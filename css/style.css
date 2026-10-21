@@ -1,0 +1,62 @@
+
+/*==========================================
+              ESTILOS GENERALES             
+============================================*/          
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;      /* Cambiamos la proporción 1rem = 10px  */ 
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* =============================================
+                  COMUNES                       
+================================================*/
+
+a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+}
+ul {
+  list-style: none;
+}
+.contenedor {
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+
+.header__nav {
+    background-color: rgb(217, 159, 88);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    max-height: 30rem;
+    text-decoration: none; 
+   
+}
+.header__logo-link {
+    width: 30rem;
+    height: auto;
+}
+.header__navigator {
+    display: flex;
+    gap: 3rem;   
+}
+.header__navigator-link {
+    font-size: 3rem;
+}
+.header__net {
+    display: flex;
+    gap: 2rem;
+    margin-right: 4rem;
+}
+    
