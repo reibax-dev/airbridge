@@ -2,23 +2,47 @@
 :root{
 
 /* =================================================
-                  COLORS                           
+                  MAIN COLORS                           
 ===================================================*/
 
-   --color-primary:     black;
-   --color-secondary:   white;
+   --color-primary:     #0066FF; /* Azul eléctrico */
+   --color-secondary:   #2563EB; /* Azul intenso */
+   --color-navy:        #071952; /* Azul marino oscuro */
 
 /* =================================================
                 BACKGROUND                         
 ====================================================*/
    
-   --bg-primary:        blue;
+   --bg-primary:        #F4F9FE; /* Blanco azulado muy claro */
+   --color-surface:     #FFFFFF; /* Blanco puro */
+   --color-surface-blue:#EAF2FC; /* Azul hielo muy claro */
+
+/* ==================================================
+                  TEXTS                              
+=====================================================*/
+
+   --color-text:           #071952;  /* Azul marino oscuro */
+   --color-text-secondary: #526A99;  /* Azul grisáceo */
+
+/* ==================================================
+                  BORDERS                              
+=====================================================*/
+
+   --color-border:  #D5E2F3; /* Azul grisáceo muy claro */
+
+/* ==================================================
+                  FOOTER                              
+=====================================================*/
+
+    --color-footer: #1D4081; /* Azul marino medio */
 
 /* ==================================================
                   FONTS                              
 =====================================================*/
 
-   --font-primary:      "arial serif";
-   --font-second:       "Open Sans";
+   --font-primary:      Arial, Helvetica, sans-serif;
+   --font-second:       Verdana, Geneva, sans-serif;
 
 }
+
+

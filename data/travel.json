@@ -1,0 +1,1312 @@
+{
+  "descripcion": "Ofertas de vuelos ficticias para el proyecto académico AirBridge; no representan vuelos comerciales reales.",
+  "moneda": "EUR",
+  "precios": "por pasajero; gastos de gestión no incluidos",
+  "viajes": [
+    {
+      "id": "RT-BIO-VLC-01",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "VY-20261120-BIOVLC-001",
+        "origen": "BIO",
+        "destino": "VLC",
+        "aerolinea": "Vueling",
+        "numeroVuelo": "VY1401",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "06:50",
+        "horaLlegada": "08:05",
+        "duracionMinutos": 75,
+        "escalas": 0,
+        "precio": 30
+      },
+      "vuelta": {
+        "id": "IB-20261127-VLCBIO-101",
+        "origen": "VLC",
+        "destino": "BIO",
+        "aerolinea": "Iberia",
+        "numeroVuelo": "IB1501",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "07:40",
+        "horaLlegada": "08:55",
+        "duracionMinutos": 75,
+        "escalas": 0,
+        "precio": 34
+      },
+      "precioTotal": 64
+    },
+    {
+      "id": "RT-BIO-VLC-02",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "IB-20261120-BIOVLC-002",
+        "origen": "BIO",
+        "destino": "VLC",
+        "aerolinea": "Iberia",
+        "numeroVuelo": "IB1402",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "07:30",
+        "horaLlegada": "08:45",
+        "duracionMinutos": 75,
+        "escalas": 0,
+        "precio": 38
+      },
+      "vuelta": {
+        "id": "IB-20261127-VLCBIO-102",
+        "origen": "VLC",
+        "destino": "BIO",
+        "aerolinea": "Iberia",
+        "numeroVuelo": "IB1502",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "09:15",
+        "horaLlegada": "10:30",
+        "duracionMinutos": 75,
+        "escalas": 0,
+        "precio": 41
+      },
+      "precioTotal": 79
+    },
+    {
+      "id": "RT-BIO-VLC-03",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "FR-20261120-BIOVLC-003",
+        "origen": "BIO",
+        "destino": "VLC",
+        "aerolinea": "Ryanair",
+        "numeroVuelo": "FR1403",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "08:30",
+        "horaLlegada": "09:45",
+        "duracionMinutos": 75,
+        "escalas": 0,
+        "precio": 46
+      },
+      "vuelta": {
+        "id": "FR-20261127-VLCBIO-103",
+        "origen": "VLC",
+        "destino": "BIO",
+        "aerolinea": "Ryanair",
+        "numeroVuelo": "FR1503",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "11:30",
+        "horaLlegada": "12:45",
+        "duracionMinutos": 75,
+        "escalas": 0,
+        "precio": 48
+      },
+      "precioTotal": 94
+    },
+    {
+      "id": "RT-BIO-VLC-04",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "UX-20261120-BIOVLC-004",
+        "origen": "BIO",
+        "destino": "VLC",
+        "aerolinea": "Air Europa",
+        "numeroVuelo": "UX1404",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "09:20",
+        "horaLlegada": "10:35",
+        "duracionMinutos": 75,
+        "escalas": 0,
+        "precio": 54
+      },
+      "vuelta": {
+        "id": "VY-20261127-VLCBIO-104",
+        "origen": "VLC",
+        "destino": "BIO",
+        "aerolinea": "Vueling",
+        "numeroVuelo": "VY1504",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "13:05",
+        "horaLlegada": "14:20",
+        "duracionMinutos": 75,
+        "escalas": 0,
+        "precio": 55
+      },
+      "precioTotal": 109
+    },
+    {
+      "id": "RT-BIO-VLC-05",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "VY-20261120-BIOVLC-005",
+        "origen": "BIO",
+        "destino": "VLC",
+        "aerolinea": "Vueling",
+        "numeroVuelo": "VY1405",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "10:45",
+        "horaLlegada": "12:00",
+        "duracionMinutos": 75,
+        "escalas": 0,
+        "precio": 62
+      },
+      "vuelta": {
+        "id": "VY-20261127-VLCBIO-105",
+        "origen": "VLC",
+        "destino": "BIO",
+        "aerolinea": "Vueling",
+        "numeroVuelo": "VY1505",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "15:45",
+        "horaLlegada": "17:00",
+        "duracionMinutos": 75,
+        "escalas": 0,
+        "precio": 62
+      },
+      "precioTotal": 124
+    },
+    {
+      "id": "RT-BIO-VLC-06",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "IB-20261120-BIOVLC-006",
+        "origen": "BIO",
+        "destino": "VLC",
+        "aerolinea": "Iberia",
+        "numeroVuelo": "IB1406",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "12:10",
+        "horaLlegada": "14:55",
+        "duracionMinutos": 165,
+        "escalas": 1,
+        "precio": 105
+      },
+      "vuelta": {
+        "id": "IB-20261127-VLCBIO-106",
+        "origen": "VLC",
+        "destino": "BIO",
+        "aerolinea": "Iberia",
+        "numeroVuelo": "IB1506",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "17:00",
+        "horaLlegada": "18:15",
+        "duracionMinutos": 75,
+        "escalas": 0,
+        "precio": 69
+      },
+      "precioTotal": 174
+    },
+    {
+      "id": "RT-BIO-VLC-07",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "FR-20261120-BIOVLC-007",
+        "origen": "BIO",
+        "destino": "VLC",
+        "aerolinea": "Ryanair",
+        "numeroVuelo": "FR1407",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "13:35",
+        "horaLlegada": "14:50",
+        "duracionMinutos": 75,
+        "escalas": 0,
+        "precio": 78
+      },
+      "vuelta": {
+        "id": "UX-20261127-VLCBIO-107",
+        "origen": "VLC",
+        "destino": "BIO",
+        "aerolinea": "Air Europa",
+        "numeroVuelo": "UX1507",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "18:50",
+        "horaLlegada": "21:30",
+        "duracionMinutos": 160,
+        "escalas": 1,
+        "precio": 108
+      },
+      "precioTotal": 186
+    },
+    {
+      "id": "RT-BIO-VLC-08",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "UX-20261120-BIOVLC-008",
+        "origen": "BIO",
+        "destino": "VLC",
+        "aerolinea": "Air Europa",
+        "numeroVuelo": "UX1408",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "15:30",
+        "horaLlegada": "16:45",
+        "duracionMinutos": 75,
+        "escalas": 0,
+        "precio": 86
+      },
+      "vuelta": {
+        "id": "UX-20261127-VLCBIO-108",
+        "origen": "VLC",
+        "destino": "BIO",
+        "aerolinea": "Air Europa",
+        "numeroVuelo": "UX1508",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "20:00",
+        "horaLlegada": "21:15",
+        "duracionMinutos": 75,
+        "escalas": 0,
+        "precio": 83
+      },
+      "precioTotal": 169
+    },
+    {
+      "id": "RT-BIO-VLC-09",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "VY-20261120-BIOVLC-009",
+        "origen": "BIO",
+        "destino": "VLC",
+        "aerolinea": "Vueling",
+        "numeroVuelo": "VY1409",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "17:00",
+        "horaLlegada": "18:15",
+        "duracionMinutos": 75,
+        "escalas": 0,
+        "precio": 94
+      },
+      "vuelta": {
+        "id": "VY-20261127-VLCBIO-109",
+        "origen": "VLC",
+        "destino": "BIO",
+        "aerolinea": "Vueling",
+        "numeroVuelo": "VY1509",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "21:10",
+        "horaLlegada": "22:25",
+        "duracionMinutos": 75,
+        "escalas": 0,
+        "precio": 90
+      },
+      "precioTotal": 184
+    },
+    {
+      "id": "RT-BIO-VLC-10",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "IB-20261120-BIOVLC-010",
+        "origen": "BIO",
+        "destino": "VLC",
+        "aerolinea": "Iberia",
+        "numeroVuelo": "IB1410",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "19:10",
+        "horaLlegada": "21:55",
+        "duracionMinutos": 165,
+        "escalas": 1,
+        "precio": 137
+      },
+      "vuelta": {
+        "id": "FR-20261127-VLCBIO-110",
+        "origen": "VLC",
+        "destino": "BIO",
+        "aerolinea": "Ryanair",
+        "numeroVuelo": "FR1510",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "22:00",
+        "horaLlegada": "00:40",
+        "duracionMinutos": 160,
+        "escalas": 1,
+        "precio": 129
+      },
+      "precioTotal": 266
+    },
+    {
+      "id": "OW-BIO-VLC-01",
+      "tipoViaje": "solo-ida",
+      "ida": {
+        "id": "IB-20261120-BIOVLC-201",
+        "origen": "BIO",
+        "destino": "VLC",
+        "aerolinea": "Iberia",
+        "numeroVuelo": "IB1601",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "08:30",
+        "horaLlegada": "09:45",
+        "duracionMinutos": 75,
+        "escalas": 0,
+        "precio": 29
+      },
+      "vuelta": null,
+      "precioTotal": 29
+    },
+    {
+      "id": "OW-BIO-VLC-02",
+      "tipoViaje": "solo-ida",
+      "ida": {
+        "id": "FR-20261120-BIOVLC-202",
+        "origen": "BIO",
+        "destino": "VLC",
+        "aerolinea": "Ryanair",
+        "numeroVuelo": "FR1602",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "09:20",
+        "horaLlegada": "10:35",
+        "duracionMinutos": 75,
+        "escalas": 0,
+        "precio": 39
+      },
+      "vuelta": null,
+      "precioTotal": 39
+    },
+    {
+      "id": "OW-BIO-VLC-03",
+      "tipoViaje": "solo-ida",
+      "ida": {
+        "id": "UX-20261120-BIOVLC-203",
+        "origen": "BIO",
+        "destino": "VLC",
+        "aerolinea": "Air Europa",
+        "numeroVuelo": "UX1603",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "10:45",
+        "horaLlegada": "12:00",
+        "duracionMinutos": 75,
+        "escalas": 0,
+        "precio": 49
+      },
+      "vuelta": null,
+      "precioTotal": 49
+    },
+    {
+      "id": "OW-BIO-VLC-04",
+      "tipoViaje": "solo-ida",
+      "ida": {
+        "id": "VY-20261120-BIOVLC-204",
+        "origen": "BIO",
+        "destino": "VLC",
+        "aerolinea": "Vueling",
+        "numeroVuelo": "VY1604",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "12:10",
+        "horaLlegada": "13:25",
+        "duracionMinutos": 75,
+        "escalas": 0,
+        "precio": 59
+      },
+      "vuelta": null,
+      "precioTotal": 59
+    },
+    {
+      "id": "OW-BIO-VLC-05",
+      "tipoViaje": "solo-ida",
+      "ida": {
+        "id": "IB-20261120-BIOVLC-205",
+        "origen": "BIO",
+        "destino": "VLC",
+        "aerolinea": "Iberia",
+        "numeroVuelo": "IB1605",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "13:35",
+        "horaLlegada": "16:10",
+        "duracionMinutos": 155,
+        "escalas": 1,
+        "precio": 94
+      },
+      "vuelta": null,
+      "precioTotal": 94
+    },
+    {
+      "id": "RT-BIO-MAD-01",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "VY-20261120-BIOMAD-001",
+        "origen": "BIO",
+        "destino": "MAD",
+        "aerolinea": "Vueling",
+        "numeroVuelo": "VY1401",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "06:50",
+        "horaLlegada": "07:55",
+        "duracionMinutos": 65,
+        "escalas": 0,
+        "precio": 28
+      },
+      "vuelta": {
+        "id": "IB-20261127-MADBIO-101",
+        "origen": "MAD",
+        "destino": "BIO",
+        "aerolinea": "Iberia",
+        "numeroVuelo": "IB1501",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "07:40",
+        "horaLlegada": "08:45",
+        "duracionMinutos": 65,
+        "escalas": 0,
+        "precio": 32
+      },
+      "precioTotal": 60
+    },
+    {
+      "id": "RT-BIO-MAD-02",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "IB-20261120-BIOMAD-002",
+        "origen": "BIO",
+        "destino": "MAD",
+        "aerolinea": "Iberia",
+        "numeroVuelo": "IB1402",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "07:30",
+        "horaLlegada": "08:35",
+        "duracionMinutos": 65,
+        "escalas": 0,
+        "precio": 36
+      },
+      "vuelta": {
+        "id": "IB-20261127-MADBIO-102",
+        "origen": "MAD",
+        "destino": "BIO",
+        "aerolinea": "Iberia",
+        "numeroVuelo": "IB1502",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "09:15",
+        "horaLlegada": "10:20",
+        "duracionMinutos": 65,
+        "escalas": 0,
+        "precio": 39
+      },
+      "precioTotal": 75
+    },
+    {
+      "id": "RT-BIO-MAD-03",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "FR-20261120-BIOMAD-003",
+        "origen": "BIO",
+        "destino": "MAD",
+        "aerolinea": "Ryanair",
+        "numeroVuelo": "FR1403",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "08:30",
+        "horaLlegada": "09:35",
+        "duracionMinutos": 65,
+        "escalas": 0,
+        "precio": 44
+      },
+      "vuelta": {
+        "id": "FR-20261127-MADBIO-103",
+        "origen": "MAD",
+        "destino": "BIO",
+        "aerolinea": "Ryanair",
+        "numeroVuelo": "FR1503",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "11:30",
+        "horaLlegada": "12:35",
+        "duracionMinutos": 65,
+        "escalas": 0,
+        "precio": 46
+      },
+      "precioTotal": 90
+    },
+    {
+      "id": "RT-BIO-MAD-04",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "UX-20261120-BIOMAD-004",
+        "origen": "BIO",
+        "destino": "MAD",
+        "aerolinea": "Air Europa",
+        "numeroVuelo": "UX1404",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "09:20",
+        "horaLlegada": "10:25",
+        "duracionMinutos": 65,
+        "escalas": 0,
+        "precio": 52
+      },
+      "vuelta": {
+        "id": "VY-20261127-MADBIO-104",
+        "origen": "MAD",
+        "destino": "BIO",
+        "aerolinea": "Vueling",
+        "numeroVuelo": "VY1504",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "13:05",
+        "horaLlegada": "14:10",
+        "duracionMinutos": 65,
+        "escalas": 0,
+        "precio": 53
+      },
+      "precioTotal": 105
+    },
+    {
+      "id": "RT-BIO-MAD-05",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "VY-20261120-BIOMAD-005",
+        "origen": "BIO",
+        "destino": "MAD",
+        "aerolinea": "Vueling",
+        "numeroVuelo": "VY1405",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "10:45",
+        "horaLlegada": "11:50",
+        "duracionMinutos": 65,
+        "escalas": 0,
+        "precio": 60
+      },
+      "vuelta": {
+        "id": "VY-20261127-MADBIO-105",
+        "origen": "MAD",
+        "destino": "BIO",
+        "aerolinea": "Vueling",
+        "numeroVuelo": "VY1505",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "15:45",
+        "horaLlegada": "16:50",
+        "duracionMinutos": 65,
+        "escalas": 0,
+        "precio": 60
+      },
+      "precioTotal": 120
+    },
+    {
+      "id": "OW-BIO-MAD-01",
+      "tipoViaje": "solo-ida",
+      "ida": {
+        "id": "IB-20261120-BIOMAD-201",
+        "origen": "BIO",
+        "destino": "MAD",
+        "aerolinea": "Iberia",
+        "numeroVuelo": "IB1601",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "08:30",
+        "horaLlegada": "09:35",
+        "duracionMinutos": 65,
+        "escalas": 0,
+        "precio": 27
+      },
+      "vuelta": null,
+      "precioTotal": 27
+    },
+    {
+      "id": "OW-BIO-MAD-02",
+      "tipoViaje": "solo-ida",
+      "ida": {
+        "id": "FR-20261120-BIOMAD-202",
+        "origen": "BIO",
+        "destino": "MAD",
+        "aerolinea": "Ryanair",
+        "numeroVuelo": "FR1602",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "09:20",
+        "horaLlegada": "10:25",
+        "duracionMinutos": 65,
+        "escalas": 0,
+        "precio": 37
+      },
+      "vuelta": null,
+      "precioTotal": 37
+    },
+    {
+      "id": "OW-BIO-MAD-03",
+      "tipoViaje": "solo-ida",
+      "ida": {
+        "id": "UX-20261120-BIOMAD-203",
+        "origen": "BIO",
+        "destino": "MAD",
+        "aerolinea": "Air Europa",
+        "numeroVuelo": "UX1603",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "10:45",
+        "horaLlegada": "11:50",
+        "duracionMinutos": 65,
+        "escalas": 0,
+        "precio": 47
+      },
+      "vuelta": null,
+      "precioTotal": 47
+    },
+    {
+      "id": "OW-BIO-MAD-04",
+      "tipoViaje": "solo-ida",
+      "ida": {
+        "id": "VY-20261120-BIOMAD-204",
+        "origen": "BIO",
+        "destino": "MAD",
+        "aerolinea": "Vueling",
+        "numeroVuelo": "VY1604",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "12:10",
+        "horaLlegada": "13:15",
+        "duracionMinutos": 65,
+        "escalas": 0,
+        "precio": 57
+      },
+      "vuelta": null,
+      "precioTotal": 57
+    },
+    {
+      "id": "OW-BIO-MAD-05",
+      "tipoViaje": "solo-ida",
+      "ida": {
+        "id": "IB-20261120-BIOMAD-205",
+        "origen": "BIO",
+        "destino": "MAD",
+        "aerolinea": "Iberia",
+        "numeroVuelo": "IB1605",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "13:35",
+        "horaLlegada": "16:00",
+        "duracionMinutos": 145,
+        "escalas": 1,
+        "precio": 92
+      },
+      "vuelta": null,
+      "precioTotal": 92
+    },
+    {
+      "id": "RT-BIO-BCN-01",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "VY-20261120-BIOBCN-001",
+        "origen": "BIO",
+        "destino": "BCN",
+        "aerolinea": "Vueling",
+        "numeroVuelo": "VY1401",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "06:50",
+        "horaLlegada": "08:00",
+        "duracionMinutos": 70,
+        "escalas": 0,
+        "precio": 29
+      },
+      "vuelta": {
+        "id": "IB-20261127-BCNBIO-101",
+        "origen": "BCN",
+        "destino": "BIO",
+        "aerolinea": "Iberia",
+        "numeroVuelo": "IB1501",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "07:40",
+        "horaLlegada": "08:50",
+        "duracionMinutos": 70,
+        "escalas": 0,
+        "precio": 33
+      },
+      "precioTotal": 62
+    },
+    {
+      "id": "RT-BIO-BCN-02",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "IB-20261120-BIOBCN-002",
+        "origen": "BIO",
+        "destino": "BCN",
+        "aerolinea": "Iberia",
+        "numeroVuelo": "IB1402",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "07:30",
+        "horaLlegada": "08:40",
+        "duracionMinutos": 70,
+        "escalas": 0,
+        "precio": 37
+      },
+      "vuelta": {
+        "id": "IB-20261127-BCNBIO-102",
+        "origen": "BCN",
+        "destino": "BIO",
+        "aerolinea": "Iberia",
+        "numeroVuelo": "IB1502",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "09:15",
+        "horaLlegada": "10:25",
+        "duracionMinutos": 70,
+        "escalas": 0,
+        "precio": 40
+      },
+      "precioTotal": 77
+    },
+    {
+      "id": "RT-BIO-BCN-03",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "FR-20261120-BIOBCN-003",
+        "origen": "BIO",
+        "destino": "BCN",
+        "aerolinea": "Ryanair",
+        "numeroVuelo": "FR1403",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "08:30",
+        "horaLlegada": "09:40",
+        "duracionMinutos": 70,
+        "escalas": 0,
+        "precio": 45
+      },
+      "vuelta": {
+        "id": "FR-20261127-BCNBIO-103",
+        "origen": "BCN",
+        "destino": "BIO",
+        "aerolinea": "Ryanair",
+        "numeroVuelo": "FR1503",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "11:30",
+        "horaLlegada": "12:40",
+        "duracionMinutos": 70,
+        "escalas": 0,
+        "precio": 47
+      },
+      "precioTotal": 92
+    },
+    {
+      "id": "RT-BIO-BCN-04",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "UX-20261120-BIOBCN-004",
+        "origen": "BIO",
+        "destino": "BCN",
+        "aerolinea": "Air Europa",
+        "numeroVuelo": "UX1404",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "09:20",
+        "horaLlegada": "10:30",
+        "duracionMinutos": 70,
+        "escalas": 0,
+        "precio": 53
+      },
+      "vuelta": {
+        "id": "VY-20261127-BCNBIO-104",
+        "origen": "BCN",
+        "destino": "BIO",
+        "aerolinea": "Vueling",
+        "numeroVuelo": "VY1504",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "13:05",
+        "horaLlegada": "14:15",
+        "duracionMinutos": 70,
+        "escalas": 0,
+        "precio": 54
+      },
+      "precioTotal": 107
+    },
+    {
+      "id": "RT-BIO-BCN-05",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "VY-20261120-BIOBCN-005",
+        "origen": "BIO",
+        "destino": "BCN",
+        "aerolinea": "Vueling",
+        "numeroVuelo": "VY1405",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "10:45",
+        "horaLlegada": "11:55",
+        "duracionMinutos": 70,
+        "escalas": 0,
+        "precio": 61
+      },
+      "vuelta": {
+        "id": "VY-20261127-BCNBIO-105",
+        "origen": "BCN",
+        "destino": "BIO",
+        "aerolinea": "Vueling",
+        "numeroVuelo": "VY1505",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "15:45",
+        "horaLlegada": "16:55",
+        "duracionMinutos": 70,
+        "escalas": 0,
+        "precio": 61
+      },
+      "precioTotal": 122
+    },
+    {
+      "id": "OW-BIO-BCN-01",
+      "tipoViaje": "solo-ida",
+      "ida": {
+        "id": "IB-20261120-BIOBCN-201",
+        "origen": "BIO",
+        "destino": "BCN",
+        "aerolinea": "Iberia",
+        "numeroVuelo": "IB1601",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "08:30",
+        "horaLlegada": "09:40",
+        "duracionMinutos": 70,
+        "escalas": 0,
+        "precio": 28
+      },
+      "vuelta": null,
+      "precioTotal": 28
+    },
+    {
+      "id": "OW-BIO-BCN-02",
+      "tipoViaje": "solo-ida",
+      "ida": {
+        "id": "FR-20261120-BIOBCN-202",
+        "origen": "BIO",
+        "destino": "BCN",
+        "aerolinea": "Ryanair",
+        "numeroVuelo": "FR1602",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "09:20",
+        "horaLlegada": "10:30",
+        "duracionMinutos": 70,
+        "escalas": 0,
+        "precio": 38
+      },
+      "vuelta": null,
+      "precioTotal": 38
+    },
+    {
+      "id": "OW-BIO-BCN-03",
+      "tipoViaje": "solo-ida",
+      "ida": {
+        "id": "UX-20261120-BIOBCN-203",
+        "origen": "BIO",
+        "destino": "BCN",
+        "aerolinea": "Air Europa",
+        "numeroVuelo": "UX1603",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "10:45",
+        "horaLlegada": "11:55",
+        "duracionMinutos": 70,
+        "escalas": 0,
+        "precio": 48
+      },
+      "vuelta": null,
+      "precioTotal": 48
+    },
+    {
+      "id": "OW-BIO-BCN-04",
+      "tipoViaje": "solo-ida",
+      "ida": {
+        "id": "VY-20261120-BIOBCN-204",
+        "origen": "BIO",
+        "destino": "BCN",
+        "aerolinea": "Vueling",
+        "numeroVuelo": "VY1604",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "12:10",
+        "horaLlegada": "13:20",
+        "duracionMinutos": 70,
+        "escalas": 0,
+        "precio": 58
+      },
+      "vuelta": null,
+      "precioTotal": 58
+    },
+    {
+      "id": "OW-BIO-BCN-05",
+      "tipoViaje": "solo-ida",
+      "ida": {
+        "id": "IB-20261120-BIOBCN-205",
+        "origen": "BIO",
+        "destino": "BCN",
+        "aerolinea": "Iberia",
+        "numeroVuelo": "IB1605",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "13:35",
+        "horaLlegada": "16:05",
+        "duracionMinutos": 150,
+        "escalas": 1,
+        "precio": 93
+      },
+      "vuelta": null,
+      "precioTotal": 93
+    },
+    {
+      "id": "RT-BIO-FCO-01",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "VY-20261120-BIOFCO-001",
+        "origen": "BIO",
+        "destino": "FCO",
+        "aerolinea": "Vueling",
+        "numeroVuelo": "VY1401",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "06:50",
+        "horaLlegada": "09:10",
+        "duracionMinutos": 140,
+        "escalas": 0,
+        "precio": 44
+      },
+      "vuelta": {
+        "id": "IB-20261127-FCOBIO-101",
+        "origen": "FCO",
+        "destino": "BIO",
+        "aerolinea": "Iberia",
+        "numeroVuelo": "IB1501",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "07:40",
+        "horaLlegada": "10:00",
+        "duracionMinutos": 140,
+        "escalas": 0,
+        "precio": 48
+      },
+      "precioTotal": 92
+    },
+    {
+      "id": "RT-BIO-FCO-02",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "IB-20261120-BIOFCO-002",
+        "origen": "BIO",
+        "destino": "FCO",
+        "aerolinea": "Iberia",
+        "numeroVuelo": "IB1402",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "07:30",
+        "horaLlegada": "09:50",
+        "duracionMinutos": 140,
+        "escalas": 0,
+        "precio": 52
+      },
+      "vuelta": {
+        "id": "IB-20261127-FCOBIO-102",
+        "origen": "FCO",
+        "destino": "BIO",
+        "aerolinea": "Iberia",
+        "numeroVuelo": "IB1502",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "09:15",
+        "horaLlegada": "11:35",
+        "duracionMinutos": 140,
+        "escalas": 0,
+        "precio": 55
+      },
+      "precioTotal": 107
+    },
+    {
+      "id": "RT-BIO-FCO-03",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "FR-20261120-BIOFCO-003",
+        "origen": "BIO",
+        "destino": "FCO",
+        "aerolinea": "Ryanair",
+        "numeroVuelo": "FR1403",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "08:30",
+        "horaLlegada": "10:50",
+        "duracionMinutos": 140,
+        "escalas": 0,
+        "precio": 60
+      },
+      "vuelta": {
+        "id": "FR-20261127-FCOBIO-103",
+        "origen": "FCO",
+        "destino": "BIO",
+        "aerolinea": "Ryanair",
+        "numeroVuelo": "FR1503",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "11:30",
+        "horaLlegada": "13:50",
+        "duracionMinutos": 140,
+        "escalas": 0,
+        "precio": 62
+      },
+      "precioTotal": 122
+    },
+    {
+      "id": "RT-BIO-FCO-04",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "UX-20261120-BIOFCO-004",
+        "origen": "BIO",
+        "destino": "FCO",
+        "aerolinea": "Air Europa",
+        "numeroVuelo": "UX1404",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "09:20",
+        "horaLlegada": "11:40",
+        "duracionMinutos": 140,
+        "escalas": 0,
+        "precio": 68
+      },
+      "vuelta": {
+        "id": "VY-20261127-FCOBIO-104",
+        "origen": "FCO",
+        "destino": "BIO",
+        "aerolinea": "Vueling",
+        "numeroVuelo": "VY1504",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "13:05",
+        "horaLlegada": "15:25",
+        "duracionMinutos": 140,
+        "escalas": 0,
+        "precio": 69
+      },
+      "precioTotal": 137
+    },
+    {
+      "id": "OW-BIO-FCO-01",
+      "tipoViaje": "solo-ida",
+      "ida": {
+        "id": "IB-20261120-BIOFCO-201",
+        "origen": "BIO",
+        "destino": "FCO",
+        "aerolinea": "Iberia",
+        "numeroVuelo": "IB1601",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "08:30",
+        "horaLlegada": "10:50",
+        "duracionMinutos": 140,
+        "escalas": 0,
+        "precio": 43
+      },
+      "vuelta": null,
+      "precioTotal": 43
+    },
+    {
+      "id": "OW-BIO-FCO-02",
+      "tipoViaje": "solo-ida",
+      "ida": {
+        "id": "FR-20261120-BIOFCO-202",
+        "origen": "BIO",
+        "destino": "FCO",
+        "aerolinea": "Ryanair",
+        "numeroVuelo": "FR1602",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "09:20",
+        "horaLlegada": "11:40",
+        "duracionMinutos": 140,
+        "escalas": 0,
+        "precio": 53
+      },
+      "vuelta": null,
+      "precioTotal": 53
+    },
+    {
+      "id": "OW-BIO-FCO-03",
+      "tipoViaje": "solo-ida",
+      "ida": {
+        "id": "UX-20261120-BIOFCO-203",
+        "origen": "BIO",
+        "destino": "FCO",
+        "aerolinea": "Air Europa",
+        "numeroVuelo": "UX1603",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "10:45",
+        "horaLlegada": "13:05",
+        "duracionMinutos": 140,
+        "escalas": 0,
+        "precio": 63
+      },
+      "vuelta": null,
+      "precioTotal": 63
+    },
+    {
+      "id": "OW-BIO-FCO-04",
+      "tipoViaje": "solo-ida",
+      "ida": {
+        "id": "VY-20261120-BIOFCO-204",
+        "origen": "BIO",
+        "destino": "FCO",
+        "aerolinea": "Vueling",
+        "numeroVuelo": "VY1604",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "12:10",
+        "horaLlegada": "14:30",
+        "duracionMinutos": 140,
+        "escalas": 0,
+        "precio": 73
+      },
+      "vuelta": null,
+      "precioTotal": 73
+    },
+    {
+      "id": "RT-MAD-CDG-01",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "VY-20261120-MADCDG-001",
+        "origen": "MAD",
+        "destino": "CDG",
+        "aerolinea": "Vueling",
+        "numeroVuelo": "VY1401",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "06:50",
+        "horaLlegada": "08:55",
+        "duracionMinutos": 125,
+        "escalas": 0,
+        "precio": 41
+      },
+      "vuelta": {
+        "id": "IB-20261127-CDGMAD-101",
+        "origen": "CDG",
+        "destino": "MAD",
+        "aerolinea": "Iberia",
+        "numeroVuelo": "IB1501",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "07:40",
+        "horaLlegada": "09:45",
+        "duracionMinutos": 125,
+        "escalas": 0,
+        "precio": 45
+      },
+      "precioTotal": 86
+    },
+    {
+      "id": "RT-MAD-CDG-02",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "IB-20261120-MADCDG-002",
+        "origen": "MAD",
+        "destino": "CDG",
+        "aerolinea": "Iberia",
+        "numeroVuelo": "IB1402",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "07:30",
+        "horaLlegada": "09:35",
+        "duracionMinutos": 125,
+        "escalas": 0,
+        "precio": 49
+      },
+      "vuelta": {
+        "id": "IB-20261127-CDGMAD-102",
+        "origen": "CDG",
+        "destino": "MAD",
+        "aerolinea": "Iberia",
+        "numeroVuelo": "IB1502",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "09:15",
+        "horaLlegada": "11:20",
+        "duracionMinutos": 125,
+        "escalas": 0,
+        "precio": 52
+      },
+      "precioTotal": 101
+    },
+    {
+      "id": "RT-MAD-CDG-03",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "FR-20261120-MADCDG-003",
+        "origen": "MAD",
+        "destino": "CDG",
+        "aerolinea": "Ryanair",
+        "numeroVuelo": "FR1403",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "08:30",
+        "horaLlegada": "10:35",
+        "duracionMinutos": 125,
+        "escalas": 0,
+        "precio": 57
+      },
+      "vuelta": {
+        "id": "FR-20261127-CDGMAD-103",
+        "origen": "CDG",
+        "destino": "MAD",
+        "aerolinea": "Ryanair",
+        "numeroVuelo": "FR1503",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "11:30",
+        "horaLlegada": "13:35",
+        "duracionMinutos": 125,
+        "escalas": 0,
+        "precio": 59
+      },
+      "precioTotal": 116
+    },
+    {
+      "id": "RT-MAD-CDG-04",
+      "tipoViaje": "ida-vuelta",
+      "ida": {
+        "id": "UX-20261120-MADCDG-004",
+        "origen": "MAD",
+        "destino": "CDG",
+        "aerolinea": "Air Europa",
+        "numeroVuelo": "UX1404",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "09:20",
+        "horaLlegada": "11:25",
+        "duracionMinutos": 125,
+        "escalas": 0,
+        "precio": 65
+      },
+      "vuelta": {
+        "id": "VY-20261127-CDGMAD-104",
+        "origen": "CDG",
+        "destino": "MAD",
+        "aerolinea": "Vueling",
+        "numeroVuelo": "VY1504",
+        "fechaSalida": "2026-11-27",
+        "horaSalida": "13:05",
+        "horaLlegada": "15:10",
+        "duracionMinutos": 125,
+        "escalas": 0,
+        "precio": 66
+      },
+      "precioTotal": 131
+    },
+    {
+      "id": "OW-MAD-CDG-01",
+      "tipoViaje": "solo-ida",
+      "ida": {
+        "id": "IB-20261120-MADCDG-201",
+        "origen": "MAD",
+        "destino": "CDG",
+        "aerolinea": "Iberia",
+        "numeroVuelo": "IB1601",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "08:30",
+        "horaLlegada": "10:35",
+        "duracionMinutos": 125,
+        "escalas": 0,
+        "precio": 40
+      },
+      "vuelta": null,
+      "precioTotal": 40
+    },
+    {
+      "id": "OW-MAD-CDG-02",
+      "tipoViaje": "solo-ida",
+      "ida": {
+        "id": "FR-20261120-MADCDG-202",
+        "origen": "MAD",
+        "destino": "CDG",
+        "aerolinea": "Ryanair",
+        "numeroVuelo": "FR1602",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "09:20",
+        "horaLlegada": "11:25",
+        "duracionMinutos": 125,
+        "escalas": 0,
+        "precio": 50
+      },
+      "vuelta": null,
+      "precioTotal": 50
+    },
+    {
+      "id": "OW-MAD-CDG-03",
+      "tipoViaje": "solo-ida",
+      "ida": {
+        "id": "UX-20261120-MADCDG-203",
+        "origen": "MAD",
+        "destino": "CDG",
+        "aerolinea": "Air Europa",
+        "numeroVuelo": "UX1603",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "10:45",
+        "horaLlegada": "12:50",
+        "duracionMinutos": 125,
+        "escalas": 0,
+        "precio": 60
+      },
+      "vuelta": null,
+      "precioTotal": 60
+    },
+    {
+      "id": "OW-MAD-CDG-04",
+      "tipoViaje": "solo-ida",
+      "ida": {
+        "id": "VY-20261120-MADCDG-204",
+        "origen": "MAD",
+        "destino": "CDG",
+        "aerolinea": "Vueling",
+        "numeroVuelo": "VY1604",
+        "fechaSalida": "2026-11-20",
+        "horaSalida": "12:10",
+        "horaLlegada": "14:15",
+        "duracionMinutos": 125,
+        "escalas": 0,
+        "precio": 70
+      },
+      "vuelta": null,
+      "precioTotal": 70
+    }
+  ]
+}

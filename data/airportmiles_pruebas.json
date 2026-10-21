@@ -1,0 +1,83 @@
+{
+  "descripcion": "MOCK local para desarrollo. Datos de ejemplo normalizados para AirBridge, NO respuesta literal ni datos certificados de AirportMiles.",
+  "fuentePrevista": "AirportMiles API v1",
+  "documentacion": "https://airportmiles.com/api",
+  "aviso": "Las rutas listadas son las parejas usadas en viajes.json, no una confirmación de rutas comerciales ni de ficheros de ruta de la API. Las distancias son cálculos aproximados entre coordenadas de ejemplo.",
+  "aeropuertos": [
+    {
+      "codigo": "BIO",
+      "nombre": "Aeropuerto de Bilbao",
+      "ciudad": "Bilbao",
+      "pais": "España",
+      "latitud": 43.3011,
+      "longitud": -2.9106
+    },
+    {
+      "codigo": "VLC",
+      "nombre": "Aeropuerto de Valencia",
+      "ciudad": "Valencia",
+      "pais": "España",
+      "latitud": 39.4893,
+      "longitud": -0.4816
+    },
+    {
+      "codigo": "MAD",
+      "nombre": "Aeropuerto Adolfo Suárez Madrid-Barajas",
+      "ciudad": "Madrid",
+      "pais": "España",
+      "latitud": 40.4983,
+      "longitud": -3.5676
+    },
+    {
+      "codigo": "BCN",
+      "nombre": "Aeropuerto Josep Tarradellas Barcelona-El Prat",
+      "ciudad": "Barcelona",
+      "pais": "España",
+      "latitud": 41.2971,
+      "longitud": 2.0785
+    },
+    {
+      "codigo": "FCO",
+      "nombre": "Aeropuerto de Roma-Fiumicino",
+      "ciudad": "Roma",
+      "pais": "Italia",
+      "latitud": 41.8003,
+      "longitud": 12.2389
+    },
+    {
+      "codigo": "CDG",
+      "nombre": "Aeropuerto de París-Charles de Gaulle",
+      "ciudad": "París",
+      "pais": "Francia",
+      "latitud": 49.0097,
+      "longitud": 2.5479
+    }
+  ],
+  "rutas": [
+    {
+      "origen": "BCN",
+      "destino": "BIO",
+      "distanciaKm": 467
+    },
+    {
+      "origen": "BIO",
+      "destino": "FCO",
+      "distanciaKm": 1250
+    },
+    {
+      "origen": "BIO",
+      "destino": "MAD",
+      "distanciaKm": 316
+    },
+    {
+      "origen": "BIO",
+      "destino": "VLC",
+      "distanciaKm": 470
+    },
+    {
+      "origen": "CDG",
+      "destino": "MAD",
+      "distanciaKm": 1062
+    }
+  ]
+}
