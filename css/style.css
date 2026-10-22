@@ -24,11 +24,11 @@ ul {
   list-style: none;
 }
 
-.contenedor {
+/* .contenedor {
   max-width: 120rem;
   width: 90%;
   margin: 0 auto;
-}
+} */
 
 /*===============================================
                    HEADER                        
@@ -70,12 +70,14 @@ ul {
 main {
     margin: 0;
     padding: 0;
-    min-height: 92vh;
+    min-height: 94vh;
 }
 .front__image {
     display: block;
     width: 100%;
-    height: auto;
+    height: 20rem;
+    object-fit: cover;
+    object-position: center;
     margin: 0;
     padding: 0;
 }
