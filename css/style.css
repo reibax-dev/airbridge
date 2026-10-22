@@ -41,19 +41,21 @@ ul {
     align-items: center;
     margin: 0;
     padding: 0;
-    max-height: 30rem;
+    max-height: 10vh;
 
    
 }
 .header__logo-link {
     width: 20rem;
     height: auto;
+    margin-left: 4rem;
 }
 .header__navigator {
     display: flex;
     gap: 3rem;   
 }
 .header__navigator-link {
+    font-family: var(--font-primary);
     font-size: 3rem;
 }
 .header__net {
@@ -62,9 +64,21 @@ ul {
     margin-right: 4rem;
 }
     
-
-
-
+/*================================================
+               PORTADA                            
+==================================================*/
+main {
+    margin: 0;
+    padding: 0;
+    min-height: 92vh;
+}
+.front__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
 
 
 
@@ -73,15 +87,23 @@ ul {
 /*==================================
             FOOTER                   
 =============================================*/
-
-.footer__section {
-    background-color: rgb(217, 159, 88);
+.footer {
+    background-image: url( /assets/img_footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom ,bottom;
+    object-fit: cover; 
+    height: 30rem;
+    width: auto; 
+}
+.footer__section {   
     display: flex;
     justify-content:space-around;
     align-items: flex-start;
     margin: 0 ;
     padding: 1rem 2rem;
     max-height: 25rem;
+
 }
 .footer__logo {
     width: 15rem;
@@ -90,6 +112,7 @@ ul {
 
 .footer__logo-text {
     font-size: 1.5rem;
+    font-family: var(--font-second);
     padding: 0;
     margin: 0;
 }
@@ -102,6 +125,7 @@ ul {
 }
 .footer__air-text {
     margin-bottom: 0;
+    font-family: var(--font-primary);
     font-size: 1.8rem;
 }
 .footer__air-list {
@@ -111,6 +135,7 @@ ul {
     padding: 0 ;
 }
 .footer__air-list  {
+    font-family: var(--font-second);
     font-size: 1.5rem;
 }
 .footer__logo-list {
@@ -122,11 +147,14 @@ ul {
 .footer__copy  {
     display: flex;
     justify-content: space-between;
-    margin: 0 4rem;
+    margin: 0 ;
     font-size: 1.5rem;
-    padding: 0;
+    padding: 0 4rem;
+    background-color: var(--color-footer);
+    color: var(--color-surface);
 }
 .footer__copy-net {
     display: flex;
     gap: 2rem;
+    
 }
