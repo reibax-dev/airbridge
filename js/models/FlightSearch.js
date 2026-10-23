@@ -32,12 +32,15 @@ class FlightSearch{
         return this.results;
     }
 
+    //Quitar comparar por aerolinea
     filterByAirline(airline){
         return this.results.filter(trip => 
             trip.outbound.airline === airline ||
             (trip.returnFlight !== null && trip.returnFlight.airline === airline));
 
     }
+
+    //Crear método por tiempo
 
     sortByPriceAscendant(){
         //[...this.results] para conservar this.results porque sort mofifica el array original

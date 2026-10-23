@@ -24,6 +24,8 @@ class ShoppingCart {
         this.itemsTrips = this.itemsTrips.filter(
             trip => trip.idTrip !== idTrip
         );
+
+        
     }
 
     getSubtotal() {
