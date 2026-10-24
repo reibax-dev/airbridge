@@ -39,8 +39,21 @@ class FlightSearch{
             (trip.returnFlight !== null && trip.returnFlight.airline === airline));
 
     }
-
     //Crear método por tiempo
+    orderFlightByTime () {
+        const totalDuration = (trip) => {
+            let outboundTotalTime = trip.outbound.durationMinutes;
+            let returnTotalTime = 0;
+
+            if(trip.returnFlight !== null ) {
+                returnTotalTime = trip.returnFlight.durationMinutes;
+            }
+
+            return outboundTotalTime + returnTotalTime;           
+        } 
+        return [...this.results].sort((a,b) => totalDuration(a) - totalDuration(b));              
+    }
+    
 
     sortByPriceAscendant(){
         //[...this.results] para conservar this.results porque sort mofifica el array original
@@ -54,6 +67,9 @@ class FlightSearch{
 
 
 
+
 }
 
 export default FlightSearch;
+
+console.log (this.results)
