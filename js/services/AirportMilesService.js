@@ -1,8 +1,8 @@
-import { cantGetUrlError } from "../components/Errors";
+import { cantGetUrlError } from "../components/Errors.js";
 
 
 
-// OBTENER URLs API
+// OBTENER URL API
 
 
 async function getUrl(urlSection){
@@ -24,7 +24,7 @@ async function getUrl(urlSection){
 
 
 
-// OBTENER IATAS DE LAS RUTAS 
+// OBTENER IATAS DE LA RUTA
 // return "iata-iata"
 
 
@@ -37,10 +37,10 @@ async function getRouteIATA(iata1,iata2){
     }
 
     const index=await results.json();
-    const routesIATA=index.routes;
+    const routeIATA=index.routes;
 
     let iatas;
-    for(const element of routesIATA){
+    for(const element of routeIATA){
 
         if( element.includes(iata1.toLowerCase()) 
             &&
@@ -57,10 +57,10 @@ async function getRouteIATA(iata1,iata2){
 
 
 
-// OBTENER RUTAS
+// OBTENER RUTA
 
 
-async function getRoutes(iatas){
+async function getRoute(iatas){
 
     const url=await getUrl("route");
     const results=await fetch(url.replace("{iata}-{iata}",iatas));
@@ -69,9 +69,9 @@ async function getRoutes(iatas){
         throw new cantGetUrlError;
     }
 
-    const routes=await results.json();
+    const route=await results.json();
 
-    return routes;
+    return route;
 
     
 }
@@ -79,10 +79,10 @@ async function getRoutes(iatas){
 
 
 
-// OBTENER AEROPUERTOS
+// OBTENER AEROPUERTO
 
 
-async function getAirports(iata){
+async function getAirport(iata){
 
     const url=await getUrl("airport");
     const results=await fetch(url.replace("{iata}",iata));
@@ -91,9 +91,11 @@ async function getAirports(iata){
         throw new cantGetUrlError;
     }
 
-    const airports=await results.json();
+    const airport=await results.json();
 
-    return airports
+    const airportJSON={codeAirport:airport.airport.iata,nameAirport:airport.airport.name,city:airport.airport.city,country:airport.airport.country.name};
+
+    return airportJSON;
 
     
 }
@@ -101,10 +103,36 @@ async function getAirports(iata){
 
 
 
-// OBTENER CIUDADES
 
 
-async function getCities(slug){
+export{
+    
+    getUrl,
+    getRouteIATA,
+    getRoute,
+    getAirport
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* OBTENER CIUDADES
+
+
+async function getCity(slug){
 
     const url=await getUrl("city");
     const results=await fetch(url.replace("{slug}",slug));
@@ -119,14 +147,14 @@ async function getCities(slug){
 
     
 }
+*/
 
 
 
+/* OBTENER PAISES
 
-// OBTENER PAISES
 
-
-async function getCountries(slug){
+async function getCountry(slug){
 
     const url=await getUrl("countrie");
     const results=await fetch(url.replace("{slug}",slug));
@@ -141,3 +169,4 @@ async function getCountries(slug){
 
     
 }
+*/
