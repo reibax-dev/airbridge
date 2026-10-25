@@ -1,6 +1,6 @@
 
-
-
+export function renderForm(airports) {
+    
 const fieldsetForm = document.createElement('fieldset');
 fieldsetForm.setAttribute('class', 'fieltset-form');
 
@@ -9,6 +9,9 @@ fieldsetForm.setAttribute('class', 'fieltset-form');
 
 const divButtons = document.createElement('div');
 divButtons.setAttribute('class', 'form-buttons-trip');
+
+const cityList = document.createElement('datalist');
+cityList.id = 'cities';
 
 const roundTripButton = document.createElement('button');
 roundTripButton.setAttribute('type','button');
@@ -28,6 +31,7 @@ origenLabel.setAttribute('for', 'origin');
 
 const origenInput = document.createElement('input');
 origenInput.setAttribute('id', 'origin');
+origenInput.setAttribute('list', 'cities');
 origenInput.setAttribute('name', 'Origen');
 
 const swapButton = document.createElement('button');
@@ -41,6 +45,7 @@ destinyLabel.setAttribute('for', 'destination');
 
 const destinyInput = document.createElement('input');
 destinyInput.setAttribute('id', 'destination');
+destinyInput.setAttribute('list', 'cities');
 destinyInput.setAttribute('name', 'Destino');
 
 //!----------------- FECHAS -----------------------------
@@ -73,7 +78,7 @@ passengerInput.setAttribute('name', 'passenger');
 for ( let i = 1; i <=9 ; i++) {
     const option = document.createElement('option');
     option.value = i ;
-    option.textContent = `${i} 'Pasajeros' `;
+    option.textContent = `${i} ${i === 1 ? 'Pasajero' : 'Pasajeros'}`;
     passengerInput.append(option);
 }
 passengerLabel.append(passengerInput);
@@ -81,7 +86,7 @@ passengerLabel.append(passengerInput);
 //!--------------- DIV para separar --------------------
 
 const divButtonSubmit = document.createElement('div');
-divButtons.setAttribute('class', 'formSubmit');
+divButtonSubmit.setAttribute('class', 'formSubmit');
 
 
 //!------------------- CHECKBOX -------------------------
@@ -102,9 +107,23 @@ submitButton.setAttribute('id','submit-form');
 submitButton.textContent = 'Buscar Vuelos';
 
 
+//! -------------PARA EL CITYLIST -------------------------
+
+airports.forEach(airport => {
+    const option = document.createElement('option');
+    option.value = airport.city;
+    option.label = airport.iata;
+    cityList.append(option);
+});
+
+
+//! -------------SEARCHFORM -------------------------------
+
 const searchForm = document.querySelector('#searchForm');
 divButtons.append(roundTripButton, oneTripButton);
 divButtonSubmit.append(directLabel, submitButton);
+
+//! -----------LABEL CONECT INPUT ------------------------
 
 origenLabel.append(origenInput);
 destinyLabel.append(destinyInput);
@@ -113,6 +132,7 @@ returnDateLabel.append(returnDateInput);
 
 fieldsetForm.append (
     divButtons,
+    cityList,
     origenLabel,
     swapButton,
     destinyLabel,
@@ -123,4 +143,4 @@ fieldsetForm.append (
 )
 
 searchForm.append(fieldsetForm);
-
+}; //* Fin Function
