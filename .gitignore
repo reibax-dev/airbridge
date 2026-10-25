@@ -1,1 +1,7 @@
 **/.DS_Store   
+
+# Archivos de pruebas personales
+/testTrip.html
+/js/testTrip.js
+/testResults.html
+/js/testResults.js
