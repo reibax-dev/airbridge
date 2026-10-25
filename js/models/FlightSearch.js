@@ -97,8 +97,20 @@ class FlightSearch{
         return this.results;
     }
 
+  
+    orderFlightByTime () {
+        const totalDuration = (trip) => {
+            let outboundTotalTime = trip.outbound.durationMinutes;
+            let returnTotalTime = 0;
 
-    //Crear método por tiempo
+            if(trip.returnFlight !== null ) {
+                returnTotalTime = trip.returnFlight.durationMinutes;
+            }
+
+            return outboundTotalTime + returnTotalTime;           
+        } 
+        return [...this.results].sort((a,b) => totalDuration(a) - totalDuration(b));              
+    }
     
 
     sortByPriceAscendant(){
@@ -113,6 +125,8 @@ class FlightSearch{
 
 
 
+
 }
 
 export default FlightSearch;
+

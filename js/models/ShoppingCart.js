@@ -23,33 +23,31 @@ class ShoppingCart {
         //Para eliminar viaje
         this.itemsTrips = this.itemsTrips.filter(
             trip => trip.idTrip !== idTrip
-        );
-
-        
+        );       
     }
 
     getSubtotal() {
         //Calcular subtotal (sumar todos los viajes) y multiplicar por los pasajeros
-        
+        return this.itemsTrips.reduce((acuPrice , trip) => trip.getTotalPrice(this.passengers  ) + acuPrice ,0) ;
     }
-
+    
 
     getTotal(){
         //Suma subtotal+gastos de gestion
+        return this.getSubtotal() + this.managementFee ;
     }
 
     clearCart(){
         //Eliminar/vaciar carrito
+         this.itemsTrips.splice(0, this.itemsTrips.length) ;
+         return this.itemsTrips.length ;
     }
 
     checkTrip(idTrip){
         //Comprobar si existe el viaje
         return this.itemsTrips.some(trip => trip.idTrip === idTrip);
 
-
-    }
-
-    
+    }    
 }
 
 export default ShoppingCart;
