@@ -27,7 +27,7 @@ class FlightSearch{
             const foundDepartureDate = trip.outbound.departureDate === searchCriteria.departureDate;
             const foundTripType = trip.tripType === searchCriteria.tripType;
 
-            //directOnly - Si busca vuelos directos, o vuelos con o sin escalas
+            //directOnly - Si busca vuelos directos, o no
             let foundDirectOnly = true;
             if (searchCriteria.directOnly) {
                 //comprobamos si el vuelo de ida es directo. Si tiene escalas, foundDirectOnly será false.
@@ -63,13 +63,15 @@ class FlightSearch{
             console.log("Viajes encontrados:", foundTrips); // HACK
             
 
-            //completar la información del viaje
-            //obtener de lo que se ha sacado de la API la info de aeropuerto y rutas
+            // PENDIENTE: Obtener los aeropuertos mediante AirportMilesService.
 
+            // PENDIENTE: Construir un FlightRoute para cada trayecto.
 
-            //crear los objetos FlightRoute, y Trip con los datos combinados
+            // PENDIENTE: Crear los objetos Flight utilizando Flight.fromJson().
 
-            //guardar los viajes encontrados en this.results
+            // PENDIENTE: Crear los objetos Trip utilizando Trip.fromJson().
+
+            // PENDIENTE: Guardar los objetos Trip en this.results.
             
         }catch (error){
             console.error("Error al obtener los resultados:",error);
