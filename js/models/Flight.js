@@ -76,7 +76,6 @@ class Flight {
 
   getPriceEuro() {
     
-    
     return (this.price / 100).toFixed(2) + "€";
   }
 }
