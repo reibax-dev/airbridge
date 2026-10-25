@@ -63,15 +63,15 @@ class FlightSearch{
             console.log("Cantidad de viajes:", foundTrips.length); // HACK
             
 
-            // PENDIENTE: Obtener los aeropuertos mediante AirportMilesService.
+            //PENDIENTE: Obtener los aeropuertos mediante AirportMilesService.
 
-            // PENDIENTE: Construir un FlightRoute para cada trayecto.
+            //PENDIENTE: Construir un FlightRoute para cada trayecto.
 
-            // PENDIENTE: Crear los objetos Flight utilizando Flight.fromJson().
+            //PENDIENTE: Crear los objetos Flight utilizando Flight.fromJson().
 
-            // PENDIENTE: Crear los objetos Trip utilizando Trip.fromJson().
+            //PENDIENTE: Crear los objetos Trip utilizando Trip.fromJson().
 
-            // PENDIENTE: Guardar los objetos Trip en this.results.
+            //PENDIENTE: Guardar los objetos Trip en this.results.
             
         }catch (error){
             console.error("Error al obtener los resultados:",error);
