@@ -66,6 +66,25 @@ const returnDateInput = document.createElement('input');
 returnDateInput.setAttribute('id', 'returnDate');
 returnDateInput.setAttribute('type', 'date');
 
+returnDateInput.disabled = false;
+returnDateInput.required = true;
+//* IDA
+    oneTripButton.addEventListener('click', () => { 
+        returnDateInput.disabled = true;
+        returnDateInput.required = false;
+        returnDateInput.value = '';
+        returnDateLabel.hidden = true;
+    });
+//* IDA Y VUELTA
+    roundTripButton.addEventListener('click', () => {
+        returnDateInput.disabled = false;
+        returnDateInput.required = true;
+        returnDateLabel.hidden = false;
+    });
+
+
+
+
 //!------------------ PASAJEROS --------------------------
 
 const passengerLabel = document.createElement('label');
