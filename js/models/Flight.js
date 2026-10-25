@@ -63,11 +63,20 @@ class Flight {
     const horas = Math.floor(this.durationMinutes/60);
     const minutos = this.durationMinutes % 60;
 
+    if (minutos === 0) {
+        return `${horas}h`;
+    }
+
+    if (horas === 0) {
+        return `${minutos}m`;
+    }
+
     return `${horas}h ${minutos}m`;
   }
 
   getPriceEuro() {
-    //Convertir el precio de céntimos a euros SOLO para mostrarlo.
+    
+    
     return (this.price / 100).toFixed(2) + "€";
   }
 }
