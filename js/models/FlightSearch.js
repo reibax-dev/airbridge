@@ -57,10 +57,10 @@ class FlightSearch{
                     foundReturnDate;
             });
 
-            console.log(foundTrips); // HACK
             console.log("Origen buscado:", searchCriteria.origin); // HACK
             console.log("Destino buscado:", searchCriteria.destination); // HACK
             console.log("Viajes encontrados:", foundTrips); // HACK
+            console.log("Cantidad de viajes:", foundTrips.length); // HACK
             
 
             // PENDIENTE: Obtener los aeropuertos mediante AirportMilesService.
@@ -82,6 +82,8 @@ class FlightSearch{
 
     }
 
+    //maxPrice debe recibirse en céntimos.
+    //getTotalPrice(passengers) devuelve en céntimos.
     filterByPrice(maxPrice, passengers){
         return this.results.filter(trip => trip.getTotalPrice(passengers) <= maxPrice);
     }
@@ -89,11 +91,11 @@ class FlightSearch{
     //Filtro: directo o escalas o todo
     filterByStops(stopType){
         if(stopType === "direct"){
-            return this.results.filter(trip => !trip.hasStop());
+            return this.results.filter(trip => !trip.hasStops());
         }
 
         if (stopType === "withStops") {
-            return this.results.filter(trip => trip.hasStop());
+            return this.results.filter(trip => trip.hasStops());
         }
 
         return this.results;
