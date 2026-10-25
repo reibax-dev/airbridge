@@ -1,3 +1,4 @@
+
 class Airport {
     constructor(codeAirport,nameAirport,city,country) {
         this.codeAirport = codeAirport;
@@ -6,6 +7,12 @@ class Airport {
         this.country = country;
     }
 
+
+
+    static fromJson(json){
+        const airport = new Airport(codeAirport,nameAirport,city,country);
+        return airport;
+    }
 
 }
 

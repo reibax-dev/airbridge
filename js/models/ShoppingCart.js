@@ -1,7 +1,5 @@
-import Trip from "./Trip.js";
-
 class ShoppingCart {
-    constructor(itemsTrips = [], passengers = 1, managementFee = 5) {
+    constructor(itemsTrips = [], passengers = 1, managementFee = 500) { //Gastos de gestión son 5€, ponemos 500 para guardarlos ya en céntimos
         this.itemsTrips = itemsTrips; // Array con los viajes que tiene el carrito
         this.passengers = passengers;
         this.managementFee = managementFee;
@@ -34,6 +32,10 @@ class ShoppingCart {
 
     getTotal(){
         //Suma subtotal+gastos de gestion
+        
+        if (this.itemsTrips.length === 0) {
+            return 0;
+        }
         return this.getSubtotal() + this.managementFee ;
     }
 
