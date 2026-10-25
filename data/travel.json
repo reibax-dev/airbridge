@@ -1,6 +1,23 @@
 {
   "description": "Ofertas de vuelos ficticias para el proyecto académico AirBridge; no representan vuelos comerciales reales.",
   "currency": "EUR",
+  "airports": [
+    {"city": "Bilbao",    "iata": "BIO"},
+    {"city": "Bangkok",   "iata": "BKK"},
+    {"city": "Valencia",  "iata": "VLC"},
+    {"city": "Madrid",    "iata": "MAD"},
+    {"city": "Barcelona", "iata": "BCN"},
+    {"city": "Roma",      "iata": "FCO"},
+    {"city": "París",     "iata": "CDG"},
+    {"city": "Lisboa",    "iata": "LIS"},
+    {"city": "Londres",   "iata": "LHR"},
+    {"city": "Ámsterdam", "iata": "AMS"},
+    {"city": "Berlín",    "iata": "BER"},
+    {"city": "Atenas",    "iata": "ATH"},
+    {"city": "Nueva York", "iata": "JFK"},
+    {"city": "Dubái",     "iata": "DXB"},
+    {"city": "Tokio",     "iata": "HND"}
+  ],
   "priceInfo": "por pasajero; gastos de gestión no incluidos",
   "trips": [
     {
