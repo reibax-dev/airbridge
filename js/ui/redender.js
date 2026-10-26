@@ -1,18 +1,15 @@
 
 export function renderForm(airports) {
+const searchForm = document.querySelector('#searchForm');
     
-const fieldsetForm = document.createElement('fieltset');
-fieldsetForm.setAttribute('class', 'fieltset-form');
-
+const fieldsetForm = document.createElement('fieldset');
+fieldsetForm.setAttribute('class', 'fieldset-form');
 
 
 // !---------BOTONES IDA , IDA Y VUELTA -----------------
 
 const divButtons = document.createElement('div');
 divButtons.setAttribute('class', 'form-buttons-trip');
-
-const cityList = document.createElement('datalist');
-cityList.id = 'cities';
 
 const roundTripButton = document.createElement('button');
 roundTripButton.setAttribute('type','button');
@@ -83,9 +80,6 @@ returnDateInput.required = true;
         returnDateLabel.hidden = false;
     });
 
-
-
-
 //!------------------ PASAJEROS --------------------------
 
 const passengerLabel = document.createElement('label');
@@ -130,8 +124,10 @@ submitButton.addEventListener('click', ()=> {
 
 })
 
-
 //! -------------PARA EL CITYLIST -------------------------
+
+const cityList = document.createElement('datalist');
+cityList.id = 'cities';
 
 airports.forEach(airport => {
     const option = document.createElement('option');
@@ -166,9 +162,10 @@ fieldsetForm.append (
 )
 
 searchForm.addEventListener('submit', (event) => {
-    event.preventDefault(); //! Para que no se recarge la página 
-    // const searchForm = document.querySelector('#searchForm');
-    
+    event.preventDefault();                                 //! Para que no se recarge la página     
+     
+//! OBTENER CODIGO IATA LIMPIO
+
     function normalizeCity(city) {
         return city
         .trim()
@@ -176,16 +173,29 @@ searchForm.addEventListener('submit', (event) => {
         .normalize('NFD')
         .replace(/[\u0300-\u036f]/g,'')
     }
-    const originName        = origenInput.value;
-    const destinationName   = destinyInput.value;
+    const originName        = normalizeCity(origenInput.value);
+    const destinationName   = normalizeCity(destinyInput.value);
 
     const originAirport = airports.find(
-        airport => normalizeCity(airport.city) === normalizeCity(originName)
+        (airport) => normalizeCity(airport.city) === originName
     );
     const destinationAirport = airports.find(
-        airport => normalizeCity(airport.city) === normalizeCity(destinationName)
+        (airport) => normalizeCity(airport.city) === destinationName
     );
-    
+
+
+    if(!originAirport || !destinationAirport) {
+        console.error('Ciudad no disponible todavía')
+        return
+    }
+
+    if(originName === destinationName) {
+        console.error('Ciudades deben de ser diferentes')
+        return
+    }
+
+
+
     const searchCriteria = {
         origin:         originAirport.iata,
         destination:    destinationAirport.iata,
