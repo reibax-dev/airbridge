@@ -167,18 +167,35 @@ fieldsetForm.append (
 
 searchForm.addEventListener('submit', (event) => {
     event.preventDefault(); //! Para que no se recarge la página 
-    const searchForm = document.querySelector('#searchForm');
+    // const searchForm = document.querySelector('#searchForm');
     
-    const data = {
-        origen:         origenInput.value.trim(),
-        destiny:        destinyInput.value.trim(),
+    function normalizeCity(city) {
+        return city
+        .trim()
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g,'')
+    }
+    const originName        = origenInput.value;
+    const destinationName   = destinyInput.value;
+
+    const originAirport = airports.find(
+        airport => normalizeCity(airport.city) === normalizeCity(originName)
+    );
+    const destinationAirport = airports.find(
+        airport => normalizeCity(airport.city) === normalizeCity(destinationName)
+    );
+    
+    const searchCriteria = {
+        origin:         originAirport.iata,
+        destination:    destinationAirport.iata,
         departureDate:  departureInput.value,
         returnDate:     returnDateInput.disabled ? null : returnDateInput.value,
         passengers:     Number(passengerInput.value),
-        onlyDirect:     directCheckbox.checked
+        directOnly:     directCheckbox.checked
         
     }
-    console.log(data);
+    console.log( searchCriteria );
 });
 
 searchForm.append(fieldsetForm);
