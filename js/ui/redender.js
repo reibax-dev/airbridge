@@ -120,9 +120,9 @@ submitButton.setAttribute('type','submit');
 submitButton.setAttribute('id','submit-form');
 submitButton.textContent = 'Buscar Vuelos';
 
-submitButton.addEventListener('click', ()=> {
+// submitButton.addEventListener('click', ()=> {
 
-})
+// })
 
 //! -------------PARA EL CITYLIST -------------------------
 
@@ -162,7 +162,7 @@ fieldsetForm.append (
 )
 
 searchForm.addEventListener('submit', (event) => {
-    event.preventDefault();                                 //! Para que no se recarge la página     
+    event.preventDefault();                       //! Para que no se recarge la página     
      
 //! OBTENER CODIGO IATA LIMPIO
 
@@ -175,26 +175,69 @@ searchForm.addEventListener('submit', (event) => {
     }
     const originName        = normalizeCity(origenInput.value);
     const destinationName   = normalizeCity(destinyInput.value);
+    
+    //! CIUDADES SELECCIONADAS
 
-    const originAirport = airports.find(
+    if(!origenInput.value.trim() || !destinyInput.value.trim()) {
+        console.error('Selecciona una Ciudad')
+        return
+    };
+
+    //! CODIGOS IATA
+
+    const originAirport     = airports.find(
         (airport) => normalizeCity(airport.city) === originName
     );
     const destinationAirport = airports.find(
         (airport) => normalizeCity(airport.city) === destinationName
     );
 
+    //! COMPROBACION DE CIUDADES
 
     if(!originAirport || !destinationAirport) {
         console.error('Ciudad no disponible todavía')
         return
-    }
+    };
 
-    if(originName === destinationName) {
-        console.error('Ciudades deben de ser diferentes')
+    //!CODIGOS IATA DIFERENTES
+
+    const originIata        = originAirport.iata;
+    const destinationIata   = destinationAirport.iata;
+
+    if ( originIata === destinationIata) {
+        console.error('Codigos deben de ser diferentes')
+        return
+    };
+
+    //! CIUDADES DIFERENTES
+
+    // if(originName === destinationName) {
+    //     console.error('Ciudades deben de ser diferentes')
+    //     return
+    // };
+
+    //!  FECHA DE IDA SELECCIONADA
+
+    const departureDate = departureInput.value;
+
+    if(!departureDate) {
+        console.error('Selecciona fecha de ida')
         return
     }
 
+    //! FECHA SELECCIONADA NO PASADA
 
+    const now   = new Date();
+    const today = [ 
+        now.getFullYear(),
+        String(now.getMonth() + 1).padStart(2,'0'),
+        String(now.getDate()).padStart(2,'0')
+    ].join('-');
+
+    if(departureDate < today ) {
+        console.error('Fecha de ida no puede ser anterior a la de hoy')
+        return
+    }
 
     const searchCriteria = {
         origin:         originAirport.iata,
