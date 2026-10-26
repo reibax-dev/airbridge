@@ -1,6 +1,23 @@
 {
   "description": "Ofertas de vuelos ficticias para el proyecto académico AirBridge; no representan vuelos comerciales reales.",
   "currency": "EUR",
+  "airports": [
+    {"city": "Bilbao",    "iata": "BIO"},
+    {"city": "Bangkok",   "iata": "BKK"},
+    {"city": "Valencia",  "iata": "VLC"},
+    {"city": "Madrid",    "iata": "MAD"},
+    {"city": "Barcelona", "iata": "BCN"},
+    {"city": "Roma",      "iata": "FCO"},
+    {"city": "París",     "iata": "CDG"},
+    {"city": "Lisboa",    "iata": "LIS"},
+    {"city": "Londres",   "iata": "LHR"},
+    {"city": "Ámsterdam", "iata": "AMS"},
+    {"city": "Berlín",    "iata": "BER"},
+    {"city": "Atenas",    "iata": "ATH"},
+    {"city": "Nueva York", "iata": "JFK"},
+    {"city": "Dubái",     "iata": "DXB"},
+    {"city": "Tokio",     "iata": "HND"}
+  ],
   "priceInfo": "por pasajero; gastos de gestión no incluidos",
   "trips": [
     {
@@ -1307,6 +1324,1206 @@
       },
       "returnFlight": null,
       "totalPrice": 70
+    },
+    {
+      "idTrip": "RT-BIO-LIS-01",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "TP-20261120-BIOLIS-7001",
+        "origin": "BIO",
+        "destination": "LIS",
+        "airline": "TAP Air Portugal",
+        "flightNumber": "TP7001",
+        "departureDate": "2026-11-20",
+        "departureTime": "08:10",
+        "arrivalTime": "09:00",
+        "durationMinutes": 110,
+        "stops": 0,
+        "price": 69
+      },
+      "returnFlight": {
+        "idFlight": "IB-20261127-LISBIO-7002",
+        "origin": "LIS",
+        "destination": "BIO",
+        "airline": "Iberia",
+        "flightNumber": "IB7002",
+        "departureDate": "2026-11-27",
+        "departureTime": "09:30",
+        "arrivalTime": "14:10",
+        "durationMinutes": 220,
+        "stops": 1,
+        "price": 91
+      },
+      "totalPrice": 160
+    },
+    {
+      "idTrip": "RT-BIO-LIS-02",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "IB-20261204-BIOLIS-7003",
+        "origin": "BIO",
+        "destination": "LIS",
+        "airline": "Iberia",
+        "flightNumber": "IB7003",
+        "departureDate": "2026-12-04",
+        "departureTime": "10:25",
+        "arrivalTime": "13:05",
+        "durationMinutes": 220,
+        "stops": 1,
+        "price": 95
+      },
+      "returnFlight": {
+        "idFlight": "TP-20261211-LISBIO-7004",
+        "origin": "LIS",
+        "destination": "BIO",
+        "airline": "TAP Air Portugal",
+        "flightNumber": "TP7004",
+        "departureDate": "2026-12-11",
+        "departureTime": "14:05",
+        "arrivalTime": "16:55",
+        "durationMinutes": 110,
+        "stops": 0,
+        "price": 87
+      },
+      "totalPrice": 182
+    },
+    {
+      "idTrip": "OW-BIO-LIS-03",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "TP-20261120-BIOLIS-7005",
+        "origin": "BIO",
+        "destination": "LIS",
+        "airline": "TAP Air Portugal",
+        "flightNumber": "TP7005",
+        "departureDate": "2026-11-20",
+        "departureTime": "13:20",
+        "arrivalTime": "14:10",
+        "durationMinutes": 110,
+        "stops": 0,
+        "price": 55
+      },
+      "returnFlight": null,
+      "totalPrice": 55
+    },
+    {
+      "idTrip": "OW-BIO-LIS-04",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "IB-20261204-BIOLIS-7006",
+        "origin": "BIO",
+        "destination": "LIS",
+        "airline": "Iberia",
+        "flightNumber": "IB7006",
+        "departureDate": "2026-12-04",
+        "departureTime": "16:15",
+        "arrivalTime": "17:05",
+        "durationMinutes": 110,
+        "stops": 0,
+        "price": 81
+      },
+      "returnFlight": null,
+      "totalPrice": 81
+    },
+    {
+      "idTrip": "RT-BIO-LHR-01",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "BA-20261120-BIOLHR-7007",
+        "origin": "BIO",
+        "destination": "LHR",
+        "airline": "British Airways",
+        "flightNumber": "BA7007",
+        "departureDate": "2026-11-20",
+        "departureTime": "08:10",
+        "arrivalTime": "09:05",
+        "durationMinutes": 115,
+        "stops": 0,
+        "price": 89
+      },
+      "returnFlight": {
+        "idFlight": "IB-20261127-LHRBIO-7008",
+        "origin": "LHR",
+        "destination": "BIO",
+        "airline": "Iberia",
+        "flightNumber": "IB7008",
+        "departureDate": "2026-11-27",
+        "departureTime": "09:30",
+        "arrivalTime": "14:20",
+        "durationMinutes": 230,
+        "stops": 1,
+        "price": 111
+      },
+      "totalPrice": 200
+    },
+    {
+      "idTrip": "RT-BIO-LHR-02",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "IB-20261204-BIOLHR-7009",
+        "origin": "BIO",
+        "destination": "LHR",
+        "airline": "Iberia",
+        "flightNumber": "IB7009",
+        "departureDate": "2026-12-04",
+        "departureTime": "10:25",
+        "arrivalTime": "13:15",
+        "durationMinutes": 230,
+        "stops": 1,
+        "price": 115
+      },
+      "returnFlight": {
+        "idFlight": "BA-20261211-LHRBIO-7010",
+        "origin": "LHR",
+        "destination": "BIO",
+        "airline": "British Airways",
+        "flightNumber": "BA7010",
+        "departureDate": "2026-12-11",
+        "departureTime": "14:05",
+        "arrivalTime": "17:00",
+        "durationMinutes": 115,
+        "stops": 0,
+        "price": 107
+      },
+      "totalPrice": 222
+    },
+    {
+      "idTrip": "OW-BIO-LHR-03",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "BA-20261120-BIOLHR-7011",
+        "origin": "BIO",
+        "destination": "LHR",
+        "airline": "British Airways",
+        "flightNumber": "BA7011",
+        "departureDate": "2026-11-20",
+        "departureTime": "13:20",
+        "arrivalTime": "14:15",
+        "durationMinutes": 115,
+        "stops": 0,
+        "price": 75
+      },
+      "returnFlight": null,
+      "totalPrice": 75
+    },
+    {
+      "idTrip": "OW-BIO-LHR-04",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "IB-20261204-BIOLHR-7012",
+        "origin": "BIO",
+        "destination": "LHR",
+        "airline": "Iberia",
+        "flightNumber": "IB7012",
+        "departureDate": "2026-12-04",
+        "departureTime": "16:15",
+        "arrivalTime": "17:10",
+        "durationMinutes": 115,
+        "stops": 0,
+        "price": 101
+      },
+      "returnFlight": null,
+      "totalPrice": 101
+    },
+    {
+      "idTrip": "RT-BIO-AMS-01",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "KL-20261120-BIOAMS-7013",
+        "origin": "BIO",
+        "destination": "AMS",
+        "airline": "KLM",
+        "flightNumber": "KL7013",
+        "departureDate": "2026-11-20",
+        "departureTime": "08:10",
+        "arrivalTime": "10:15",
+        "durationMinutes": 125,
+        "stops": 0,
+        "price": 92
+      },
+      "returnFlight": {
+        "idFlight": "VY-20261127-AMSBIO-7014",
+        "origin": "AMS",
+        "destination": "BIO",
+        "airline": "Vueling",
+        "flightNumber": "VY7014",
+        "departureDate": "2026-11-27",
+        "departureTime": "09:30",
+        "arrivalTime": "13:35",
+        "durationMinutes": 245,
+        "stops": 1,
+        "price": 114
+      },
+      "totalPrice": 206
+    },
+    {
+      "idTrip": "RT-BIO-AMS-02",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "VY-20261204-BIOAMS-7015",
+        "origin": "BIO",
+        "destination": "AMS",
+        "airline": "Vueling",
+        "flightNumber": "VY7015",
+        "departureDate": "2026-12-04",
+        "departureTime": "10:25",
+        "arrivalTime": "14:30",
+        "durationMinutes": 245,
+        "stops": 1,
+        "price": 118
+      },
+      "returnFlight": {
+        "idFlight": "KL-20261211-AMSBIO-7016",
+        "origin": "AMS",
+        "destination": "BIO",
+        "airline": "KLM",
+        "flightNumber": "KL7016",
+        "departureDate": "2026-12-11",
+        "departureTime": "14:05",
+        "arrivalTime": "16:10",
+        "durationMinutes": 125,
+        "stops": 0,
+        "price": 110
+      },
+      "totalPrice": 228
+    },
+    {
+      "idTrip": "OW-BIO-AMS-03",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "KL-20261120-BIOAMS-7017",
+        "origin": "BIO",
+        "destination": "AMS",
+        "airline": "KLM",
+        "flightNumber": "KL7017",
+        "departureDate": "2026-11-20",
+        "departureTime": "13:20",
+        "arrivalTime": "15:25",
+        "durationMinutes": 125,
+        "stops": 0,
+        "price": 78
+      },
+      "returnFlight": null,
+      "totalPrice": 78
+    },
+    {
+      "idTrip": "OW-BIO-AMS-04",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "VY-20261204-BIOAMS-7018",
+        "origin": "BIO",
+        "destination": "AMS",
+        "airline": "Vueling",
+        "flightNumber": "VY7018",
+        "departureDate": "2026-12-04",
+        "departureTime": "16:15",
+        "arrivalTime": "18:20",
+        "durationMinutes": 125,
+        "stops": 0,
+        "price": 104
+      },
+      "returnFlight": null,
+      "totalPrice": 104
+    },
+    {
+      "idTrip": "RT-BCN-BER-01",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "VY-20261120-BCNBER-7019",
+        "origin": "BCN",
+        "destination": "BER",
+        "airline": "Vueling",
+        "flightNumber": "VY7019",
+        "departureDate": "2026-11-20",
+        "departureTime": "08:10",
+        "arrivalTime": "10:55",
+        "durationMinutes": 165,
+        "stops": 0,
+        "price": 84
+      },
+      "returnFlight": {
+        "idFlight": "U2-20261127-BERBCN-7020",
+        "origin": "BER",
+        "destination": "BCN",
+        "airline": "easyJet",
+        "flightNumber": "U27020",
+        "departureDate": "2026-11-27",
+        "departureTime": "09:30",
+        "arrivalTime": "14:10",
+        "durationMinutes": 280,
+        "stops": 1,
+        "price": 106
+      },
+      "totalPrice": 190
+    },
+    {
+      "idTrip": "RT-BCN-BER-02",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "U2-20261204-BCNBER-7021",
+        "origin": "BCN",
+        "destination": "BER",
+        "airline": "easyJet",
+        "flightNumber": "U27021",
+        "departureDate": "2026-12-04",
+        "departureTime": "10:25",
+        "arrivalTime": "15:05",
+        "durationMinutes": 280,
+        "stops": 1,
+        "price": 110
+      },
+      "returnFlight": {
+        "idFlight": "VY-20261211-BERBCN-7022",
+        "origin": "BER",
+        "destination": "BCN",
+        "airline": "Vueling",
+        "flightNumber": "VY7022",
+        "departureDate": "2026-12-11",
+        "departureTime": "14:05",
+        "arrivalTime": "16:50",
+        "durationMinutes": 165,
+        "stops": 0,
+        "price": 102
+      },
+      "totalPrice": 212
+    },
+    {
+      "idTrip": "OW-BCN-BER-03",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "VY-20261120-BCNBER-7023",
+        "origin": "BCN",
+        "destination": "BER",
+        "airline": "Vueling",
+        "flightNumber": "VY7023",
+        "departureDate": "2026-11-20",
+        "departureTime": "13:20",
+        "arrivalTime": "16:05",
+        "durationMinutes": 165,
+        "stops": 0,
+        "price": 70
+      },
+      "returnFlight": null,
+      "totalPrice": 70
+    },
+    {
+      "idTrip": "OW-BCN-BER-04",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "U2-20261204-BCNBER-7024",
+        "origin": "BCN",
+        "destination": "BER",
+        "airline": "easyJet",
+        "flightNumber": "U27024",
+        "departureDate": "2026-12-04",
+        "departureTime": "16:15",
+        "arrivalTime": "19:00",
+        "durationMinutes": 165,
+        "stops": 0,
+        "price": 96
+      },
+      "returnFlight": null,
+      "totalPrice": 96
+    },
+    {
+      "idTrip": "RT-MAD-ATH-01",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "A3-20261120-MADATH-7025",
+        "origin": "MAD",
+        "destination": "ATH",
+        "airline": "Aegean Airlines",
+        "flightNumber": "A37025",
+        "departureDate": "2026-11-20",
+        "departureTime": "08:10",
+        "arrivalTime": "12:50",
+        "durationMinutes": 220,
+        "stops": 0,
+        "price": 128
+      },
+      "returnFlight": {
+        "idFlight": "IB-20261127-ATHMAD-7026",
+        "origin": "ATH",
+        "destination": "MAD",
+        "airline": "Iberia",
+        "flightNumber": "IB7026",
+        "departureDate": "2026-11-27",
+        "departureTime": "09:30",
+        "arrivalTime": "14:30",
+        "durationMinutes": 360,
+        "stops": 1,
+        "price": 150
+      },
+      "totalPrice": 278
+    },
+    {
+      "idTrip": "RT-MAD-ATH-02",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "IB-20261204-MADATH-7027",
+        "origin": "MAD",
+        "destination": "ATH",
+        "airline": "Iberia",
+        "flightNumber": "IB7027",
+        "departureDate": "2026-12-04",
+        "departureTime": "10:25",
+        "arrivalTime": "17:25",
+        "durationMinutes": 360,
+        "stops": 1,
+        "price": 154
+      },
+      "returnFlight": {
+        "idFlight": "A3-20261211-ATHMAD-7028",
+        "origin": "ATH",
+        "destination": "MAD",
+        "airline": "Aegean Airlines",
+        "flightNumber": "A37028",
+        "departureDate": "2026-12-11",
+        "departureTime": "14:05",
+        "arrivalTime": "16:45",
+        "durationMinutes": 220,
+        "stops": 0,
+        "price": 146
+      },
+      "totalPrice": 300
+    },
+    {
+      "idTrip": "OW-MAD-ATH-03",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "A3-20261120-MADATH-7029",
+        "origin": "MAD",
+        "destination": "ATH",
+        "airline": "Aegean Airlines",
+        "flightNumber": "A37029",
+        "departureDate": "2026-11-20",
+        "departureTime": "13:20",
+        "arrivalTime": "18:00",
+        "durationMinutes": 220,
+        "stops": 0,
+        "price": 114
+      },
+      "returnFlight": null,
+      "totalPrice": 114
+    },
+    {
+      "idTrip": "OW-MAD-ATH-04",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "IB-20261204-MADATH-7030",
+        "origin": "MAD",
+        "destination": "ATH",
+        "airline": "Iberia",
+        "flightNumber": "IB7030",
+        "departureDate": "2026-12-04",
+        "departureTime": "16:15",
+        "arrivalTime": "20:55",
+        "durationMinutes": 220,
+        "stops": 0,
+        "price": 140
+      },
+      "returnFlight": null,
+      "totalPrice": 140
+    },
+    {
+      "idTrip": "RT-MAD-JFK-01",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "IB-20261120-MADJFK-7031",
+        "origin": "MAD",
+        "destination": "JFK",
+        "airline": "Iberia",
+        "flightNumber": "IB7031",
+        "departureDate": "2026-11-20",
+        "departureTime": "08:10",
+        "arrivalTime": "10:25",
+        "durationMinutes": 495,
+        "stops": 0,
+        "price": 415
+      },
+      "returnFlight": {
+        "idFlight": "AA-20261127-JFKMAD-7032",
+        "origin": "JFK",
+        "destination": "MAD",
+        "airline": "American Airlines",
+        "flightNumber": "AA7032",
+        "departureDate": "2026-11-27",
+        "departureTime": "09:30",
+        "arrivalTime": "02:30",
+        "durationMinutes": 660,
+        "stops": 1,
+        "price": 437
+      },
+      "totalPrice": 852
+    },
+    {
+      "idTrip": "RT-MAD-JFK-02",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "AA-20261204-MADJFK-7033",
+        "origin": "MAD",
+        "destination": "JFK",
+        "airline": "American Airlines",
+        "flightNumber": "AA7033",
+        "departureDate": "2026-12-04",
+        "departureTime": "10:25",
+        "arrivalTime": "15:25",
+        "durationMinutes": 660,
+        "stops": 1,
+        "price": 441
+      },
+      "returnFlight": {
+        "idFlight": "IB-20261211-JFKMAD-7034",
+        "origin": "JFK",
+        "destination": "MAD",
+        "airline": "Iberia",
+        "flightNumber": "IB7034",
+        "departureDate": "2026-12-11",
+        "departureTime": "14:05",
+        "arrivalTime": "04:20",
+        "durationMinutes": 495,
+        "stops": 0,
+        "price": 433
+      },
+      "totalPrice": 874
+    },
+    {
+      "idTrip": "OW-MAD-JFK-03",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "IB-20261120-MADJFK-7035",
+        "origin": "MAD",
+        "destination": "JFK",
+        "airline": "Iberia",
+        "flightNumber": "IB7035",
+        "departureDate": "2026-11-20",
+        "departureTime": "13:20",
+        "arrivalTime": "15:35",
+        "durationMinutes": 495,
+        "stops": 0,
+        "price": 401
+      },
+      "returnFlight": null,
+      "totalPrice": 401
+    },
+    {
+      "idTrip": "OW-MAD-JFK-04",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "AA-20261204-MADJFK-7036",
+        "origin": "MAD",
+        "destination": "JFK",
+        "airline": "American Airlines",
+        "flightNumber": "AA7036",
+        "departureDate": "2026-12-04",
+        "departureTime": "16:15",
+        "arrivalTime": "18:30",
+        "durationMinutes": 495,
+        "stops": 0,
+        "price": 427
+      },
+      "returnFlight": null,
+      "totalPrice": 427
+    },
+    {
+      "idTrip": "RT-MAD-DXB-01",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "EK-20261120-MADDXB-7037",
+        "origin": "MAD",
+        "destination": "DXB",
+        "airline": "Emirates",
+        "flightNumber": "EK7037",
+        "departureDate": "2026-11-20",
+        "departureTime": "08:10",
+        "arrivalTime": "18:25",
+        "durationMinutes": 435,
+        "stops": 0,
+        "price": 365
+      },
+      "returnFlight": {
+        "idFlight": "IB-20261127-DXBMAD-7038",
+        "origin": "DXB",
+        "destination": "MAD",
+        "airline": "Iberia",
+        "flightNumber": "IB7038",
+        "departureDate": "2026-11-27",
+        "departureTime": "09:30",
+        "arrivalTime": "16:35",
+        "durationMinutes": 605,
+        "stops": 1,
+        "price": 387
+      },
+      "totalPrice": 752
+    },
+    {
+      "idTrip": "RT-MAD-DXB-02",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "IB-20261204-MADDXB-7039",
+        "origin": "MAD",
+        "destination": "DXB",
+        "airline": "Iberia",
+        "flightNumber": "IB7039",
+        "departureDate": "2026-12-04",
+        "departureTime": "10:25",
+        "arrivalTime": "23:30",
+        "durationMinutes": 605,
+        "stops": 1,
+        "price": 391
+      },
+      "returnFlight": {
+        "idFlight": "EK-20261211-DXBMAD-7040",
+        "origin": "DXB",
+        "destination": "MAD",
+        "airline": "Emirates",
+        "flightNumber": "EK7040",
+        "departureDate": "2026-12-11",
+        "departureTime": "14:05",
+        "arrivalTime": "18:20",
+        "durationMinutes": 435,
+        "stops": 0,
+        "price": 383
+      },
+      "totalPrice": 774
+    },
+    {
+      "idTrip": "OW-MAD-DXB-03",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "EK-20261120-MADDXB-7041",
+        "origin": "MAD",
+        "destination": "DXB",
+        "airline": "Emirates",
+        "flightNumber": "EK7041",
+        "departureDate": "2026-11-20",
+        "departureTime": "13:20",
+        "arrivalTime": "23:35",
+        "durationMinutes": 435,
+        "stops": 0,
+        "price": 351
+      },
+      "returnFlight": null,
+      "totalPrice": 351
+    },
+    {
+      "idTrip": "OW-MAD-DXB-04",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "IB-20261204-MADDXB-7042",
+        "origin": "MAD",
+        "destination": "DXB",
+        "airline": "Iberia",
+        "flightNumber": "IB7042",
+        "departureDate": "2026-12-04",
+        "departureTime": "16:15",
+        "arrivalTime": "02:30",
+        "durationMinutes": 435,
+        "stops": 0,
+        "price": 377
+      },
+      "returnFlight": null,
+      "totalPrice": 377
+    },
+    {
+      "idTrip": "RT-CDG-HND-01",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "AF-20261120-CDGHND-7043",
+        "origin": "CDG",
+        "destination": "HND",
+        "airline": "Air France",
+        "flightNumber": "AF7043",
+        "departureDate": "2026-11-20",
+        "departureTime": "08:10",
+        "arrivalTime": "05:10",
+        "durationMinutes": 780,
+        "stops": 0,
+        "price": 575
+      },
+      "returnFlight": {
+        "idFlight": "JL-20261127-HNDCDG-7044",
+        "origin": "HND",
+        "destination": "CDG",
+        "airline": "Japan Airlines",
+        "flightNumber": "JL7044",
+        "departureDate": "2026-11-27",
+        "departureTime": "09:30",
+        "arrivalTime": "17:30",
+        "durationMinutes": 960,
+        "stops": 1,
+        "price": 597
+      },
+      "totalPrice": 1172
+    },
+    {
+      "idTrip": "RT-CDG-HND-02",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "JL-20261204-CDGHND-7045",
+        "origin": "CDG",
+        "destination": "HND",
+        "airline": "Japan Airlines",
+        "flightNumber": "JL7045",
+        "departureDate": "2026-12-04",
+        "departureTime": "10:25",
+        "arrivalTime": "10:25",
+        "durationMinutes": 960,
+        "stops": 1,
+        "price": 601
+      },
+      "returnFlight": {
+        "idFlight": "AF-20261211-HNDCDG-7046",
+        "origin": "HND",
+        "destination": "CDG",
+        "airline": "Air France",
+        "flightNumber": "AF7046",
+        "departureDate": "2026-12-11",
+        "departureTime": "14:05",
+        "arrivalTime": "19:05",
+        "durationMinutes": 780,
+        "stops": 0,
+        "price": 593
+      },
+      "totalPrice": 1194
+    },
+    {
+      "idTrip": "OW-CDG-HND-03",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "AF-20261120-CDGHND-7047",
+        "origin": "CDG",
+        "destination": "HND",
+        "airline": "Air France",
+        "flightNumber": "AF7047",
+        "departureDate": "2026-11-20",
+        "departureTime": "13:20",
+        "arrivalTime": "10:20",
+        "durationMinutes": 780,
+        "stops": 0,
+        "price": 561
+      },
+      "returnFlight": null,
+      "totalPrice": 561
+    },
+    {
+      "idTrip": "OW-CDG-HND-04",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "JL-20261204-CDGHND-7048",
+        "origin": "CDG",
+        "destination": "HND",
+        "airline": "Japan Airlines",
+        "flightNumber": "JL7048",
+        "departureDate": "2026-12-04",
+        "departureTime": "16:15",
+        "arrivalTime": "13:15",
+        "durationMinutes": 780,
+        "stops": 0,
+        "price": 587
+      },
+      "returnFlight": null,
+      "totalPrice": 587
+    },
+    {
+      "idTrip": "RT-BCN-LIS-01",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "VY-20261120-BCNLIS-7049",
+        "origin": "BCN",
+        "destination": "LIS",
+        "airline": "Vueling",
+        "flightNumber": "VY7049",
+        "departureDate": "2026-11-20",
+        "departureTime": "08:10",
+        "arrivalTime": "09:10",
+        "durationMinutes": 120,
+        "stops": 0,
+        "price": 74
+      },
+      "returnFlight": {
+        "idFlight": "TP-20261127-LISBCN-7050",
+        "origin": "LIS",
+        "destination": "BCN",
+        "airline": "TAP Air Portugal",
+        "flightNumber": "TP7050",
+        "departureDate": "2026-11-27",
+        "departureTime": "09:30",
+        "arrivalTime": "14:45",
+        "durationMinutes": 255,
+        "stops": 1,
+        "price": 96
+      },
+      "totalPrice": 170
+    },
+    {
+      "idTrip": "RT-BCN-LIS-02",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "TP-20261204-BCNLIS-7051",
+        "origin": "BCN",
+        "destination": "LIS",
+        "airline": "TAP Air Portugal",
+        "flightNumber": "TP7051",
+        "departureDate": "2026-12-04",
+        "departureTime": "10:25",
+        "arrivalTime": "13:40",
+        "durationMinutes": 255,
+        "stops": 1,
+        "price": 100
+      },
+      "returnFlight": {
+        "idFlight": "VY-20261211-LISBCN-7052",
+        "origin": "LIS",
+        "destination": "BCN",
+        "airline": "Vueling",
+        "flightNumber": "VY7052",
+        "departureDate": "2026-12-11",
+        "departureTime": "14:05",
+        "arrivalTime": "17:05",
+        "durationMinutes": 120,
+        "stops": 0,
+        "price": 92
+      },
+      "totalPrice": 192
+    },
+    {
+      "idTrip": "OW-BCN-LIS-03",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "VY-20261120-BCNLIS-7053",
+        "origin": "BCN",
+        "destination": "LIS",
+        "airline": "Vueling",
+        "flightNumber": "VY7053",
+        "departureDate": "2026-11-20",
+        "departureTime": "13:20",
+        "arrivalTime": "14:20",
+        "durationMinutes": 120,
+        "stops": 0,
+        "price": 60
+      },
+      "returnFlight": null,
+      "totalPrice": 60
+    },
+    {
+      "idTrip": "OW-BCN-LIS-04",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "TP-20261204-BCNLIS-7054",
+        "origin": "BCN",
+        "destination": "LIS",
+        "airline": "TAP Air Portugal",
+        "flightNumber": "TP7054",
+        "departureDate": "2026-12-04",
+        "departureTime": "16:15",
+        "arrivalTime": "17:15",
+        "durationMinutes": 120,
+        "stops": 0,
+        "price": 86
+      },
+      "returnFlight": null,
+      "totalPrice": 86
+    },
+    {
+      "idTrip": "RT-BCN-AMS-01",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "KL-20261120-BCNAMS-7055",
+        "origin": "BCN",
+        "destination": "AMS",
+        "airline": "KLM",
+        "flightNumber": "KL7055",
+        "departureDate": "2026-11-20",
+        "departureTime": "08:10",
+        "arrivalTime": "10:40",
+        "durationMinutes": 150,
+        "stops": 0,
+        "price": 106
+      },
+      "returnFlight": {
+        "idFlight": "VY-20261127-AMSBCN-7056",
+        "origin": "AMS",
+        "destination": "BCN",
+        "airline": "Vueling",
+        "flightNumber": "VY7056",
+        "departureDate": "2026-11-27",
+        "departureTime": "09:30",
+        "arrivalTime": "14:10",
+        "durationMinutes": 280,
+        "stops": 1,
+        "price": 128
+      },
+      "totalPrice": 234
+    },
+    {
+      "idTrip": "RT-BCN-AMS-02",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "VY-20261204-BCNAMS-7057",
+        "origin": "BCN",
+        "destination": "AMS",
+        "airline": "Vueling",
+        "flightNumber": "VY7057",
+        "departureDate": "2026-12-04",
+        "departureTime": "10:25",
+        "arrivalTime": "15:05",
+        "durationMinutes": 280,
+        "stops": 1,
+        "price": 132
+      },
+      "returnFlight": {
+        "idFlight": "KL-20261211-AMSBCN-7058",
+        "origin": "AMS",
+        "destination": "BCN",
+        "airline": "KLM",
+        "flightNumber": "KL7058",
+        "departureDate": "2026-12-11",
+        "departureTime": "14:05",
+        "arrivalTime": "16:35",
+        "durationMinutes": 150,
+        "stops": 0,
+        "price": 124
+      },
+      "totalPrice": 256
+    },
+    {
+      "idTrip": "OW-BCN-AMS-03",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "KL-20261120-BCNAMS-7059",
+        "origin": "BCN",
+        "destination": "AMS",
+        "airline": "KLM",
+        "flightNumber": "KL7059",
+        "departureDate": "2026-11-20",
+        "departureTime": "13:20",
+        "arrivalTime": "15:50",
+        "durationMinutes": 150,
+        "stops": 0,
+        "price": 92
+      },
+      "returnFlight": null,
+      "totalPrice": 92
+    },
+    {
+      "idTrip": "OW-BCN-AMS-04",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "VY-20261204-BCNAMS-7060",
+        "origin": "BCN",
+        "destination": "AMS",
+        "airline": "Vueling",
+        "flightNumber": "VY7060",
+        "departureDate": "2026-12-04",
+        "departureTime": "16:15",
+        "arrivalTime": "18:45",
+        "durationMinutes": 150,
+        "stops": 0,
+        "price": 118
+      },
+      "returnFlight": null,
+      "totalPrice": 118
+    },
+    {
+      "idTrip": "RT-MAD-LHR-01",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "IB-20261120-MADLHR-7061",
+        "origin": "MAD",
+        "destination": "LHR",
+        "airline": "Iberia",
+        "flightNumber": "IB7061",
+        "departureDate": "2026-11-20",
+        "departureTime": "08:10",
+        "arrivalTime": "09:35",
+        "durationMinutes": 145,
+        "stops": 0,
+        "price": 102
+      },
+      "returnFlight": {
+        "idFlight": "BA-20261127-LHRMAD-7062",
+        "origin": "LHR",
+        "destination": "MAD",
+        "airline": "British Airways",
+        "flightNumber": "BA7062",
+        "departureDate": "2026-11-27",
+        "departureTime": "09:30",
+        "arrivalTime": "14:50",
+        "durationMinutes": 260,
+        "stops": 1,
+        "price": 124
+      },
+      "totalPrice": 226
+    },
+    {
+      "idTrip": "RT-MAD-LHR-02",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "BA-20261204-MADLHR-7063",
+        "origin": "MAD",
+        "destination": "LHR",
+        "airline": "British Airways",
+        "flightNumber": "BA7063",
+        "departureDate": "2026-12-04",
+        "departureTime": "10:25",
+        "arrivalTime": "13:45",
+        "durationMinutes": 260,
+        "stops": 1,
+        "price": 128
+      },
+      "returnFlight": {
+        "idFlight": "IB-20261211-LHRMAD-7064",
+        "origin": "LHR",
+        "destination": "MAD",
+        "airline": "Iberia",
+        "flightNumber": "IB7064",
+        "departureDate": "2026-12-11",
+        "departureTime": "14:05",
+        "arrivalTime": "17:30",
+        "durationMinutes": 145,
+        "stops": 0,
+        "price": 120
+      },
+      "totalPrice": 248
+    },
+    {
+      "idTrip": "OW-MAD-LHR-03",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "IB-20261120-MADLHR-7065",
+        "origin": "MAD",
+        "destination": "LHR",
+        "airline": "Iberia",
+        "flightNumber": "IB7065",
+        "departureDate": "2026-11-20",
+        "departureTime": "13:20",
+        "arrivalTime": "14:45",
+        "durationMinutes": 145,
+        "stops": 0,
+        "price": 88
+      },
+      "returnFlight": null,
+      "totalPrice": 88
+    },
+    {
+      "idTrip": "OW-MAD-LHR-04",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "BA-20261204-MADLHR-7066",
+        "origin": "MAD",
+        "destination": "LHR",
+        "airline": "British Airways",
+        "flightNumber": "BA7066",
+        "departureDate": "2026-12-04",
+        "departureTime": "16:15",
+        "arrivalTime": "17:40",
+        "durationMinutes": 145,
+        "stops": 0,
+        "price": 114
+      },
+      "returnFlight": null,
+      "totalPrice": 114
+    },
+    {
+      "idTrip": "RT-BIO-CDG-01",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "AF-20261120-BIOCDG-7067",
+        "origin": "BIO",
+        "destination": "CDG",
+        "airline": "Air France",
+        "flightNumber": "AF7067",
+        "departureDate": "2026-11-20",
+        "departureTime": "08:10",
+        "arrivalTime": "09:55",
+        "durationMinutes": 105,
+        "stops": 0,
+        "price": 79
+      },
+      "returnFlight": {
+        "idFlight": "VY-20261127-CDGBIO-7068",
+        "origin": "CDG",
+        "destination": "BIO",
+        "airline": "Vueling",
+        "flightNumber": "VY7068",
+        "departureDate": "2026-11-27",
+        "departureTime": "09:30",
+        "arrivalTime": "13:15",
+        "durationMinutes": 225,
+        "stops": 1,
+        "price": 101
+      },
+      "totalPrice": 180
+    },
+    {
+      "idTrip": "RT-BIO-CDG-02",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "VY-20261204-BIOCDG-7069",
+        "origin": "BIO",
+        "destination": "CDG",
+        "airline": "Vueling",
+        "flightNumber": "VY7069",
+        "departureDate": "2026-12-04",
+        "departureTime": "10:25",
+        "arrivalTime": "14:10",
+        "durationMinutes": 225,
+        "stops": 1,
+        "price": 105
+      },
+      "returnFlight": {
+        "idFlight": "AF-20261211-CDGBIO-7070",
+        "origin": "CDG",
+        "destination": "BIO",
+        "airline": "Air France",
+        "flightNumber": "AF7070",
+        "departureDate": "2026-12-11",
+        "departureTime": "14:05",
+        "arrivalTime": "15:50",
+        "durationMinutes": 105,
+        "stops": 0,
+        "price": 97
+      },
+      "totalPrice": 202
+    },
+    {
+      "idTrip": "OW-BIO-CDG-03",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "AF-20261120-BIOCDG-7071",
+        "origin": "BIO",
+        "destination": "CDG",
+        "airline": "Air France",
+        "flightNumber": "AF7071",
+        "departureDate": "2026-11-20",
+        "departureTime": "13:20",
+        "arrivalTime": "15:05",
+        "durationMinutes": 105,
+        "stops": 0,
+        "price": 65
+      },
+      "returnFlight": null,
+      "totalPrice": 65
+    },
+    {
+      "idTrip": "OW-BIO-CDG-04",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "VY-20261204-BIOCDG-7072",
+        "origin": "BIO",
+        "destination": "CDG",
+        "airline": "Vueling",
+        "flightNumber": "VY7072",
+        "departureDate": "2026-12-04",
+        "departureTime": "16:15",
+        "arrivalTime": "18:00",
+        "durationMinutes": 105,
+        "stops": 0,
+        "price": 91
+      },
+      "returnFlight": null,
+      "totalPrice": 91
     }
   ]
 }

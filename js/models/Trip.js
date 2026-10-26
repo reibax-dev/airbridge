@@ -15,13 +15,30 @@ class Trip {
     outboundRoute,
     returnRoute = null,
   ) {
-    //Crear el objeto Fight de ida
+    //Crear objeto Fight de ida
+    const outboundFlight = Flight.fromJson(outbound,outboundRoute);
 
     //Crear el objeto Fight de vuelta si hay vuelta
+    let hasReturnFlight = null;
 
-    //Crear el viaje completo con todo
+    if (returnFlight !== null) {
+      hasReturnFlight = Flight.fromJson(returnFlight,returnRoute);
+    }
+
+    //Convertir totalPrice de euros a céntimos
+    const totalPriceCents = parseInt(totalPrice * 100);
+
+    //Crear el viaje completo con todo (crear Trip)
+    const trip = new Trip(
+      idTrip,
+      tripType,
+      outboundFlight,
+      totalPriceCents,
+      hasReturnFlight
+    );
 
     //devolver el objeto creado Trip
+    return trip;
   }
 
   isRoundTrip() {
