@@ -1,8 +1,9 @@
 
 export function renderForm(airports) {
     
-const fieldsetForm = document.createElement('fieldset');
+const fieldsetForm = document.createElement('fieltset');
 fieldsetForm.setAttribute('class', 'fieltset-form');
+
 
 
 // !---------BOTONES IDA , IDA Y VUELTA -----------------
@@ -125,6 +126,10 @@ submitButton.setAttribute('type','submit');
 submitButton.setAttribute('id','submit-form');
 submitButton.textContent = 'Buscar Vuelos';
 
+submitButton.addEventListener('click', ()=> {
+
+})
+
 
 //! -------------PARA EL CITYLIST -------------------------
 
@@ -138,7 +143,6 @@ airports.forEach(airport => {
 
 //! -------------SEARCHFORM -------------------------------
 
-const searchForm = document.querySelector('#searchForm');
 divButtons.append(roundTripButton, oneTripButton);
 divButtonSubmit.append(directLabel, submitButton);
 
@@ -160,6 +164,22 @@ fieldsetForm.append (
     passengerLabel,
     divButtonSubmit
 )
+
+searchForm.addEventListener('submit', (event) => {
+    event.preventDefault(); //! Para que no se recarge la página 
+    const searchForm = document.querySelector('#searchForm');
+    
+    const data = {
+        origen:         origenInput.value.trim(),
+        destiny:        destinyInput.value.trim(),
+        departureDate:  departureInput.value,
+        returnDate:     returnDateInput.disabled ? null : returnDateInput.value,
+        passengers:     Number(passengerInput.value),
+        onlyDirect:     directCheckbox.checked
+        
+    }
+    console.log(data);
+});
 
 searchForm.append(fieldsetForm);
 }; //* Fin Function
