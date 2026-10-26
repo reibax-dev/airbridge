@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,17 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/results.css">
 
     <title>AirBridge</title>
 </head>
+
 <body>
     <header>
         <nav class="header__nav">
 
             <a href="index.html" class="header__logo-link">
-                <img src="assets/logo.png" height="60px" width="200px" alt="image_logo" >
+                <img src="assets/logo.png" height="60px" width="200px" alt="image_logo">
             </a>
 
             <ul class="header__navigator">
@@ -29,21 +32,21 @@
                 </li>
                 <li>
                     <a class="header__navigator-link" href="#">Favoritos</a>
-                </li>                    
+                </li>
             </ul>
 
             <ul class="header__net">
-                <li  class="header__net-link">
+                <li class="header__net-link">
                     <a href="results.html">
                         <img src="assets/icons/corazon.png" height="40px" width="40px" alt="Favorites">
-                    </a>    
+                    </a>
                 </li>
                 <li class="header__net-link">
                     <a href="shoppingCart.html">
                         <img src="assets/icons/carrito.png" height="40px" width="40px" alt="Shopping-car">
                     </a>
                 </li>
-                <li  class="header__net-link">
+                <li class="header__net-link">
                     <a href="#">
                         <img src="assets/icons/logged_in.png" height="40px" width="40px" alt="User">
                     </a>
@@ -52,15 +55,73 @@
         </nav>
     </header>
     <main>
-        <div >
-            <img src="assets/portada.png"  class="front__image" alt="image-front">
+        <div>
+            <img src="assets/portada.png" class="front__image" alt="image-front">
+                <section class="results" id="resultsContainer">
+            <article class="flight-card" id="flightCard">
+
+                <div class="flight-card__details">
+
+                    <header class="flight-card__header">
+                        <img class="flight-card__airline-logo" id="airlineLogo" src="assets/airlines/Logo_Vueling.svg.webp" alt="Logo de Vueling" width="48" height="48">
+                        <div class="flight-card__airline">
+                            <h3 class="flight-card__airline-name" id="airlineName">Vueling</h3>
+                            <p class="flight-card__flight-number" id="flightNumber">VY 1423</p>
+                        </div>
+                        <time class="flight-card__date" id="flightDate" datetime="2026-11-20">Jue, 20 nov 2026</time>
+                    </header>
+
+                    <div class="flight-card__route">
+                        <div class="flight-card__airport">
+                            <time class="flight-card__time" id="departureTime" datetime="08:30">08:30</time>
+                            <p class="flight-card__code" id="originCode">BIO</p>
+                            <p class="flight-card__airport-name" id="originAirportName">Aeropuerto de Bilbao</p>
+                            <p class="flight-card__location">
+                                <span id="originCity">Bilbao</span>, <span id="originCountry">España</span>
+                            </p>
+                        </div>
+
+                        <div class="flight-card__line">
+                            <img src="assets/icons/avion.png" alt="" width="20" height="20">
+                        </div>
+
+                        <div class="flight-card__airport flight-card__airport--destination">
+                            <time class="flight-card__time" id="arrivalTime" datetime="09:45">09:45</time>
+                            <p class="flight-card__code" id="destinationCode">VLC</p>
+                            <p class="flight-card__airport-name" id="destinationAirportName">Aeropuerto de Valencia</p>
+                            <p class="flight-card__location">
+                                <span id="destinationCity">Valencia</span>, <span id="destinationCountry">España</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <ul class="flight-card__info">
+                        <li class="flight-card__info-item" id="duration">1h 15m</li>
+                        <li class="flight-card__info-item" id="stops">Directo</li>
+                        <li class="flight-card__info-item"><span id="distanceKm">472</span> km</li>
+                    </ul>
+
+                </div>
+
+                <div class="flight-card__price">
+                    <p class="flight-card__price-label">Precio total</p>
+                    <p class="flight-card__price-amount" id="price">30 €</p>
+                    <button class="flight-card__button" id="selectButton" type="button">Seleccionar</button>
+                </div>
+
+            </article>
+        </section>
+
+
         </div>
+
     </main>
     <footer>
-            <div class="footer">
+        <div class="footer">
             <section class="footer__section">
                 <div class="footer__logo">
-                    <img src="assets/logo_tab.png" height="80px" width="80px" alt="image/logo" class="footer__logo-image">
+                    <img src="assets/logo_tab.png" height="80px" width="80px" alt="image/logo"
+                        class="footer__logo-image">
                     <div class="footer__logo-text">
                         <h3>Vuela más lejos, <br> vive más experiencias</h3>
                         <p>Encuentra los mejores vuelos al mejor precio.</p>
@@ -102,31 +163,30 @@
                     <h3 class="footer__air-text">Síguenos</h3>
                     <ul class="footer__logo-list">
                         <li>
-                            <img src="assets/icons/facebook.png" height="50px" width="50px"alt="image/facebook">
+                            <img src="assets/icons/facebook.png" height="50px" width="50px" alt="image/facebook">
                         </li>
                         <li>
-                            <img src="assets/icons/instagram.png" height="50px" width="50px"alt="image/instagram">
+                            <img src="assets/icons/instagram.png" height="50px" width="50px" alt="image/instagram">
                         </li>
                         <li>
-                            <img src="assets/icons/x.png" height="50px" width="50px"alt="image/x">
+                            <img src="assets/icons/x.png" height="50px" width="50px" alt="image/x">
                         </li>
                     </ul>
                 </div>
             </section>
 
-        </div>    <!-- footer -->
+        </div> <!-- footer -->
         <div class="footer__copy">
-            <p >&copy; AirBridge. Todos los derechos reservados 
+            <p>&copy; AirBridge. Todos los derechos reservados
             <div class="footer__copy-net">
                 <p>Condiciones de Servicio</p>
                 <p>Política de privacidad</p>
                 <p>Aviso legal</p>
                 <p>Configuración de cookies</p>
             </div>
-        </div> 
+        </div>
     </footer>
-    
+
 </body>
 
 </html>
-
