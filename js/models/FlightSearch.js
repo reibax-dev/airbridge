@@ -63,7 +63,7 @@ class FlightSearch{
             console.log("Cantidad de viajes:", foundTrips.length); // HACK
             
 
-            //PENDIENTE: Obtener los aeropuertos mediante AirportMilesService.
+            //PENDIENTE: Obtener los aeropuertos mediante AirportMilesService getAiport await.
 
             //PENDIENTE: Construir un FlightRoute para cada trayecto.
 
