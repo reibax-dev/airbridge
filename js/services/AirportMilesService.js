@@ -1,4 +1,6 @@
 import { cantGetUrlError } from "../components/Errors.js";
+import Airport from "../models/Airport.js";
+import FlightRoute from "../models/FlightRoute.js";
 
 
 
@@ -68,11 +70,11 @@ async function getRoute(iatas){
         throw new cantGetUrlError;
     }
 
-    const route=await results.json();
+    const routeJSON=await results.json();
 
-    const routeJSON={origin:route.from.iata,destination:route.to.iata,distanceKM:route.distance.km};
+    const route= new FlightRoute(routeJSON.from.iata,routeJSON.to.iata,routeJSON.distance.km);
 
-    return routeJSON;
+    return route;
 
     
 }
@@ -92,11 +94,12 @@ async function getAirport(iata){
         throw new cantGetUrlError;
     }
 
-    const airport=await results.json();
+    const airportJSON=await results.json();
 
-    const airportJSON={codeAirport:airport.airport.iata,nameAirport:airport.airport.name,city:airport.airport.city,country:airport.airport.country.name};
+    const airport=new Airport(airportJSON.airport.iata,airportJSON.airport.name,airportJSON.airport.city,airportJSON.airport.country.name);
+    
 
-    return airportJSON;
+    return airport;
 
     
 }
