@@ -260,6 +260,7 @@ searchForm.addEventListener('submit', (event) => {
         destination:    destinationAirport.iata,
         departureDate:  departureInput.value,
         returnDate:     returnDateInput.disabled ? null : returnDateInput.value,
+        tripType:       tripType,
         passengers:     Number(passengerInput.value),
         directOnly:     directCheckbox.checked
         
@@ -269,3 +270,6 @@ searchForm.addEventListener('submit', (event) => {
 
 searchForm.append(fieldsetForm);
 }; //* Fin Function
+
+
+// console.log(typeof searchCriteria.departureDate);
