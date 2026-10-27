@@ -144,6 +144,7 @@ label[for="passenger"]::before     { background-image: url(../assets/icons/pasaj
    outline: none;
 }
 
+
 /* Mobile: origen, destino, pasajeros a tutta larghezza; le date in due colonne */
 label[for="origin"],
 label[for="destination"],
