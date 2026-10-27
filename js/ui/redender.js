@@ -59,7 +59,7 @@ departureInput.setAttribute('id', 'departureDate');
 departureInput.setAttribute('type', 'date');
 
 const returnDateLabel = document.createElement('label');
-returnDateLabel.textContent = 'Vuelta';
+returnDateLabel.textContent = 'Fecha de vuelta';
 returnDateLabel.setAttribute('for', 'returnDate');
 
 const returnDateInput = document.createElement('input');

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img"><title>Iberia</title><g transform="matrix(1.908855 0 0 1.908855 -178.447779 18.738598)"><defs><linearGradient x1="3.3094875%" y1="-9.97218728%" x2="103.215928%" y2="90.3086359%" id="red">
+            <stop stop-color="#A61C22" offset="0%"/>
+            <stop stop-color="#DC1C2E" offset="50%"/>
+            <stop stop-color="#DC1C2E" offset="100%"/>
+        </linearGradient>
+        <linearGradient x1="-1.22775264%" y1="3.63240533%" x2="99.1578257%" y2="102.498351%" id="gold">
+            <stop stop-color="#ED7417" offset="0%"/>
+            <stop stop-color="#FACD08" offset="85%"/>
+            <stop stop-color="#FACD08" offset="100%"/>
+        </linearGradient>
+    </defs><path d="M105.4552,16.4993 L98.2569,9.2337 L98.2569,9.2327 C123.2439,9.2327 129.1346,15.1072 132.5718,23.1035 L132.5718,23.1035 L135.458,30.6307 C127.0396,30.3884 114.3361,25.4264 105.4552,16.4993" fill="url(#red)" transform="translate(116.8575, 19.9317) scale(1, -1) translate(-116.8575, -19.9317) "/>
+                    <path d="M122.2391,8.204 L114.1399,0 C121.8296,5.5235 129.498,8.8559 137.1377,9.7164 L137.1377,9.7164 L139,14.5736 C127.6905,14.5736 126.1503,12.1007 122.2391,8.204" fill="url(#gold)" transform="translate(126.57, 7.2868) scale(1, -1) translate(-126.57, -7.2868) "/>
+                </g></svg>

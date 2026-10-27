@@ -17,7 +17,7 @@ function createFlightSection(flight, leg) {
     imgAirline.dataset.field = "airlineLogo";
 
     //TODO: seleccionar el logo según la aerolínea
-    imgAirline.setAttribute("src", "assets/airlines/Logo_Vueling.svg.webp");
+    imgAirline.setAttribute("src", "assets/airlines/vueling.svg");
     imgAirline.setAttribute("alt", `Logo de ${flight.airline}`);
     imgAirline.setAttribute("width", "48");
     imgAirline.setAttribute("height", "48");
@@ -293,7 +293,7 @@ function createFlightCard(trip,passengers = 1,action = "select") {
 
     //BOTÓN
     let buttonText = "Seleccionar";
-    
+
     if (action === "remove") {
         buttonText = "Eliminar";
     }

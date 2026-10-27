@@ -19,9 +19,6 @@ if (searchCriteria !== null) {
     passengers = Number(searchCriteria.passengers);
 }
 
-initResults();
-
-
 //mostrar tarjetas
 function renderResults(trips, passengers = 1) {
 
@@ -50,3 +47,6 @@ async function initResults() {
     await flightSearch.loadResults(searchCriteria);
     renderResults(flightSearch.results, passengers);
 }
+
+
+initResults();
