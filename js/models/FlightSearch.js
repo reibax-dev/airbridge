@@ -79,10 +79,12 @@ class FlightSearch {
       console.log("Viajes encontrados:", foundTrips); // HACK
       console.log("Cantidad de viajes:", foundTrips.length); // HACK
 
+      //////CONSTRUIR RUTA DE IDA////
+
       //Crear aeropuertos con los códigos de travel.json
       //(esto es por si falla la API tener los datos de travel y poder mostrar sin datos API)
-      let originAirport = new Airport(searchCriteria.origin, null, null, null);
-      let destinationAirport = new Airport(searchCriteria.destination,null,null,null);
+      const originAirport = new Airport(searchCriteria.origin, null, null, null);
+      const destinationAirport = new Airport(searchCriteria.destination,null,null,null);
 
       //crear ruta sin distancia (distancia será null por el constructor)
       const outboundRoute = new FlightRoute(originAirport, destinationAirport);
@@ -115,15 +117,32 @@ class FlightSearch {
         console.warn("No se ha podido obtener la distancia:", error);
       }
 
-      console.log("Ruta de ida:", outboundRoute);
+      console.log("Ruta de ida:", outboundRoute); //HACK
 
-      //PENDIENTE: Construir un FlightRoute para cada trayecto.
+      /////CONSTRUIR RUTA DE VUELTA//////
 
-      //PENDIENTE: Crear los objetos Flight utilizando Flight.fromJson().
+      let returnRoute = null;
 
-      //PENDIENTE: Crear los objetos Trip utilizando Trip.fromJson().
+      //Si tiene ida y vuelta, intercambiamos los aeropuertos
+      if (searchCriteria.tripType === "roundTrip") {
+        returnRoute = new FlightRoute(outboundRoute.destination,outboundRoute.origin,outboundRoute.distanceKm);
+      }
 
-      //PENDIENTE: Guardar los objetos Trip en this.results.
+      console.log("Ruta de vuelta: ", returnRoute); //HACK
+      
+     //Crear los objetos Trip utilizando Trip.fromJson()
+     const transformedTrips = foundTrips.map(tripData => {
+        return Trip.fromJson(tripData,outboundRoute,returnRoute);
+     });
+
+     //guardar los objetos Trip en this.results.
+     this.results = transformedTrips;
+
+     console.log("Resultados reconstruidos: ",this.results);
+     
+    return this.results;
+
+
     } catch (error) {
       console.error("Error al obtener los resultados:", error);
       throw error;
