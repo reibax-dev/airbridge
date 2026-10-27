@@ -16,6 +16,7 @@ roundTripButton.setAttribute('type','button');
 roundTripButton.setAttribute('id','round-trip');
 roundTripButton.textContent = 'Ida y vuelta';
 
+
 const oneTripButton = document.createElement('button');
 oneTripButton.setAttribute('type','button');
 oneTripButton.setAttribute('id','one-trip');
@@ -66,18 +67,23 @@ returnDateInput.setAttribute('type', 'date');
 
 returnDateInput.disabled = false;
 returnDateInput.required = true;
+
+let tripType = 'roundTrip';
+
 //* IDA
     oneTripButton.addEventListener('click', () => { 
+        tripType = 'oneWay';
         returnDateInput.disabled = true;
         returnDateInput.required = false;
-        returnDateInput.value = '';
-        returnDateLabel.hidden = true;
+        returnDateInput.value    = '';
+        returnDateLabel.hidden   = true;
     });
 //* IDA Y VUELTA
     roundTripButton.addEventListener('click', () => {
+        tripType = 'roundTrip';
         returnDateInput.disabled = false;
         returnDateInput.required = true;
-        returnDateLabel.hidden = false;
+        returnDateLabel.hidden   = false;
     });
 
 //!------------------ PASAJEROS --------------------------
@@ -164,7 +170,7 @@ fieldsetForm.append (
 searchForm.addEventListener('submit', (event) => {
     event.preventDefault();                       //! Para que no se recarge la página     
      
-//! OBTENER CODIGO IATA LIMPIO
+//!--------- OBTENER CODIGO IATA LIMPIO  -------------
 
     function normalizeCity(city) {
         return city
@@ -238,6 +244,16 @@ searchForm.addEventListener('submit', (event) => {
         console.error('Fecha de ida no puede ser anterior a la de hoy')
         return
     }
+
+    //! FECHA IDA > VUELTA
+
+    if (departureInput < returnDateInput) {
+        console.error('Fecha de vuelta anterior a fecha de ida')
+        return
+    }
+
+
+//! --------DATOS FORMULARIO ---------------------
 
     const searchCriteria = {
         origin:         originAirport.iata,
