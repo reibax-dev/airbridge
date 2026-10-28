@@ -1,62 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Grupo4">
-    <meta name="description" content="Buscador de vuelos">
-    <link rel="icon" href="assets/logo_tab.png" type="image/png">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/results.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Grupo4" />
+    <meta name="description" content="Buscador de vuelos" />
+    <link rel="icon" href="assets/logo_tab.png" type="image/png" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/results.css" />
 
     <title>AirBridge</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="header__nav">
+      <nav class="header__nav">
+        <a href="index.html" class="header__logo-link">
+          <img
+            src="assets/logo.png"
+            height="60px"
+            width="200px"
+            alt="image_logo"
+          />
+        </a>
 
-            <a href="index.html" class="header__logo-link">
-                <img src="assets/logo.png" height="60px" width="200px" alt="image_logo">
+        <ul class="header__navigator">
+          <li>
+            <a class="header__navigator-link" href="index.html">Vuelos</a>
+          </li>
+          <li>
+            <a class="header__navigator-link" href="#">Destinos</a>
+          </li>
+          <li>
+            <a class="header__navigator-link" href="#">Favoritos</a>
+          </li>
+        </ul>
+
+        <ul class="header__net">
+          <li class="header__net-link">
+            <a href="results.html">
+              <img
+                src="assets/icons/corazon.png"
+                height="40px"
+                width="40px"
+                alt="Favorites"
+              />
             </a>
-
-            <ul class="header__navigator">
-                <li>
-                    <a class="header__navigator-link" href="index.html">Vuelos</a>
-                </li>
-                <li>
-                    <a class="header__navigator-link" href="#">Destinos</a>
-                </li>
-                <li>
-                    <a class="header__navigator-link" href="#">Favoritos</a>
-                </li>
-            </ul>
-
-            <ul class="header__net">
-                <li class="header__net-link">
-                    <a href="results.html">
-                        <img src="assets/icons/corazon.png" height="40px" width="40px" alt="Favorites">
-                    </a>
-                </li>
-                <li class="header__net-link">
-                    <a href="shoppingCart.html">
-                        <img src="assets/icons/carrito.png" alt="Shopping-car">
-                    </a>
-                </li>
-                <li class="header__net-link">
-                    <a href="#">
-                        <img src="assets/icons/logged_in.png" alt="User">
-                    </a>
-                </li>
-            </ul>
-        </nav>
+          </li>
+          <li class="header__net-link">
+            <a href="shoppingCart.html">
+              <img src="assets/icons/carrito.png" alt="Shopping-car" />
+            </a>
+          </li>
+          <li class="header__net-link">
+            <a href="#">
+              <img src="assets/icons/logged_in.png" alt="User" />
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section class="search-summary">
-            <img src="assets/portada.png" class="front__image" alt="">
+      <section class="search-summary">
+        <img src="assets/portada.png" class="front__image" alt="" />
 
             <div class="search-summary__content">
                 <div class="search-summary__text">
@@ -113,227 +121,188 @@
                     </fieldset>
 
                     <fieldset class="filters__group">
-                        <legend class="filters__legend">Escalas</legend>
-                        <label class="filters__option"><input type="checkbox" name="stops" value="direct">
+                        <legend class="filters__legend">Tipo de vuelo</legend>
+                        <label class="filters__option"><input type="radio" name="stops" value="direct">
                             Directo</label>
-                        <label class="filters__option"><input type="checkbox" name="stops" value="oneStop"> 1
-                            escala</label>
-                        <label class="filters__option"><input type="checkbox" name="stops" value="twoOrMoreStops"> 2+
-                            escalas</label>
+                        <label class="filters__option"><input type="radio" name="stops" value="withStops">
+                            Escalas</label>
                     </fieldset>
-
 
                 </form>
             </aside>
 
-            <section class="results">
-
-
-                <div class="results__list" id="resultsContainer">
-                    <article class="flight-card" data-trip-id="RT-BIO-VLC-01">
-                        <div class="flight-card__details" data-leg="outbound">
-                            <p class="flight-card__leg">
-                                <img src="assets/icons/ida_resultados.png" alt="" width="20" height="20">
-                                Ida
-                            </p>
-                            <header class="flight-card__header">
-                                <img class="flight-card__airline-logo" data-field="airlineLogo"
-                                    src="assets/airlines/vueling.svg" alt="Logo de Vueling" width="48" height="48">
-                                <div class="flight-card__airline">
-                                    <h3 class="flight-card__airline-name" data-field="airlineName">Vueling</h3>
-                                    <p class="flight-card__flight-number" data-field="flightNumber">VY 1401</p>
-                                </div>
-                                <time class="flight-card__date" data-field="flightDate" datetime="2026-11-20">Vie, 20
-                                    nov
-                                    2026</time>
-                            </header>
-
-                            <div class="flight-card__route">
-                                <div class="flight-card__airport">
-                                    <time class="flight-card__time" data-field="departureTime"
-                                        datetime="06:50">06:50</time>
-                                    <p class="flight-card__code" data-field="originCode">BIO</p>
-                                    <p class="flight-card__airport-name" data-field="originAirportName">Aeropuerto de
-                                        Bilbao</p>
-                                    <p class="flight-card__location">
-                                        <span data-field="originCity">Bilbao</span>, <span
-                                            data-field="originCountry">España</span>
-                                    </p>
-                                </div>
-
-                                <div class="flight-card__line">
-                                    <img src="assets/icons/avion.png" alt="" width="20" height="20">
-                                </div>
-
-                                <div class="flight-card__airport flight-card__airport--destination">
-                                    <time class="flight-card__time" data-field="arrivalTime"
-                                        datetime="08:05">08:05</time>
-                                    <p class="flight-card__code" data-field="destinationCode">VLC</p>
-                                    <p class="flight-card__airport-name" data-field="destinationAirportName">Aeropuerto
-                                        de
-                                        Valencia</p>
-                                    <p class="flight-card__location">
-                                        <span data-field="destinationCity">Valencia</span>, <span
-                                            data-field="destinationCountry">España</span>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <ul class="flight-card__info">
-                                <li class="flight-card__info-item" data-field="duration">1h 15m</li>
-                                <li class="flight-card__info-item" data-field="stops">Directo</li>
-                                <li class="flight-card__info-item"><span data-field="distanceKm">472</span> km</li>
-                            </ul>
-
-                        </div>
-
-                        <div class="flight-card__details" data-leg="return">
-                            <p class="flight-card__leg">
-                                <img src="assets/icons/vuelta_resultados.png" alt="" width="20" height="20">
-                                Vuelta
-                            </p>
-                            <header class="flight-card__header">
-                                <img class="flight-card__airline-logo" data-field="airlineLogo"
-                                    src="assets/airlines/iberia.svg" alt="Logo de Iberia" width="48" height="48">
-                                <div class="flight-card__airline">
-                                    <h3 class="flight-card__airline-name" data-field="airlineName">Iberia</h3>
-                                    <p class="flight-card__flight-number" data-field="flightNumber">IB 1501</p>
-                                </div>
-                                <time class="flight-card__date" data-field="flightDate" datetime="2026-11-27">Vie, 27
-                                    nov
-                                    2026</time>
-                            </header>
-
-                            <div class="flight-card__route">
-                                <div class="flight-card__airport">
-                                    <time class="flight-card__time" data-field="departureTime"
-                                        datetime="07:40">07:40</time>
-                                    <p class="flight-card__code" data-field="originCode">VLC</p>
-                                    <p class="flight-card__airport-name" data-field="originAirportName">Aeropuerto de
-                                        Valencia
-                                    </p>
-                                    <p class="flight-card__location">
-                                        <span data-field="originCity">Valencia</span>, <span
-                                            data-field="originCountry">España</span>
-                                    </p>
-                                </div>
-
-                                <div class="flight-card__line">
-                                    <img src="assets/icons/avion.png" alt="" width="20" height="20">
-                                </div>
-
-                                <div class="flight-card__airport flight-card__airport--destination">
-                                    <time class="flight-card__time" data-field="arrivalTime"
-                                        datetime="08:55">08:55</time>
-                                    <p class="flight-card__code" data-field="destinationCode">BIO</p>
-                                    <p class="flight-card__airport-name" data-field="destinationAirportName">Aeropuerto
-                                        de
-                                        Bilbao</p>
-                                    <p class="flight-card__location">
-                                        <span data-field="destinationCity">Bilbao</span>, <span
-                                            data-field="destinationCountry">España</span>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <ul class="flight-card__info">
-                                <li class="flight-card__info-item" data-field="duration">1h 15m</li>
-                                <li class="flight-card__info-item" data-field="stops">Directo</li>
-                                <li class="flight-card__info-item"><span data-field="distanceKm">472</span> km</li>
-                            </ul>
-
-                        </div>
-
-                        <div class="flight-card__price">
-                            <p class="flight-card__price-label">Precio total</p>
-                            <p class="flight-card__price-amount" data-field="price">64 €</p>
-                            <button class="flight-card__button" data-action="select" type="button" aria-pressed="false">
-                                <svg class="flight-card__button-check" viewBox="0 0 24 24" width="18" height="18"
-                                    aria-hidden="true">
-                                    <path d="M5 12.5l4.5 4.5L19 7.5" />
-                                </svg>
-                                <span class="flight-card__button-text" data-field="buttonText">Seleccionar</span>
-                            </button>
-                        </div>
-
-                    </article>
-                </div>
-
+            <section class="results__list" id="resultsContainer">
+              <!-- Tarjetas resultados -->
             </section>
-
         </div>
+      </section>
+      <div class="results-page">
+        <div class="results__toolbar">
+          <button
+            class="results__filters-button"
+            id="filtersButton"
+            type="button"
+            aria-controls="filters"
+            aria-expanded="false"
+          >
+            Filtros
+          </button>
+          <h2 class="results__count">
+            <span id="resultsCount">12</span> viajes encontrados
+          </h2>
+          <label class="results__sort">
+            <span class="results__sort-label">Ordenar por:</span>
+            <select
+              class="results__sort-select"
+              id="sortSelect"
+              name="sort"
+              aria-label="Ordenar por"
+            >
+              <option value="priceAsc">Precio (más bajo)</option>
+              <option value="priceDesc">Precio (más alto)</option>
+              <option value="duration">Duración</option>
+            </select>
+          </label>
+        </div>
+
+        <aside class="filters" id="filters">
+          <form class="filters__form" id="filtersForm">
+            <div class="filters__header">
+              <h2 class="filters__title">Filtros</h2>
+              <button class="filters__clear" type="reset">
+                Limpiar filtros
+              </button>
+            </div>
+
+            <fieldset class="filters__group">
+              <legend class="filters__legend">Precio total</legend>
+              <input
+                class="filters__range"
+                type="range"
+                name="maxPrice"
+                min="50"
+                max="300"
+                step="10"
+                value="300"
+              />
+              <div class="filters__range-labels">
+                <span>50 €</span>
+                <span>300 €</span>
+              </div>
+            </fieldset>
+
+            <fieldset class="filters__group">
+              <legend class="filters__legend">Tipo de vuelo</legend>
+              <label class="filters__option"
+                ><input type="radio" name="stops" value="direct" />
+                Directo</label
+              >
+              <label class="filters__option"
+                ><input type="radio" name="stops" value="withStops" />
+                Escalas</label
+              >
+            </fieldset>
+          </form>
+        </aside>
+
+        <section class="results" id="resultsContainer">
+          <!-- Tarjetas viajes -->
+        </section>
+      </div>
     </main>
     <footer>
-        <div class="footer">
-            <section class="footer__section">
-                <div class="footer__logo">
-                    <img src="assets/logo_tab.png" height="80px" width="80px" alt="image/logo"
-                        class="footer__logo-image">
-                    <div class="footer__logo-text">
-                        <h3>Vuela más lejos, <br> vive más experiencias</h3>
-                        <p>Encuentra los mejores vuelos al mejor precio.</p>
-                    </div>
-
-                </div>
-                <div class="footer__air">
-                    <h3 class="footer__air-text">AirBridge</h3>
-                    <ul class="footer__air-list">
-                        <li>Sobre nosotros</li>
-                        <li>Trabaja con nosotros</li>
-                        <li>Prensa</li>
-                        <li>Sostenibilidad</li>
-                        <li>Contacto</li>
-                    </ul>
-                </div>
-                <div class="footer__air">
-                    <h3 class="footer__air-text">Ayuda</h3>
-                    <ul class="footer__air-list">
-                        <li>Centro de ayuda</li>
-                        <li>Cambios y cancelaciones</li>
-                        <li>Equipaje</li>
-                        <li>Condiciones de servicio</li>
-                        <li>Politica de privacidad</li>
-                        <li>Aviso legal</li>
-                    </ul>
-                </div>
-                <div class="footer__air">
-                    <h3 class="footer__air-text">Destinos Populares</h3>
-                    <ul class="footer__air-list">
-                        <li>Bangkok</li>
-                        <li>Napoles</li>
-                        <li>Bilbao</li>
-                        <li>Valencia</li>
-                        <li>Singapur</li>
-                    </ul>
-                </div>
-                <div class="footer__air">
-                    <h3 class="footer__air-text">Síguenos</h3>
-                    <ul class="footer__logo-list">
-                        <li>
-                            <img src="assets/icons/facebook.png" height="50px" width="50px" alt="image/facebook">
-                        </li>
-                        <li>
-                            <img src="assets/icons/instagram.png" height="50px" width="50px" alt="image/instagram">
-                        </li>
-                        <li>
-                            <img src="assets/icons/x.png" height="50px" width="50px" alt="image/x">
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-        </div> <!-- footer -->
-        <div class="footer__copy">
-            <p>&copy; AirBridge. Todos los derechos reservados
-            <div class="footer__copy-net">
-                <p>Condiciones de Servicio</p>
-                <p>Política de privacidad</p>
-                <p>Aviso legal</p>
-                <p>Configuración de cookies</p>
+      <div class="footer">
+        <section class="footer__section">
+          <div class="footer__logo">
+            <img
+              src="assets/logo_tab.png"
+              height="80px"
+              width="80px"
+              alt="image/logo"
+              class="footer__logo-image"
+            />
+            <div class="footer__logo-text">
+              <h3>
+                Vuela más lejos, <br />
+                vive más experiencias
+              </h3>
+              <p>Encuentra los mejores vuelos al mejor precio.</p>
             </div>
+          </div>
+          <div class="footer__air">
+            <h3 class="footer__air-text">AirBridge</h3>
+            <ul class="footer__air-list">
+              <li>Sobre nosotros</li>
+              <li>Trabaja con nosotros</li>
+              <li>Prensa</li>
+              <li>Sostenibilidad</li>
+              <li>Contacto</li>
+            </ul>
+          </div>
+          <div class="footer__air">
+            <h3 class="footer__air-text">Ayuda</h3>
+            <ul class="footer__air-list">
+              <li>Centro de ayuda</li>
+              <li>Cambios y cancelaciones</li>
+              <li>Equipaje</li>
+              <li>Condiciones de servicio</li>
+              <li>Politica de privacidad</li>
+              <li>Aviso legal</li>
+            </ul>
+          </div>
+          <div class="footer__air">
+            <h3 class="footer__air-text">Destinos Populares</h3>
+            <ul class="footer__air-list">
+              <li>Bangkok</li>
+              <li>Napoles</li>
+              <li>Bilbao</li>
+              <li>Valencia</li>
+              <li>Singapur</li>
+            </ul>
+          </div>
+          <div class="footer__air">
+            <h3 class="footer__air-text">Síguenos</h3>
+            <ul class="footer__logo-list">
+              <li>
+                <img
+                  src="assets/icons/facebook.png"
+                  height="50px"
+                  width="50px"
+                  alt="image/facebook"
+                />
+              </li>
+              <li>
+                <img
+                  src="assets/icons/instagram.png"
+                  height="50px"
+                  width="50px"
+                  alt="image/instagram"
+                />
+              </li>
+              <li>
+                <img
+                  src="assets/icons/x.png"
+                  height="50px"
+                  width="50px"
+                  alt="image/x"
+                />
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <!-- footer -->
+      <div class="footer__copy">
+        <p>&copy; AirBridge. Todos los derechos reservados</p>
+        <div class="footer__copy-net">
+          <p>Condiciones de Servicio</p>
+          <p>Política de privacidad</p>
+          <p>Aviso legal</p>
+          <p>Configuración de cookies</p>
         </div>
+      </div>
     </footer>
-
+<script type="module" src="./js/pages/results.js"></script>
 </body>
 
 </html>
