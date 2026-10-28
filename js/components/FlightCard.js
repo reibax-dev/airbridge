@@ -17,7 +17,7 @@ function createFlightSection(flight, leg) {
     imgAirline.dataset.field = "airlineLogo";
 
     //TODO: seleccionar el logo según la aerolínea
-    imgAirline.setAttribute("src", "assets/airlines/vueling.svg");
+    imgAirline.setAttribute("src", `assets/airlines/${flight.airline}.svg`);
     imgAirline.setAttribute("alt", `Logo de ${flight.airline}`);
     imgAirline.setAttribute("width", "48");
     imgAirline.setAttribute("height", "48");
