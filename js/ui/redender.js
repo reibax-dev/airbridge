@@ -1,8 +1,9 @@
 
 export function renderForm(airports) {
+const searchForm = document.querySelector('#searchForm');
     
 const fieldsetForm = document.createElement('fieldset');
-fieldsetForm.setAttribute('class', 'fieltset-form');
+fieldsetForm.setAttribute('class', 'fieldset-form');
 
 
 // !---------BOTONES IDA , IDA Y VUELTA -----------------
@@ -10,13 +11,11 @@ fieldsetForm.setAttribute('class', 'fieltset-form');
 const divButtons = document.createElement('div');
 divButtons.setAttribute('class', 'form-buttons-trip');
 
-const cityList = document.createElement('datalist');
-cityList.id = 'cities';
-
 const roundTripButton = document.createElement('button');
 roundTripButton.setAttribute('type','button');
 roundTripButton.setAttribute('id','round-trip');
 roundTripButton.textContent = 'Ida y vuelta';
+
 
 const oneTripButton = document.createElement('button');
 oneTripButton.setAttribute('type','button');
@@ -68,22 +67,24 @@ returnDateInput.setAttribute('type', 'date');
 
 returnDateInput.disabled = false;
 returnDateInput.required = true;
+
+let tripType = 'roundTrip';
+
 //* IDA
     oneTripButton.addEventListener('click', () => { 
+        tripType = 'oneWay';
         returnDateInput.disabled = true;
         returnDateInput.required = false;
-        returnDateInput.value = '';
-        returnDateLabel.hidden = true;
+        returnDateInput.value    = '';
+        returnDateLabel.hidden   = true;
     });
 //* IDA Y VUELTA
     roundTripButton.addEventListener('click', () => {
+        tripType = 'roundTrip';
         returnDateInput.disabled = false;
         returnDateInput.required = true;
-        returnDateLabel.hidden = false;
+        returnDateLabel.hidden   = false;
     });
-
-
-
 
 //!------------------ PASAJEROS --------------------------
 
@@ -125,8 +126,14 @@ submitButton.setAttribute('type','submit');
 submitButton.setAttribute('id','submit-form');
 submitButton.textContent = 'Buscar Vuelos';
 
+// submitButton.addEventListener('click', ()=> {
+
+// })
 
 //! -------------PARA EL CITYLIST -------------------------
+
+const cityList = document.createElement('datalist');
+cityList.id = 'cities';
 
 airports.forEach(airport => {
     const option = document.createElement('option');
@@ -138,7 +145,6 @@ airports.forEach(airport => {
 
 //! -------------SEARCHFORM -------------------------------
 
-const searchForm = document.querySelector('#searchForm');
 divButtons.append(roundTripButton, oneTripButton);
 divButtonSubmit.append(directLabel, submitButton);
 
@@ -161,5 +167,109 @@ fieldsetForm.append (
     divButtonSubmit
 )
 
+searchForm.addEventListener('submit', (event) => {
+    event.preventDefault();                       //! Para que no se recarge la página     
+     
+//!--------- OBTENER CODIGO IATA LIMPIO  -------------
+
+    function normalizeCity(city) {
+        return city
+        .trim()
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g,'')
+    }
+    const originName        = normalizeCity(origenInput.value);
+    const destinationName   = normalizeCity(destinyInput.value);
+    
+    //! CIUDADES SELECCIONADAS
+
+    if(!origenInput.value.trim() || !destinyInput.value.trim()) {
+        console.error('Selecciona una Ciudad')
+        return
+    };
+
+    //! CODIGOS IATA
+
+    const originAirport     = airports.find(
+        (airport) => normalizeCity(airport.city) === originName
+    );
+    const destinationAirport = airports.find(
+        (airport) => normalizeCity(airport.city) === destinationName
+    );
+
+    //! COMPROBACION DE CIUDADES
+
+    if(!originAirport || !destinationAirport) {
+        console.error('Ciudad no disponible todavía')
+        return
+    };
+
+    //!CODIGOS IATA DIFERENTES
+
+    const originIata        = originAirport.iata;
+    const destinationIata   = destinationAirport.iata;
+
+    if ( originIata === destinationIata) {
+        console.error('Codigos deben de ser diferentes')
+        return
+    };
+
+    //! CIUDADES DIFERENTES
+
+    // if(originName === destinationName) {
+    //     console.error('Ciudades deben de ser diferentes')
+    //     return
+    // };
+
+    //!  FECHA DE IDA SELECCIONADA
+
+    const departureDate = departureInput.value;
+
+    if(!departureDate) {
+        console.error('Selecciona fecha de ida')
+        return
+    }
+
+    //! FECHA SELECCIONADA NO PASADA
+
+    const now   = new Date();
+    const today = [ 
+        now.getFullYear(),
+        String(now.getMonth() + 1).padStart(2,'0'),
+        String(now.getDate()).padStart(2,'0')
+    ].join('-');
+
+    if(departureDate < today ) {
+        console.error('Fecha de ida no puede ser anterior a la de hoy')
+        return
+    }
+
+    //! FECHA IDA > VUELTA
+
+    if (departureInput < returnDateInput) {
+        console.error('Fecha de vuelta anterior a fecha de ida')
+        return
+    }
+
+
+//! --------DATOS FORMULARIO ---------------------
+
+    const searchCriteria = {
+        origin:         originAirport.iata,
+        destination:    destinationAirport.iata,
+        departureDate:  departureInput.value,
+        returnDate:     returnDateInput.disabled ? null : returnDateInput.value,
+        tripType:       tripType,
+        passengers:     Number(passengerInput.value),
+        directOnly:     directCheckbox.checked
+        
+    }
+    console.log( searchCriteria );
+});
+
 searchForm.append(fieldsetForm);
 }; //* Fin Function
+
+
+// console.log(typeof searchCriteria.departureDate);
