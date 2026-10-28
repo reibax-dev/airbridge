@@ -125,13 +125,13 @@ function renderResults(trips, passengers = 1) {
                 //si ya estaba seleccionado, se quita del carrito
                 const newCartTrips = cartTrips.filter(savedTrip => savedTrip.idTrip !== trip.idTrip);
                 sessionStorage.setItem("cartTrips", JSON.stringify(newCartTrips));
-                console.log("Viaje eliminado del carrito:", trip.idTrip);
+                //console.log("Viaje eliminado del carrito:", trip.idTrip);
 
                 markButtonUnselected(selectButton);
             } else {
                 cartTrips.push(trip);
                 sessionStorage.setItem("cartTrips", JSON.stringify(cartTrips));
-                console.log("Viaje añadido al carrito:", trip.idTrip);
+                //console.log("Viaje añadido al carrito:", trip.idTrip);
 
                 markButtonSelected(selectButton);
             }
