@@ -185,6 +185,7 @@ searchForm.addEventListener('submit', (event) => {
     //! CIUDADES SELECCIONADAS
 
     if(!origenInput.value.trim() || !destinyInput.value.trim()) {
+        erri
         console.error('Selecciona una Ciudad')
         return
     };
