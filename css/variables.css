@@ -8,6 +8,8 @@
    --color-primary:     #0066FF; /* Azul eléctrico */
    --color-secondary:   #2563EB; /* Azul intenso */
    --color-navy:        #071952; /* Azul marino oscuro */
+   --color-success:     #12B76A; /* Verde (vuelo seleccionado) */
+   --color-success-dark:#039855; /* Verde oscuro (hover del seleccionado) */
 
 /* =================================================
                 BACKGROUND                         
