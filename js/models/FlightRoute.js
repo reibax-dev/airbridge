@@ -1,4 +1,3 @@
-import Airport from "./Airport.js";
 
 class FlightRoute {
     constructor(origin, destination, distanceKm = null) {
@@ -10,5 +9,6 @@ class FlightRoute {
     }
 
 }
+
 
 export default FlightRoute;

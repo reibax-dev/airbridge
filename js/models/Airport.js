@@ -1,3 +1,4 @@
+
 class Airport {
     constructor(codeAirport,nameAirport,city,country) {
         this.codeAirport = codeAirport;
@@ -5,7 +6,6 @@ class Airport {
         this.city = city;
         this.country = country;
     }
-
 
 }
 

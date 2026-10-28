@@ -1,53 +1,119 @@
+import { cantGetUrlError } from "../components/Errors.js";
+import Airport from "../models/Airport.js";
+import FlightRoute from "../models/FlightRoute.js";
+
+
+
+// OBTENER URL API
+
+
 async function getUrl(urlSection){
 
+
     const results=await fetch('https://airportmiles.com/api/v1/index.json');
-    const index=await results.json();
+
+    if(!results.ok){
+        throw new cantGetUrlError;
+    }
+
+    const index=await results.json(); // SI el json no es valido, el error original se propaga
     const urls=index.files;
 
     return urls[urlSection];
 
 }
 
-async function getAirports(iata){
 
-    const url=await obtenerUrl("airport");
-    const results=await fetch(url.replace("{iata}",iata));
-    const airports=await results.json();
 
-    return airports
 
-    
+// OBTENER IATAS DE LA RUTA
+// return "iata-iata"
+
+
+async function getRouteIATA(iata1,iata2){
+
+    const results=await fetch('https://airportmiles.com/api/v1/index.json');
+
+     if(!results.ok){
+        throw new cantGetUrlError;
+    }
+
+    const index=await results.json();
+    const routeIATA=index.routes;
+
+    let iatas;
+    for(const element of routeIATA){
+
+        if( element.includes(iata1.toLowerCase()) 
+            &&
+            element.includes(iata2.toLowerCase())){
+
+            iatas=element;
+
+        }
+    }
+
+    return iatas;
 }
 
-async function getRoutes(iata1,iata2){
+
+
+
+// OBTENER RUTA
+
+async function getRoute(iatas){
 
     const url=await getUrl("route");
-    const results=await fetch(url.replace("{iata}-{iata}",iata1+"-"+iata2));
-    const routes=await results.json();
+    const results=await fetch(url.replace("{iata}-{iata}",iatas));
 
-    return routes;
+     if(!results.ok){
+        throw new cantGetUrlError;
+    }
 
-    
-}
+    const routeJSON=await results.json();
 
-async function getCities(slug){
+    const route= new FlightRoute(routeJSON.from.iata,routeJSON.to.iata,routeJSON.distance.km);
 
-    const url=await getUrl("city");
-    const results=await fetch(url.replace("{slug}",slug));
-    const cities=await results.json();
-
-    return cities;
+    return route;
 
     
 }
 
-async function getCountries(slug){
 
-    const url=await getUrl("city");
-    const results=await fetch(url.replace("{slug}",slug));
-    const countries=await results.json();
 
-    return countries;
+
+// OBTENER AEROPUERTO
+
+
+async function getAirport(iata){
+
+    const url=await getUrl("airport");
+    const results=await fetch(url.replace("{iata}",iata));
+
+     if(!results.ok){
+        throw new cantGetUrlError;
+    }
+
+    const airportJSON=await results.json();
+
+    const airport=new Airport(airportJSON.airport.iata,airportJSON.airport.name,airportJSON.airport.city,airportJSON.airport.country.name);
+    
+
+    return airport;
 
     
+}
+
+
+
+
+
+
+export{
+    
+    getUrl,
+    getRouteIATA,
+    getRoute,
+    getAirport
+
 }

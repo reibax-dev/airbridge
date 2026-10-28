@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,18 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/results.css">
+    <link rel="stylesheet" href="css/shoppingCart.css">
 
     <title>AirBridge</title>
 </head>
+
 <body>
     <header>
         <nav class="header__nav">
 
             <a href="index.html" class="header__logo-link">
-                <img src="assets/logo.png" height="60px" width="200px" alt="image_logo" >
+                <img src="assets/logo.png" alt="image_logo">
             </a>
 
             <ul class="header__navigator">
@@ -29,38 +33,48 @@
                 </li>
                 <li>
                     <a class="header__navigator-link" href="#">Favoritos</a>
-                </li>                    
+                </li>
             </ul>
 
             <ul class="header__net">
-                <li  class="header__net-link">
+                <li class="header__net-link">
                     <a href="results.html">
-                        <img src="assets/icons/corazon.png" height="40px" width="40px" alt="Favorites">
-                    </a>    
+                        <img src="assets/icons/corazon.png" alt="Favorites">
+                    </a>
                 </li>
                 <li class="header__net-link">
                     <a href="shoppingCart.html">
-                        <img src="assets/icons/carrito.png" height="40px" width="40px" alt="Shopping-car">
+                        <img src="assets/icons/carrito.png" alt="Shopping-car">
                     </a>
                 </li>
-                <li  class="header__net-link">
+                <li class="header__net-link">
                     <a href="#">
-                        <img src="assets/icons/logged_in.png" height="40px" width="40px" alt="User">
+                        <img src="assets/icons/logged_in.png" alt="User">
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <div >
-            <img src="assets/portada.png"  class="front__image" alt="image-front">
+        <div>
+            <img src="assets/portada.png" class="front__image" alt="image-front">
+        </div>
+
+        <div class="cart-page">
+            <div class="cart__heading">
+                <h1 class="cart__title">Tu carrito de compra</h1>
+                <p class="cart__count"><span id="cartCount">1</span> viaje añadido</p>
+            </div>
+
+            <section class="cart__items" id="cartContainer"></section>
         </div>
     </main>
     <footer>
-            <div class="footer">
+        <div class="footer">
             <section class="footer__section">
                 <div class="footer__logo">
-                    <img src="assets/logo_tab.png" height="80px" width="80px" alt="image/logo" class="footer__logo-image">
+                    <img src="assets/logo_tab.png" height="80px" width="80px" alt="image/logo"
+                        class="footer__logo-image">
                     <div class="footer__logo-text">
                         <h3>Vuela más lejos, <br> vive más experiencias</h3>
                         <p>Encuentra los mejores vuelos al mejor precio.</p>
@@ -102,30 +116,31 @@
                     <h3 class="footer__air-text">Síguenos</h3>
                     <ul class="footer__logo-list">
                         <li>
-                            <img src="assets/icons/facebook.png" height="50px" width="50px"alt="image/facebook">
+                            <img src="assets/icons/facebook.png" height="50px" width="50px" alt="image/facebook">
                         </li>
                         <li>
-                            <img src="assets/icons/instagram.png" height="50px" width="50px"alt="image/instagram">
+                            <img src="assets/icons/instagram.png" height="50px" width="50px" alt="image/instagram">
                         </li>
                         <li>
-                            <img src="assets/icons/x.png" height="50px" width="50px"alt="image/x">
+                            <img src="assets/icons/x.png" height="50px" width="50px" alt="image/x">
                         </li>
                     </ul>
                 </div>
             </section>
 
-        </div>    <!-- footer -->
+        </div> <!-- footer -->
         <div class="footer__copy">
-            <p >&copy; AirBridge. Todos los derechos reservados 
+            <p>&copy; AirBridge. Todos los derechos reservados
             <div class="footer__copy-net">
                 <p>Condiciones de Servicio</p>
                 <p>Política de privacidad</p>
                 <p>Aviso legal</p>
                 <p>Configuración de cookies</p>
             </div>
-        </div> 
+        </div>
     </footer>
-    
-</body>
-</html>
+    <script type="module" src="js/pages/shoppingCart.js"></script>
 
+</body>
+
+</html>
