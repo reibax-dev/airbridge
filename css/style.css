@@ -85,6 +85,35 @@ ul {
     width: 2.8rem;
 }
 
+/* Círculo con el número de viajes del carrito */
+.header__cart-link {
+    position: relative;
+    display: block;
+}
+
+.header__cart-badge {
+    position: absolute;
+    top: -0.6rem;
+    right: -0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 2rem;
+    height: 2rem;
+    padding: 0 0.5rem;
+    border-radius: 1rem;
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    font-family: var(--font-primary);
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.header__cart-badge[hidden] {
+    display: none;
+}
+
 
 /*--------------Desktop*/
 @media (min-width:1024px) {

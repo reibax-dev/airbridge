@@ -16,7 +16,7 @@ function createFlightSection(flight, leg) {
     imgAirline.classList.add("flight-card__airline-logo");
     imgAirline.dataset.field = "airlineLogo";
 
-    //TODO: seleccionar el logo según la aerolínea
+    //seleccionar el logo según la aerolínea
     imgAirline.setAttribute("src", `assets/airlines/${flight.airline}.svg`);
     imgAirline.setAttribute("alt", `Logo de ${flight.airline}`);
     imgAirline.setAttribute("width", "48");
@@ -243,14 +243,49 @@ function createButton(buttonText,action){
     button.classList.add("flight-card__button");
     button.dataset.action = action;
     button.setAttribute("type", "button");
-    button.textContent = buttonText;
 
     if(action === "remove"){
         button.classList.add("flight-card__button--remove");
+        button.textContent = buttonText;
+        return button;
     }
+
+    //icono check (solo se ve cuando el vuelo está seleccionado)
+    const svgNS = "http://www.w3.org/2000/svg";
+
+    const checkIcon = document.createElementNS(svgNS, "svg");
+    checkIcon.classList.add("flight-card__button-check");
+    checkIcon.setAttribute("viewBox", "0 0 24 24");
+    checkIcon.setAttribute("width", "18");
+    checkIcon.setAttribute("height", "18");
+    checkIcon.setAttribute("aria-hidden", "true");
+
+    const checkPath = document.createElementNS(svgNS, "path");
+    checkPath.setAttribute("d", "M5 12l5 5L20 7");
+    checkIcon.append(checkPath);
+
+    //texto del botón
+    const buttonLabel = document.createElement("span");
+    buttonLabel.classList.add("flight-card__button-text");
+    buttonLabel.textContent = buttonText;
+
+    button.setAttribute("aria-pressed", "false");
+    button.append(checkIcon, buttonLabel);
 
     return button;
 
+}
+
+//MARCAR EL BOTÓN COMO SELECCIONADO
+function markButtonSelected(button) {
+    button.setAttribute("aria-pressed", "true");
+    button.querySelector(".flight-card__button-text").textContent = "Seleccionado";
+}
+
+//QUITAR LA SELECCIÓN DEL BOTÓN
+function markButtonUnselected(button) {
+    button.setAttribute("aria-pressed", "false");
+    button.querySelector(".flight-card__button-text").textContent = "Seleccionar";
 }
 
 //CREAR LA TARJETA COMPLETA DE UN VIAJE (Trip)
@@ -322,3 +357,4 @@ function createFlightCard(trip,passengers = 1,action = "select") {
 
 
 export default createFlightCard;
+export { markButtonSelected, markButtonUnselected };

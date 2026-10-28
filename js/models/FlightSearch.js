@@ -23,7 +23,6 @@ class FlightSearch {
 
       const data = await response.json();
 
-      console.log(data.trips); // HACK
 
       //Buscar en data (que están los datos de travel.json) los viajes que coincidan con searchCriteria
       //(searchCriteria es el objeto que tendrá los criterios que ha puesto el usuario en el formulario de la web)
@@ -74,11 +73,6 @@ class FlightSearch {
         return this.results;
       }
 
-      console.log("Origen buscado:", searchCriteria.origin); // HACK
-      console.log("Destino buscado:", searchCriteria.destination); // HACK
-      console.log("Viajes encontrados:", foundTrips); // HACK
-      console.log("Cantidad de viajes:", foundTrips.length); // HACK
-
       //////CONSTRUIR RUTA DE IDA////
 
       //Crear aeropuertos con los códigos de travel.json
@@ -117,7 +111,6 @@ class FlightSearch {
         console.warn("No se ha podido obtener la distancia:", error);
       }
 
-      console.log("Ruta de ida:", outboundRoute); //HACK
 
       /////CONSTRUIR RUTA DE VUELTA//////
 
@@ -128,7 +121,6 @@ class FlightSearch {
         returnRoute = new FlightRoute(outboundRoute.destination,outboundRoute.origin,outboundRoute.distanceKm);
       }
 
-      console.log("Ruta de vuelta: ", returnRoute); //HACK
       
      //Crear los objetos Trip utilizando Trip.fromJson()
      const transformedTrips = foundTrips.map(tripData => {
@@ -138,7 +130,7 @@ class FlightSearch {
      //guardar los objetos Trip en this.results.
      this.results = transformedTrips;
 
-     console.log("Resultados reconstruidos: ",this.results);
+     //console.log("Resultados reconstruidos: ",this.results);
      
     return this.results;
 

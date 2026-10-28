@@ -1,9 +1,10 @@
-/* ////////////////// MOBILE DESIGN //////////////////// */
 
+/* ////////////////// MOBILE DESIGN //////////////////// */
+ 
 .cart-page {
    --color-danger: #D92D20;
    --color-danger-dark: #B42318;
-
+ 
    display: flex;
    flex-direction: column;
    gap: 1.6rem;
@@ -13,42 +14,42 @@
    font-size: 1.4rem;
    color: var(--color-text);
 }
-
+ 
 .cart-page p,
 .cart-page h1,
 .cart-page h2,
 .cart-page h3 {
    margin: 0;
 }
-
+ 
 .cart__title {
    font-size: 2.4rem;
 }
-
+ 
 .cart__count {
    margin-top: 0.4rem;
    color: var(--color-text-secondary);
 }
-
+ 
 .cart__items {
    display: flex;
    flex-direction: column;
    gap: 1.2rem;
 }
-
+ 
 /* Bottone Eliminar rosso */
 .flight-card__button--remove {
    background-color: var(--color-danger);
    border-color: var(--color-danger);
 }
-
+ 
 .flight-card__button--remove:hover {
    background-color: var(--color-danger-dark);
    border-color: var(--color-danger-dark);
 }
-
+ 
 /* ---------- Seguir buscando ---------- */
-
+ 
 .cart__continue {
    display: flex;
    align-items: center;
@@ -62,7 +63,7 @@
    font-weight: bold;
    text-decoration: none;
 }
-
+ 
 .cart__continue svg,
 .summary__pay svg {
    fill: none;
@@ -71,9 +72,9 @@
    stroke-linecap: round;
    stroke-linejoin: round;
 }
-
+ 
 /* ---------- Resumen de la compra ---------- */
-
+ 
 .summary {
    display: flex;
    flex-direction: column;
@@ -83,11 +84,11 @@
    border: 1px solid var(--color-border);
    border-radius: 1.2rem;
 }
-
+ 
 .summary__title {
    font-size: 1.8rem;
 }
-
+ 
 .summary__list {
    display: flex;
    flex-direction: column;
@@ -97,18 +98,18 @@
    list-style: none;
    border-bottom: 1px solid var(--color-border);
 }
-
+ 
 .summary__row,
 .summary__total {
    display: flex;
    justify-content: space-between;
    align-items: center;
 }
-
+ 
 .summary__total strong {
    font-size: 3rem;
 }
-
+ 
 .summary__pay {
    display: flex;
    justify-content: center;
@@ -123,18 +124,45 @@
    font-weight: bold;
    cursor: pointer;
 }
-
+ 
 .summary__pay:hover {
    background-color: var(--color-secondary);
 }
-
-
+ 
+.summary__pay:disabled {
+   background-color: var(--color-border);
+   color: var(--color-text-secondary);
+   cursor: not-allowed;
+}
+ 
+/* ---------- Compra completada ---------- */
+ 
+.cart__success {
+   width: 100%;
+   max-width: 60rem;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   gap: 0.8rem;
+   padding: 2.4rem 1.6rem;
+   border: 1px solid var(--color-success);
+   border-radius: 1.2rem;
+   background-color: var(--color-surface);
+   text-align: center;
+}
+ 
+.cart__success-title {
+   color: var(--color-success);
+   font-size: 2.4rem;
+}
+ 
+ 
 /*  ///////////////////////////////////////////////////////////
    //////////////   DESIGNS OF OTHER DEVICES   ///////////////
 /* ////////////////////////////////////////////////////////// */
-
+ 
 @media (min-width: 1024px) {
-
+ 
    .cart-page {
       display: grid;
       grid-template-columns: 1fr 34rem;
@@ -146,23 +174,35 @@
       gap: 2.4rem;
       padding: 3rem 4rem;
    }
-
+ 
    .cart__heading {
       grid-area: heading;
    }
-
+ 
    .cart__items {
       grid-area: items;
    }
-
+ 
    .summary {
       grid-area: summary;
       position: sticky;
       top: 2rem;
    }
-
+ 
    .cart__continue {
       grid-area: continue;
       justify-self: start;
+   }
+ 
+   /* Compra completada: el mensaje ocupa todo el ancho (ya no hay resumen) */
+   .cart-page--completed {
+      grid-template-areas:
+         "heading heading"
+         "items    items"
+         "continue continue";
+   }
+ 
+   .cart-page--completed .cart__continue {
+      justify-self: center;
    }
 }

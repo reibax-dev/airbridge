@@ -1,4 +1,5 @@
-import createFlightCard from "../components/FlightCard.js";
+import createFlightCard, { markButtonSelected, markButtonUnselected } from "../components/FlightCard.js";
+import updateCartBadge from "../components/CartBadge.js";
 import FlightSearch from "../models/FlightSearch.js";
 
 //contenedor de las tarjetas
@@ -19,6 +20,78 @@ if (searchCriteria !== null) {
     passengers = Number(searchCriteria.passengers);
 }
 
+//TÍTULO CON LOS DATOS DEL BUSCADOR (ciudades, fechas y pasajeros)
+//formatear fecha: "2026-11-20" -> "20 nov 2026"
+function formatSummaryDate(dateText) {
+    const date = new Date(dateText + "T12:00:00");
+
+    return date.toLocaleDateString("es-ES", {
+        day: "numeric",
+        month: "short",
+        year: "numeric"
+    });
+}
+
+async function renderSearchSummary() {
+
+    if (searchCriteria === null) {
+        return;
+    }
+
+    //buscar el nombre de la ciudad a partir del código (BIO -> Bilbao)
+    const response = await fetch("data/travel.json");
+    const data = await response.json();
+
+    function getCityName(iata) {
+        const airport = data.airports.find(airport => airport.iata === iata);
+
+        if (airport) {
+            return airport.city;
+        }
+
+        return iata; //si no la encuentra, dejamos el código
+    }
+
+    //Ciudades
+    document.getElementById("summaryOrigin").textContent = getCityName(searchCriteria.origin);
+    document.getElementById("summaryDestination").textContent = getCityName(searchCriteria.destination);
+
+    //Tipo de viaje
+    const isRoundTrip = searchCriteria.tripType === "roundTrip";
+
+    if (isRoundTrip) {
+        document.getElementById("summaryTripType").textContent = "Ida y vuelta";
+    } else {
+        document.getElementById("summaryTripType").textContent = "Solo ida";
+    }
+
+    //Fecha de ida
+    const departureDate = document.getElementById("summaryDepartureDate");
+    departureDate.setAttribute("datetime", searchCriteria.departureDate);
+    departureDate.textContent = formatSummaryDate(searchCriteria.departureDate);
+
+    //Fecha de vuelta (si es solo ida, quitamos la fecha y el guion)
+    const returnDate = document.getElementById("summaryReturnDate");
+
+    if (isRoundTrip && searchCriteria.returnDate) {
+        returnDate.setAttribute("datetime", searchCriteria.returnDate);
+        returnDate.textContent = formatSummaryDate(searchCriteria.returnDate);
+    } else {
+        departureDate.nextSibling.textContent = ""; //el " – "
+        returnDate.remove();
+    }
+
+    //Pasajeros (pasajero / pasajeros)
+    const passengersSpan = document.getElementById("summaryPassengers");
+    passengersSpan.textContent = passengers;
+
+    if (passengers === 1) {
+        passengersSpan.nextSibling.textContent = " pasajero";
+    } else {
+        passengersSpan.nextSibling.textContent = " pasajeros";
+    }
+}
+
 //mostrar tarjetas
 function renderResults(trips, passengers = 1) {
 
@@ -36,18 +109,35 @@ function renderResults(trips, passengers = 1) {
 
         const selectButton = card.querySelector('[data-action="select"]');
 
+        //si el viaje ya está en el carrito, el botón sale ya seleccionado
+        const savedTrips = JSON.parse(sessionStorage.getItem("cartTrips")) || [];
+
+        if (savedTrips.some(savedTrip => savedTrip.idTrip === trip.idTrip)) {
+            markButtonSelected(selectButton);
+        }
+
         selectButton.addEventListener("click", () => {
             const cartTrips = JSON.parse(sessionStorage.getItem("cartTrips")) || []; //coger viajes del LocalStorage
 
             const alreadyExists = cartTrips.some(savedTrip => savedTrip.idTrip === trip.idTrip);
 
             if (alreadyExists) {
-                console.log("Este viaje ya está en el carrito");
+                //si ya estaba seleccionado, se quita del carrito
+                const newCartTrips = cartTrips.filter(savedTrip => savedTrip.idTrip !== trip.idTrip);
+                sessionStorage.setItem("cartTrips", JSON.stringify(newCartTrips));
+                //console.log("Viaje eliminado del carrito:", trip.idTrip);
+
+                markButtonUnselected(selectButton);
             } else {
                 cartTrips.push(trip);
                 sessionStorage.setItem("cartTrips", JSON.stringify(cartTrips));
-                console.log("Viaje añadido al carrito:", trip.idTrip);
+                //console.log("Viaje añadido al carrito:", trip.idTrip);
+
+                markButtonSelected(selectButton);
             }
+
+            //actualizar el círculo del carrito
+            updateCartBadge();
         });
 
         //añadirla al contenedor
@@ -156,4 +246,6 @@ async function initResults() {
 }
 
 
+updateCartBadge();
+renderSearchSummary();
 initResults();

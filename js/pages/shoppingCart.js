@@ -2,6 +2,7 @@ import createFlightCard from "../components/FlightCard.js";
 import createCartSummary from "../components/CartSummary.js";
 import Trip from "../models/Trip.js";
 import Flight from "../models/Flight.js";
+import updateCartBadge from "../components/CartBadge.js";
 
 //contenedores de la página
 const cartPage = document.querySelector(".cart-page");
@@ -59,6 +60,7 @@ function renderCart(trips, passengers = 1) {
 
     //Viajes en el carrito
     cartCount.textContent = trips.length;
+    updateCartBadge();
 
     //Carrito vacío
     if (trips.length === 0) {
@@ -96,6 +98,46 @@ function renderCart(trips, passengers = 1) {
     //resumen de la compra (va antes del botón de seguir buscando)
     const summary = createCartSummary(trips, passengers);
     cartContainer.after(summary);
+
+    //BOTÓN PAGAR
+    const payButton = document.getElementById("payButton");
+
+    //con el carrito vacío no se puede pagar
+    if (trips.length === 0) {
+        payButton.disabled = true;
+    }
+
+    payButton.addEventListener("click", completePurchase);
+}
+
+//COMPRA COMPLETADA
+function completePurchase() {
+
+    //vaciar el carrito
+    sessionStorage.removeItem("cartTrips");
+    console.log("Compra completada");
+
+    //volver a pintar el carrito (vacío) y quitar el resumen
+    renderCart([], passengers);
+    document.getElementById("cartSummary").remove();
+
+    //mensaje de compra completada en lugar de "Tu carrito está vacío"
+    cartContainer.innerHTML = "";
+    cartPage.classList.add("cart-page--completed"); //para centrar el mensaje
+
+    const successMessage = document.createElement("div");
+    successMessage.classList.add("cart__success");
+    successMessage.setAttribute("role", "status");
+
+    const successTitle = document.createElement("h2");
+    successTitle.classList.add("cart__success-title");
+    successTitle.textContent = "¡Compra completada!";
+
+    const successText = document.createElement("p");
+    successText.textContent = "Tu pago se ha realizado correctamente. ¡Buen viaje!";
+
+    successMessage.append(successTitle, successText);
+    cartContainer.append(successMessage);
 }
 
 function initCart() {
