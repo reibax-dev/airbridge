@@ -1,5 +1,5 @@
 
-export function renderForm(airports) {
+export function renderForm(airports, onSearch) {
 const searchForm = document.querySelector('#searchForm');
     
 const fieldsetForm = document.createElement('fieldset');
@@ -248,7 +248,7 @@ searchForm.addEventListener('submit', (event) => {
 
     //! FECHA IDA > VUELTA
 
-    if (departureInput < returnDateInput) {
+    if (!returnDateInput.disabled && returnDateInput.value < departureDate) {
         console.error('Fecha de vuelta anterior a fecha de ida')
         return
     }
@@ -267,6 +267,10 @@ searchForm.addEventListener('submit', (event) => {
         
     }
     console.log( searchCriteria );
+    
+    if (onSearch) {
+        onSearch(searchCriteria);
+    }
 });
 
 searchForm.append(fieldsetForm);
