@@ -185,8 +185,8 @@ searchForm.addEventListener('submit', (event) => {
     //! CIUDADES SELECCIONADAS
 
     if(!origenInput.value.trim() || !destinyInput.value.trim()) {
-        erri
-        console.error('Selecciona una Ciudad')
+        alert('Selecciona una Ciudad');
+        console.error('Selecciona una Ciudad');
         return
     };
 
@@ -202,7 +202,8 @@ searchForm.addEventListener('submit', (event) => {
     //! COMPROBACION DE CIUDADES
 
     if(!originAirport || !destinationAirport) {
-        console.error('Ciudad no disponible todavía')
+        alert('Ciudad no disponible todavía');
+        console.error('Ciudad no disponible todavía');
         return
     };
 
@@ -212,7 +213,8 @@ searchForm.addEventListener('submit', (event) => {
     const destinationIata   = destinationAirport.iata;
 
     if ( originIata === destinationIata) {
-        console.error('Codigos deben de ser diferentes')
+        alert('Codigos deben de ser diferentes');
+        console.error('Codigos deben de ser diferentes');
         return
     };
 
@@ -228,7 +230,8 @@ searchForm.addEventListener('submit', (event) => {
     const departureDate = departureInput.value;
 
     if(!departureDate) {
-        console.error('Selecciona fecha de ida')
+        alert('Selecciona fecha de ida');
+        console.error('Selecciona fecha de ida');
         return
     }
 
@@ -242,14 +245,16 @@ searchForm.addEventListener('submit', (event) => {
     ].join('-');
 
     if(departureDate < today ) {
-        console.error('Fecha de ida no puede ser anterior a la de hoy')
+        alert('Fecha de ida no puede ser anterior a la de hoy');
+        console.error('Fecha de ida no puede ser anterior a la de hoy');
         return
     }
 
     //! FECHA IDA > VUELTA
 
     if (!returnDateInput.disabled && returnDateInput.value < departureDate) {
-        console.error('Fecha de vuelta anterior a fecha de ida')
+        alert('Fecha de vuelta anterior a fecha de ida');
+        console.error('Fecha de vuelta anterior a fecha de ida');
         return
     }
 
