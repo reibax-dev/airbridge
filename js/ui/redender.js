@@ -271,7 +271,7 @@ searchForm.addEventListener('submit', (event) => {
         directOnly:     directCheckbox.checked
         
     }
-    console.log( searchCriteria );
+    //console.log( searchCriteria );
     
     if (onSearch) {
         onSearch(searchCriteria);
