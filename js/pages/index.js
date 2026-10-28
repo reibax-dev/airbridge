@@ -1,4 +1,8 @@
 import { renderForm } from "../ui/redender.js";
+import updateCartBadge from "../components/CartBadge.js";
+
+//círculo con el número de viajes del carrito
+updateCartBadge();
 
 const response = await fetch("data/travel.json");
 const data = await response.json();
