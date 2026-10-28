@@ -22,7 +22,7 @@ main {
    color: var(--color-text);
 }
 
-.fieltset-form {
+.fieldset-form {
    display: grid;
    grid-template-columns: 1fr 1fr;
    gap: 1rem;
@@ -72,21 +72,21 @@ main {
 
 /* Il JS non segna il bottone attivo: lo deduciamo dallo stato di "Vuelta".
    Di default è attivo "Ida y vuelta"; con returnDate disabilitato lo è "Solo ida". */
-.fieltset-form:not(:has(#returnDate:disabled)) #round-trip,
-.fieltset-form:has(#returnDate:disabled) #one-trip {
+.fieldset-form:not(:has(#returnDate:disabled)) #round-trip,
+.fieldset-form:has(#returnDate:disabled) #one-trip {
    background-color: var(--color-primary);
    border-color: var(--color-primary);
    color: var(--color-surface);
 }
 
-.fieltset-form:not(:has(#returnDate:disabled)) #round-trip::before,
-.fieltset-form:has(#returnDate:disabled) #one-trip::before {
+.fieldset-form:not(:has(#returnDate:disabled)) #round-trip::before,
+.fieldset-form:has(#returnDate:disabled) #one-trip::before {
    filter: brightness(0) invert(1);
 }
 
 /* ---------- Campi (label + input) ---------- */
 
-.fieltset-form > label {
+.fieldset-form > label {
    display: grid;
    grid-template-columns: 2rem 1fr;
    column-gap: 1rem;
@@ -100,16 +100,16 @@ main {
 }
 
 /* l'attributo hidden del JS perderebbe contro display:grid */
-.fieltset-form > label[hidden] {
+.fieldset-form > label[hidden] {
    display: none;
 }
 
-.fieltset-form > label:focus-within {
+.fieldset-form > label:focus-within {
    border-color: var(--color-primary);
 }
 
 /* icona a sinistra, a cavallo delle due righe (etichetta + input) */
-.fieltset-form > label::before {
+.fieldset-form > label::before {
    content: "";
    grid-row: 1 / span 2;
    width: 2rem;
@@ -125,8 +125,8 @@ label[for="departureDate"]::before { background-image: url(../assets/icons/calen
 label[for="returnDate"]::before    { background-image: url(../assets/icons/calendario.png); }
 label[for="passenger"]::before     { background-image: url(../assets/icons/pasajero.png); }
 
-.fieltset-form > label input,
-.fieltset-form > label select {
+.fieldset-form > label input,
+.fieldset-form > label select {
    width: 100%;
    min-width: 0;
    padding: 0;
@@ -139,8 +139,8 @@ label[for="passenger"]::before     { background-image: url(../assets/icons/pasaj
    appearance: none;
 }
 
-.fieltset-form > label input:focus,
-.fieltset-form > label select:focus {
+.fieldset-form > label input:focus,
+.fieldset-form > label select:focus {
    outline: none;
 }
 
@@ -153,7 +153,7 @@ label[for="passenger"] {
 }
 
 /* Con "Solo ida" la data de ida occupa tutta la riga */
-.fieltset-form:has(#returnDate:disabled) label[for="departureDate"] {
+.fieldset-form:has(#returnDate:disabled) label[for="departureDate"] {
    grid-column: 1 / -1;
 }
 
@@ -244,14 +244,14 @@ label[for="passenger"] {
    }
 
    /* origen | swap (colonna a larghezza 0) | destino | ida | vuelta | pasajeros */
-   .fieltset-form {
+   .fieldset-form {
       grid-template-columns: 1.4fr 0 1.4fr 1.1fr 1.1fr 1.1fr;
    }
 
    label[for="origin"],
    label[for="destination"],
    label[for="passenger"],
-   .fieltset-form:has(#returnDate:disabled) label[for="departureDate"] {
+   .fieldset-form:has(#returnDate:disabled) label[for="departureDate"] {
       grid-column: auto;
    }
 
