@@ -135,7 +135,7 @@ submitButton.textContent = 'Buscar Vuelos';
 const cityList = document.createElement('datalist');
 cityList.id = 'cities';
 
-airports.forEach(airport => {
+[...airports].sort((a, b) => a.city.localeCompare(b.city, 'es')).forEach(airport => {
     const option = document.createElement('option');
     option.value = airport.city;
     option.label = airport.iata;
