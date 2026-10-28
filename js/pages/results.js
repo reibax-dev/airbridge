@@ -25,11 +25,30 @@ function renderResults(trips, passengers = 1) {
     //vaciar los resultados anteriores
     resultsContainer.innerHTML = "";
 
+    //Viajes encontrados
+    document.getElementById("resultsCount").textContent = trips.length;
+
     //recorrer los viajes
     trips.forEach(trip => {
 
         //crear una tarjeta para este viaje
         const card = createFlightCard(trip, passengers);
+
+        const selectButton = card.querySelector('[data-action="select"]');
+
+        selectButton.addEventListener("click", () => {
+            const cartTrips = JSON.parse(sessionStorage.getItem("cartTrips")) || []; //coger viajes del LocalStorage
+
+            const alreadyExists = cartTrips.some(savedTrip => savedTrip.idTrip === trip.idTrip);
+
+            if (alreadyExists) {
+                console.log("Este viaje ya está en el carrito");
+            } else {
+                cartTrips.push(trip);
+                sessionStorage.setItem("cartTrips", JSON.stringify(cartTrips));
+                console.log("Viaje añadido al carrito:", trip.idTrip);
+            }
+        });
 
         //añadirla al contenedor
         resultsContainer.append(card);
