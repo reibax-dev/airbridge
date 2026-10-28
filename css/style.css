@@ -131,7 +131,7 @@ main {
 .front__image {
     display: block;
     width: 100%;
-    height: 100%;
+    height: 30rem;
     object-fit: cover;
     object-position: center;
     margin: 0;
