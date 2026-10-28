@@ -2524,6 +2524,1535 @@
       },
       "returnFlight": null,
       "totalPrice": 91
+    },
+    {
+      "idTrip": "RT-VLC-BIO-51",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "FR-20261127-VLCBIO-8001",
+        "origin": "VLC",
+        "destination": "BIO",
+        "airline": "Ryanair",
+        "flightNumber": "FR8001",
+        "departureDate": "2026-11-27",
+        "departureTime": "07:05",
+        "arrivalTime": "08:20",
+        "durationMinutes": 75,
+        "stops": 0,
+        "price": 31
+      },
+      "returnFlight": {
+        "idFlight": "FR-20261204-BIOVLC-8002",
+        "origin": "BIO",
+        "destination": "VLC",
+        "airline": "Ryanair",
+        "flightNumber": "FR8002",
+        "departureDate": "2026-12-04",
+        "departureTime": "20:15",
+        "arrivalTime": "21:30",
+        "durationMinutes": 75,
+        "stops": 0,
+        "price": 34
+      },
+      "totalPrice": 65
+    },
+    {
+      "idTrip": "RT-VLC-BIO-52",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "VY-20261127-VLCBIO-8003",
+        "origin": "VLC",
+        "destination": "BIO",
+        "airline": "Vueling",
+        "flightNumber": "VY8003",
+        "departureDate": "2026-11-27",
+        "departureTime": "09:40",
+        "arrivalTime": "10:55",
+        "durationMinutes": 75,
+        "stops": 0,
+        "price": 39
+      },
+      "returnFlight": {
+        "idFlight": "IB-20261204-BIOVLC-8004",
+        "origin": "BIO",
+        "destination": "VLC",
+        "airline": "Iberia",
+        "flightNumber": "IB8004",
+        "departureDate": "2026-12-04",
+        "departureTime": "18:30",
+        "arrivalTime": "19:45",
+        "durationMinutes": 75,
+        "stops": 0,
+        "price": 42
+      },
+      "totalPrice": 81
+    },
+    {
+      "idTrip": "RT-VLC-BIO-53",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "UX-20261127-VLCBIO-8005",
+        "origin": "VLC",
+        "destination": "BIO",
+        "airline": "Air Europa",
+        "flightNumber": "UX8005",
+        "departureDate": "2026-11-27",
+        "departureTime": "12:20",
+        "arrivalTime": "15:05",
+        "durationMinutes": 165,
+        "stops": 1,
+        "price": 70
+      },
+      "returnFlight": {
+        "idFlight": "UX-20261204-BIOVLC-8006",
+        "origin": "BIO",
+        "destination": "VLC",
+        "airline": "Air Europa",
+        "flightNumber": "UX8006",
+        "departureDate": "2026-12-04",
+        "departureTime": "16:45",
+        "arrivalTime": "18:00",
+        "durationMinutes": 75,
+        "stops": 0,
+        "price": 48
+      },
+      "totalPrice": 118
+    },
+    {
+      "idTrip": "RT-VLC-BIO-54",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "IB-20261127-VLCBIO-8007",
+        "origin": "VLC",
+        "destination": "BIO",
+        "airline": "Iberia",
+        "flightNumber": "IB8007",
+        "departureDate": "2026-11-27",
+        "departureTime": "17:50",
+        "arrivalTime": "19:05",
+        "durationMinutes": 75,
+        "stops": 0,
+        "price": 53
+      },
+      "returnFlight": {
+        "idFlight": "VY-20261204-BIOVLC-8008",
+        "origin": "BIO",
+        "destination": "VLC",
+        "airline": "Vueling",
+        "flightNumber": "VY8008",
+        "departureDate": "2026-12-04",
+        "departureTime": "11:10",
+        "arrivalTime": "13:55",
+        "durationMinutes": 165,
+        "stops": 1,
+        "price": 81
+      },
+      "totalPrice": 134
+    },
+    {
+      "idTrip": "OW-VLC-BIO-51",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "FR-20261127-VLCBIO-8009",
+        "origin": "VLC",
+        "destination": "BIO",
+        "airline": "Ryanair",
+        "flightNumber": "FR8009",
+        "departureDate": "2026-11-27",
+        "departureTime": "06:40",
+        "arrivalTime": "07:55",
+        "durationMinutes": 75,
+        "stops": 0,
+        "price": 31
+      },
+      "returnFlight": null,
+      "totalPrice": 31
+    },
+    {
+      "idTrip": "OW-VLC-BIO-52",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "IB-20261127-VLCBIO-8010",
+        "origin": "VLC",
+        "destination": "BIO",
+        "airline": "Iberia",
+        "flightNumber": "IB8010",
+        "departureDate": "2026-11-27",
+        "departureTime": "11:15",
+        "arrivalTime": "12:30",
+        "durationMinutes": 75,
+        "stops": 0,
+        "price": 41
+      },
+      "returnFlight": null,
+      "totalPrice": 41
+    },
+    {
+      "idTrip": "OW-VLC-BIO-53",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "VY-20261127-VLCBIO-8011",
+        "origin": "VLC",
+        "destination": "BIO",
+        "airline": "Vueling",
+        "flightNumber": "VY8011",
+        "departureDate": "2026-11-27",
+        "departureTime": "15:35",
+        "arrivalTime": "18:20",
+        "durationMinutes": 165,
+        "stops": 1,
+        "price": 74
+      },
+      "returnFlight": null,
+      "totalPrice": 74
+    },
+    {
+      "idTrip": "RT-MAD-BIO-51",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "FR-20261127-MADBIO-8012",
+        "origin": "MAD",
+        "destination": "BIO",
+        "airline": "Ryanair",
+        "flightNumber": "FR8012",
+        "departureDate": "2026-11-27",
+        "departureTime": "07:05",
+        "arrivalTime": "08:10",
+        "durationMinutes": 65,
+        "stops": 0,
+        "price": 29
+      },
+      "returnFlight": {
+        "idFlight": "FR-20261204-BIOMAD-8013",
+        "origin": "BIO",
+        "destination": "MAD",
+        "airline": "Ryanair",
+        "flightNumber": "FR8013",
+        "departureDate": "2026-12-04",
+        "departureTime": "20:15",
+        "arrivalTime": "21:20",
+        "durationMinutes": 65,
+        "stops": 0,
+        "price": 32
+      },
+      "totalPrice": 61
+    },
+    {
+      "idTrip": "RT-MAD-BIO-52",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "VY-20261127-MADBIO-8014",
+        "origin": "MAD",
+        "destination": "BIO",
+        "airline": "Vueling",
+        "flightNumber": "VY8014",
+        "departureDate": "2026-11-27",
+        "departureTime": "09:40",
+        "arrivalTime": "10:45",
+        "durationMinutes": 65,
+        "stops": 0,
+        "price": 37
+      },
+      "returnFlight": {
+        "idFlight": "IB-20261204-BIOMAD-8015",
+        "origin": "BIO",
+        "destination": "MAD",
+        "airline": "Iberia",
+        "flightNumber": "IB8015",
+        "departureDate": "2026-12-04",
+        "departureTime": "18:30",
+        "arrivalTime": "19:35",
+        "durationMinutes": 65,
+        "stops": 0,
+        "price": 40
+      },
+      "totalPrice": 77
+    },
+    {
+      "idTrip": "RT-MAD-BIO-53",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "UX-20261127-MADBIO-8016",
+        "origin": "MAD",
+        "destination": "BIO",
+        "airline": "Air Europa",
+        "flightNumber": "UX8016",
+        "departureDate": "2026-11-27",
+        "departureTime": "12:20",
+        "arrivalTime": "14:55",
+        "durationMinutes": 155,
+        "stops": 1,
+        "price": 68
+      },
+      "returnFlight": {
+        "idFlight": "UX-20261204-BIOMAD-8017",
+        "origin": "BIO",
+        "destination": "MAD",
+        "airline": "Air Europa",
+        "flightNumber": "UX8017",
+        "departureDate": "2026-12-04",
+        "departureTime": "16:45",
+        "arrivalTime": "17:50",
+        "durationMinutes": 65,
+        "stops": 0,
+        "price": 46
+      },
+      "totalPrice": 114
+    },
+    {
+      "idTrip": "RT-MAD-BIO-54",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "IB-20261127-MADBIO-8018",
+        "origin": "MAD",
+        "destination": "BIO",
+        "airline": "Iberia",
+        "flightNumber": "IB8018",
+        "departureDate": "2026-11-27",
+        "departureTime": "17:50",
+        "arrivalTime": "18:55",
+        "durationMinutes": 65,
+        "stops": 0,
+        "price": 51
+      },
+      "returnFlight": {
+        "idFlight": "VY-20261204-BIOMAD-8019",
+        "origin": "BIO",
+        "destination": "MAD",
+        "airline": "Vueling",
+        "flightNumber": "VY8019",
+        "departureDate": "2026-12-04",
+        "departureTime": "11:10",
+        "arrivalTime": "13:45",
+        "durationMinutes": 155,
+        "stops": 1,
+        "price": 79
+      },
+      "totalPrice": 130
+    },
+    {
+      "idTrip": "OW-MAD-BIO-51",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "FR-20261127-MADBIO-8020",
+        "origin": "MAD",
+        "destination": "BIO",
+        "airline": "Ryanair",
+        "flightNumber": "FR8020",
+        "departureDate": "2026-11-27",
+        "departureTime": "06:40",
+        "arrivalTime": "07:45",
+        "durationMinutes": 65,
+        "stops": 0,
+        "price": 29
+      },
+      "returnFlight": null,
+      "totalPrice": 29
+    },
+    {
+      "idTrip": "OW-MAD-BIO-52",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "IB-20261127-MADBIO-8021",
+        "origin": "MAD",
+        "destination": "BIO",
+        "airline": "Iberia",
+        "flightNumber": "IB8021",
+        "departureDate": "2026-11-27",
+        "departureTime": "11:15",
+        "arrivalTime": "12:20",
+        "durationMinutes": 65,
+        "stops": 0,
+        "price": 39
+      },
+      "returnFlight": null,
+      "totalPrice": 39
+    },
+    {
+      "idTrip": "OW-MAD-BIO-53",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "VY-20261127-MADBIO-8022",
+        "origin": "MAD",
+        "destination": "BIO",
+        "airline": "Vueling",
+        "flightNumber": "VY8022",
+        "departureDate": "2026-11-27",
+        "departureTime": "15:35",
+        "arrivalTime": "18:10",
+        "durationMinutes": 155,
+        "stops": 1,
+        "price": 72
+      },
+      "returnFlight": null,
+      "totalPrice": 72
+    },
+    {
+      "idTrip": "RT-BCN-BIO-51",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "FR-20261127-BCNBIO-8023",
+        "origin": "BCN",
+        "destination": "BIO",
+        "airline": "Ryanair",
+        "flightNumber": "FR8023",
+        "departureDate": "2026-11-27",
+        "departureTime": "07:05",
+        "arrivalTime": "08:15",
+        "durationMinutes": 70,
+        "stops": 0,
+        "price": 30
+      },
+      "returnFlight": {
+        "idFlight": "FR-20261204-BIOBCN-8024",
+        "origin": "BIO",
+        "destination": "BCN",
+        "airline": "Ryanair",
+        "flightNumber": "FR8024",
+        "departureDate": "2026-12-04",
+        "departureTime": "20:15",
+        "arrivalTime": "21:25",
+        "durationMinutes": 70,
+        "stops": 0,
+        "price": 33
+      },
+      "totalPrice": 63
+    },
+    {
+      "idTrip": "RT-BCN-BIO-52",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "VY-20261127-BCNBIO-8025",
+        "origin": "BCN",
+        "destination": "BIO",
+        "airline": "Vueling",
+        "flightNumber": "VY8025",
+        "departureDate": "2026-11-27",
+        "departureTime": "09:40",
+        "arrivalTime": "10:50",
+        "durationMinutes": 70,
+        "stops": 0,
+        "price": 38
+      },
+      "returnFlight": {
+        "idFlight": "IB-20261204-BIOBCN-8026",
+        "origin": "BIO",
+        "destination": "BCN",
+        "airline": "Iberia",
+        "flightNumber": "IB8026",
+        "departureDate": "2026-12-04",
+        "departureTime": "18:30",
+        "arrivalTime": "19:40",
+        "durationMinutes": 70,
+        "stops": 0,
+        "price": 41
+      },
+      "totalPrice": 79
+    },
+    {
+      "idTrip": "RT-BCN-BIO-53",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "UX-20261127-BCNBIO-8027",
+        "origin": "BCN",
+        "destination": "BIO",
+        "airline": "Air Europa",
+        "flightNumber": "UX8027",
+        "departureDate": "2026-11-27",
+        "departureTime": "12:20",
+        "arrivalTime": "15:00",
+        "durationMinutes": 160,
+        "stops": 1,
+        "price": 69
+      },
+      "returnFlight": {
+        "idFlight": "UX-20261204-BIOBCN-8028",
+        "origin": "BIO",
+        "destination": "BCN",
+        "airline": "Air Europa",
+        "flightNumber": "UX8028",
+        "departureDate": "2026-12-04",
+        "departureTime": "16:45",
+        "arrivalTime": "17:55",
+        "durationMinutes": 70,
+        "stops": 0,
+        "price": 47
+      },
+      "totalPrice": 116
+    },
+    {
+      "idTrip": "RT-BCN-BIO-54",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "IB-20261127-BCNBIO-8029",
+        "origin": "BCN",
+        "destination": "BIO",
+        "airline": "Iberia",
+        "flightNumber": "IB8029",
+        "departureDate": "2026-11-27",
+        "departureTime": "17:50",
+        "arrivalTime": "19:00",
+        "durationMinutes": 70,
+        "stops": 0,
+        "price": 52
+      },
+      "returnFlight": {
+        "idFlight": "VY-20261204-BIOBCN-8030",
+        "origin": "BIO",
+        "destination": "BCN",
+        "airline": "Vueling",
+        "flightNumber": "VY8030",
+        "departureDate": "2026-12-04",
+        "departureTime": "11:10",
+        "arrivalTime": "13:50",
+        "durationMinutes": 160,
+        "stops": 1,
+        "price": 80
+      },
+      "totalPrice": 132
+    },
+    {
+      "idTrip": "OW-BCN-BIO-51",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "FR-20261127-BCNBIO-8031",
+        "origin": "BCN",
+        "destination": "BIO",
+        "airline": "Ryanair",
+        "flightNumber": "FR8031",
+        "departureDate": "2026-11-27",
+        "departureTime": "06:40",
+        "arrivalTime": "07:50",
+        "durationMinutes": 70,
+        "stops": 0,
+        "price": 30
+      },
+      "returnFlight": null,
+      "totalPrice": 30
+    },
+    {
+      "idTrip": "OW-BCN-BIO-52",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "IB-20261127-BCNBIO-8032",
+        "origin": "BCN",
+        "destination": "BIO",
+        "airline": "Iberia",
+        "flightNumber": "IB8032",
+        "departureDate": "2026-11-27",
+        "departureTime": "11:15",
+        "arrivalTime": "12:25",
+        "durationMinutes": 70,
+        "stops": 0,
+        "price": 40
+      },
+      "returnFlight": null,
+      "totalPrice": 40
+    },
+    {
+      "idTrip": "OW-BCN-BIO-53",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "VY-20261127-BCNBIO-8033",
+        "origin": "BCN",
+        "destination": "BIO",
+        "airline": "Vueling",
+        "flightNumber": "VY8033",
+        "departureDate": "2026-11-27",
+        "departureTime": "15:35",
+        "arrivalTime": "18:15",
+        "durationMinutes": 160,
+        "stops": 1,
+        "price": 73
+      },
+      "returnFlight": null,
+      "totalPrice": 73
+    },
+    {
+      "idTrip": "RT-BIO-VLC-51",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "FR-20261218-BIOVLC-8034",
+        "origin": "BIO",
+        "destination": "VLC",
+        "airline": "Ryanair",
+        "flightNumber": "FR8034",
+        "departureDate": "2026-12-18",
+        "departureTime": "07:05",
+        "arrivalTime": "08:20",
+        "durationMinutes": 75,
+        "stops": 0,
+        "price": 40
+      },
+      "returnFlight": {
+        "idFlight": "FR-20270102-VLCBIO-8035",
+        "origin": "VLC",
+        "destination": "BIO",
+        "airline": "Ryanair",
+        "flightNumber": "FR8035",
+        "departureDate": "2027-01-02",
+        "departureTime": "20:15",
+        "arrivalTime": "21:30",
+        "durationMinutes": 75,
+        "stops": 0,
+        "price": 45
+      },
+      "totalPrice": 85
+    },
+    {
+      "idTrip": "RT-BIO-VLC-52",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "VY-20261218-BIOVLC-8036",
+        "origin": "BIO",
+        "destination": "VLC",
+        "airline": "Vueling",
+        "flightNumber": "VY8036",
+        "departureDate": "2026-12-18",
+        "departureTime": "09:40",
+        "arrivalTime": "10:55",
+        "durationMinutes": 75,
+        "stops": 0,
+        "price": 51
+      },
+      "returnFlight": {
+        "idFlight": "IB-20270102-VLCBIO-8037",
+        "origin": "VLC",
+        "destination": "BIO",
+        "airline": "Iberia",
+        "flightNumber": "IB8037",
+        "departureDate": "2027-01-02",
+        "departureTime": "18:30",
+        "arrivalTime": "19:45",
+        "durationMinutes": 75,
+        "stops": 0,
+        "price": 55
+      },
+      "totalPrice": 106
+    },
+    {
+      "idTrip": "RT-BIO-VLC-53",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "UX-20261218-BIOVLC-8038",
+        "origin": "BIO",
+        "destination": "VLC",
+        "airline": "Air Europa",
+        "flightNumber": "UX8038",
+        "departureDate": "2026-12-18",
+        "departureTime": "12:20",
+        "arrivalTime": "15:05",
+        "durationMinutes": 165,
+        "stops": 1,
+        "price": 93
+      },
+      "returnFlight": {
+        "idFlight": "UX-20270102-VLCBIO-8039",
+        "origin": "VLC",
+        "destination": "BIO",
+        "airline": "Air Europa",
+        "flightNumber": "UX8039",
+        "departureDate": "2027-01-02",
+        "departureTime": "16:45",
+        "arrivalTime": "18:00",
+        "durationMinutes": 75,
+        "stops": 0,
+        "price": 63
+      },
+      "totalPrice": 156
+    },
+    {
+      "idTrip": "RT-BIO-VLC-54",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "IB-20261218-BIOVLC-8040",
+        "origin": "BIO",
+        "destination": "VLC",
+        "airline": "Iberia",
+        "flightNumber": "IB8040",
+        "departureDate": "2026-12-18",
+        "departureTime": "17:50",
+        "arrivalTime": "19:05",
+        "durationMinutes": 75,
+        "stops": 0,
+        "price": 70
+      },
+      "returnFlight": {
+        "idFlight": "VY-20270102-VLCBIO-8041",
+        "origin": "VLC",
+        "destination": "BIO",
+        "airline": "Vueling",
+        "flightNumber": "VY8041",
+        "departureDate": "2027-01-02",
+        "departureTime": "11:10",
+        "arrivalTime": "13:55",
+        "durationMinutes": 165,
+        "stops": 1,
+        "price": 108
+      },
+      "totalPrice": 178
+    },
+    {
+      "idTrip": "OW-BIO-VLC-51",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "FR-20261218-BIOVLC-8042",
+        "origin": "BIO",
+        "destination": "VLC",
+        "airline": "Ryanair",
+        "flightNumber": "FR8042",
+        "departureDate": "2026-12-18",
+        "departureTime": "06:40",
+        "arrivalTime": "07:55",
+        "durationMinutes": 75,
+        "stops": 0,
+        "price": 40
+      },
+      "returnFlight": null,
+      "totalPrice": 40
+    },
+    {
+      "idTrip": "OW-BIO-VLC-52",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "IB-20261218-BIOVLC-8043",
+        "origin": "BIO",
+        "destination": "VLC",
+        "airline": "Iberia",
+        "flightNumber": "IB8043",
+        "departureDate": "2026-12-18",
+        "departureTime": "11:15",
+        "arrivalTime": "12:30",
+        "durationMinutes": 75,
+        "stops": 0,
+        "price": 54
+      },
+      "returnFlight": null,
+      "totalPrice": 54
+    },
+    {
+      "idTrip": "OW-BIO-VLC-53",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "VY-20261218-BIOVLC-8044",
+        "origin": "BIO",
+        "destination": "VLC",
+        "airline": "Vueling",
+        "flightNumber": "VY8044",
+        "departureDate": "2026-12-18",
+        "departureTime": "15:35",
+        "arrivalTime": "18:20",
+        "durationMinutes": 165,
+        "stops": 1,
+        "price": 99
+      },
+      "returnFlight": null,
+      "totalPrice": 99
+    },
+    {
+      "idTrip": "RT-BIO-MAD-51",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "FR-20261218-BIOMAD-8045",
+        "origin": "BIO",
+        "destination": "MAD",
+        "airline": "Ryanair",
+        "flightNumber": "FR8045",
+        "departureDate": "2026-12-18",
+        "departureTime": "07:05",
+        "arrivalTime": "08:10",
+        "durationMinutes": 65,
+        "stops": 0,
+        "price": 38
+      },
+      "returnFlight": {
+        "idFlight": "FR-20270102-MADBIO-8046",
+        "origin": "MAD",
+        "destination": "BIO",
+        "airline": "Ryanair",
+        "flightNumber": "FR8046",
+        "departureDate": "2027-01-02",
+        "departureTime": "20:15",
+        "arrivalTime": "21:20",
+        "durationMinutes": 65,
+        "stops": 0,
+        "price": 42
+      },
+      "totalPrice": 80
+    },
+    {
+      "idTrip": "RT-BIO-MAD-52",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "VY-20261218-BIOMAD-8047",
+        "origin": "BIO",
+        "destination": "MAD",
+        "airline": "Vueling",
+        "flightNumber": "VY8047",
+        "departureDate": "2026-12-18",
+        "departureTime": "09:40",
+        "arrivalTime": "10:45",
+        "durationMinutes": 65,
+        "stops": 0,
+        "price": 49
+      },
+      "returnFlight": {
+        "idFlight": "IB-20270102-MADBIO-8048",
+        "origin": "MAD",
+        "destination": "BIO",
+        "airline": "Iberia",
+        "flightNumber": "IB8048",
+        "departureDate": "2027-01-02",
+        "departureTime": "18:30",
+        "arrivalTime": "19:35",
+        "durationMinutes": 65,
+        "stops": 0,
+        "price": 53
+      },
+      "totalPrice": 102
+    },
+    {
+      "idTrip": "RT-BIO-MAD-53",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "UX-20261218-BIOMAD-8049",
+        "origin": "BIO",
+        "destination": "MAD",
+        "airline": "Air Europa",
+        "flightNumber": "UX8049",
+        "departureDate": "2026-12-18",
+        "departureTime": "12:20",
+        "arrivalTime": "14:55",
+        "durationMinutes": 155,
+        "stops": 1,
+        "price": 90
+      },
+      "returnFlight": {
+        "idFlight": "UX-20270102-MADBIO-8050",
+        "origin": "MAD",
+        "destination": "BIO",
+        "airline": "Air Europa",
+        "flightNumber": "UX8050",
+        "departureDate": "2027-01-02",
+        "departureTime": "16:45",
+        "arrivalTime": "17:50",
+        "durationMinutes": 65,
+        "stops": 0,
+        "price": 61
+      },
+      "totalPrice": 151
+    },
+    {
+      "idTrip": "RT-BIO-MAD-54",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "IB-20261218-BIOMAD-8051",
+        "origin": "BIO",
+        "destination": "MAD",
+        "airline": "Iberia",
+        "flightNumber": "IB8051",
+        "departureDate": "2026-12-18",
+        "departureTime": "17:50",
+        "arrivalTime": "18:55",
+        "durationMinutes": 65,
+        "stops": 0,
+        "price": 68
+      },
+      "returnFlight": {
+        "idFlight": "VY-20270102-MADBIO-8052",
+        "origin": "MAD",
+        "destination": "BIO",
+        "airline": "Vueling",
+        "flightNumber": "VY8052",
+        "departureDate": "2027-01-02",
+        "departureTime": "11:10",
+        "arrivalTime": "13:45",
+        "durationMinutes": 155,
+        "stops": 1,
+        "price": 105
+      },
+      "totalPrice": 173
+    },
+    {
+      "idTrip": "OW-BIO-MAD-51",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "FR-20261218-BIOMAD-8053",
+        "origin": "BIO",
+        "destination": "MAD",
+        "airline": "Ryanair",
+        "flightNumber": "FR8053",
+        "departureDate": "2026-12-18",
+        "departureTime": "06:40",
+        "arrivalTime": "07:45",
+        "durationMinutes": 65,
+        "stops": 0,
+        "price": 38
+      },
+      "returnFlight": null,
+      "totalPrice": 38
+    },
+    {
+      "idTrip": "OW-BIO-MAD-52",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "IB-20261218-BIOMAD-8054",
+        "origin": "BIO",
+        "destination": "MAD",
+        "airline": "Iberia",
+        "flightNumber": "IB8054",
+        "departureDate": "2026-12-18",
+        "departureTime": "11:15",
+        "arrivalTime": "12:20",
+        "durationMinutes": 65,
+        "stops": 0,
+        "price": 51
+      },
+      "returnFlight": null,
+      "totalPrice": 51
+    },
+    {
+      "idTrip": "OW-BIO-MAD-53",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "VY-20261218-BIOMAD-8055",
+        "origin": "BIO",
+        "destination": "MAD",
+        "airline": "Vueling",
+        "flightNumber": "VY8055",
+        "departureDate": "2026-12-18",
+        "departureTime": "15:35",
+        "arrivalTime": "18:10",
+        "durationMinutes": 155,
+        "stops": 1,
+        "price": 96
+      },
+      "returnFlight": null,
+      "totalPrice": 96
+    },
+    {
+      "idTrip": "RT-BIO-BCN-51",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "FR-20261218-BIOBCN-8056",
+        "origin": "BIO",
+        "destination": "BCN",
+        "airline": "Ryanair",
+        "flightNumber": "FR8056",
+        "departureDate": "2026-12-18",
+        "departureTime": "07:05",
+        "arrivalTime": "08:15",
+        "durationMinutes": 70,
+        "stops": 0,
+        "price": 39
+      },
+      "returnFlight": {
+        "idFlight": "FR-20270102-BCNBIO-8057",
+        "origin": "BCN",
+        "destination": "BIO",
+        "airline": "Ryanair",
+        "flightNumber": "FR8057",
+        "departureDate": "2027-01-02",
+        "departureTime": "20:15",
+        "arrivalTime": "21:25",
+        "durationMinutes": 70,
+        "stops": 0,
+        "price": 43
+      },
+      "totalPrice": 82
+    },
+    {
+      "idTrip": "RT-BIO-BCN-52",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "VY-20261218-BIOBCN-8058",
+        "origin": "BIO",
+        "destination": "BCN",
+        "airline": "Vueling",
+        "flightNumber": "VY8058",
+        "departureDate": "2026-12-18",
+        "departureTime": "09:40",
+        "arrivalTime": "10:50",
+        "durationMinutes": 70,
+        "stops": 0,
+        "price": 50
+      },
+      "returnFlight": {
+        "idFlight": "IB-20270102-BCNBIO-8059",
+        "origin": "BCN",
+        "destination": "BIO",
+        "airline": "Iberia",
+        "flightNumber": "IB8059",
+        "departureDate": "2027-01-02",
+        "departureTime": "18:30",
+        "arrivalTime": "19:40",
+        "durationMinutes": 70,
+        "stops": 0,
+        "price": 54
+      },
+      "totalPrice": 104
+    },
+    {
+      "idTrip": "RT-BIO-BCN-53",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "UX-20261218-BIOBCN-8060",
+        "origin": "BIO",
+        "destination": "BCN",
+        "airline": "Air Europa",
+        "flightNumber": "UX8060",
+        "departureDate": "2026-12-18",
+        "departureTime": "12:20",
+        "arrivalTime": "15:00",
+        "durationMinutes": 160,
+        "stops": 1,
+        "price": 92
+      },
+      "returnFlight": {
+        "idFlight": "UX-20270102-BCNBIO-8061",
+        "origin": "BCN",
+        "destination": "BIO",
+        "airline": "Air Europa",
+        "flightNumber": "UX8061",
+        "departureDate": "2027-01-02",
+        "departureTime": "16:45",
+        "arrivalTime": "17:55",
+        "durationMinutes": 70,
+        "stops": 0,
+        "price": 62
+      },
+      "totalPrice": 154
+    },
+    {
+      "idTrip": "RT-BIO-BCN-54",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "IB-20261218-BIOBCN-8062",
+        "origin": "BIO",
+        "destination": "BCN",
+        "airline": "Iberia",
+        "flightNumber": "IB8062",
+        "departureDate": "2026-12-18",
+        "departureTime": "17:50",
+        "arrivalTime": "19:00",
+        "durationMinutes": 70,
+        "stops": 0,
+        "price": 69
+      },
+      "returnFlight": {
+        "idFlight": "VY-20270102-BCNBIO-8063",
+        "origin": "BCN",
+        "destination": "BIO",
+        "airline": "Vueling",
+        "flightNumber": "VY8063",
+        "departureDate": "2027-01-02",
+        "departureTime": "11:10",
+        "arrivalTime": "13:50",
+        "durationMinutes": 160,
+        "stops": 1,
+        "price": 107
+      },
+      "totalPrice": 176
+    },
+    {
+      "idTrip": "OW-BIO-BCN-51",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "FR-20261218-BIOBCN-8064",
+        "origin": "BIO",
+        "destination": "BCN",
+        "airline": "Ryanair",
+        "flightNumber": "FR8064",
+        "departureDate": "2026-12-18",
+        "departureTime": "06:40",
+        "arrivalTime": "07:50",
+        "durationMinutes": 70,
+        "stops": 0,
+        "price": 39
+      },
+      "returnFlight": null,
+      "totalPrice": 39
+    },
+    {
+      "idTrip": "OW-BIO-BCN-52",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "IB-20261218-BIOBCN-8065",
+        "origin": "BIO",
+        "destination": "BCN",
+        "airline": "Iberia",
+        "flightNumber": "IB8065",
+        "departureDate": "2026-12-18",
+        "departureTime": "11:15",
+        "arrivalTime": "12:25",
+        "durationMinutes": 70,
+        "stops": 0,
+        "price": 53
+      },
+      "returnFlight": null,
+      "totalPrice": 53
+    },
+    {
+      "idTrip": "OW-BIO-BCN-53",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "VY-20261218-BIOBCN-8066",
+        "origin": "BIO",
+        "destination": "BCN",
+        "airline": "Vueling",
+        "flightNumber": "VY8066",
+        "departureDate": "2026-12-18",
+        "departureTime": "15:35",
+        "arrivalTime": "18:15",
+        "durationMinutes": 160,
+        "stops": 1,
+        "price": 97
+      },
+      "returnFlight": null,
+      "totalPrice": 97
+    },
+    {
+      "idTrip": "RT-MAD-CDG-51",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "FR-20261218-MADCDG-8067",
+        "origin": "MAD",
+        "destination": "CDG",
+        "airline": "Ryanair",
+        "flightNumber": "FR8067",
+        "departureDate": "2026-12-18",
+        "departureTime": "07:05",
+        "arrivalTime": "09:10",
+        "durationMinutes": 125,
+        "stops": 0,
+        "price": 55
+      },
+      "returnFlight": {
+        "idFlight": "FR-20270102-CDGMAD-8068",
+        "origin": "CDG",
+        "destination": "MAD",
+        "airline": "Ryanair",
+        "flightNumber": "FR8068",
+        "departureDate": "2027-01-02",
+        "departureTime": "20:15",
+        "arrivalTime": "22:20",
+        "durationMinutes": 125,
+        "stops": 0,
+        "price": 59
+      },
+      "totalPrice": 114
+    },
+    {
+      "idTrip": "RT-MAD-CDG-52",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "VY-20261218-MADCDG-8069",
+        "origin": "MAD",
+        "destination": "CDG",
+        "airline": "Vueling",
+        "flightNumber": "VY8069",
+        "departureDate": "2026-12-18",
+        "departureTime": "09:40",
+        "arrivalTime": "11:45",
+        "durationMinutes": 125,
+        "stops": 0,
+        "price": 66
+      },
+      "returnFlight": {
+        "idFlight": "IB-20270102-CDGMAD-8070",
+        "origin": "CDG",
+        "destination": "MAD",
+        "airline": "Iberia",
+        "flightNumber": "IB8070",
+        "departureDate": "2027-01-02",
+        "departureTime": "18:30",
+        "arrivalTime": "20:35",
+        "durationMinutes": 125,
+        "stops": 0,
+        "price": 70
+      },
+      "totalPrice": 136
+    },
+    {
+      "idTrip": "RT-MAD-CDG-53",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "UX-20261218-MADCDG-8071",
+        "origin": "MAD",
+        "destination": "CDG",
+        "airline": "Air Europa",
+        "flightNumber": "UX8071",
+        "departureDate": "2026-12-18",
+        "departureTime": "12:20",
+        "arrivalTime": "15:55",
+        "durationMinutes": 215,
+        "stops": 1,
+        "price": 108
+      },
+      "returnFlight": {
+        "idFlight": "UX-20270102-CDGMAD-8072",
+        "origin": "CDG",
+        "destination": "MAD",
+        "airline": "Air Europa",
+        "flightNumber": "UX8072",
+        "departureDate": "2027-01-02",
+        "departureTime": "16:45",
+        "arrivalTime": "18:50",
+        "durationMinutes": 125,
+        "stops": 0,
+        "price": 78
+      },
+      "totalPrice": 186
+    },
+    {
+      "idTrip": "RT-MAD-CDG-54",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "IB-20261218-MADCDG-8073",
+        "origin": "MAD",
+        "destination": "CDG",
+        "airline": "Iberia",
+        "flightNumber": "IB8073",
+        "departureDate": "2026-12-18",
+        "departureTime": "17:50",
+        "arrivalTime": "19:55",
+        "durationMinutes": 125,
+        "stops": 0,
+        "price": 85
+      },
+      "returnFlight": {
+        "idFlight": "VY-20270102-CDGMAD-8074",
+        "origin": "CDG",
+        "destination": "MAD",
+        "airline": "Vueling",
+        "flightNumber": "VY8074",
+        "departureDate": "2027-01-02",
+        "departureTime": "11:10",
+        "arrivalTime": "14:45",
+        "durationMinutes": 215,
+        "stops": 1,
+        "price": 123
+      },
+      "totalPrice": 208
+    },
+    {
+      "idTrip": "OW-MAD-CDG-51",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "FR-20261218-MADCDG-8075",
+        "origin": "MAD",
+        "destination": "CDG",
+        "airline": "Ryanair",
+        "flightNumber": "FR8075",
+        "departureDate": "2026-12-18",
+        "departureTime": "06:40",
+        "arrivalTime": "08:45",
+        "durationMinutes": 125,
+        "stops": 0,
+        "price": 55
+      },
+      "returnFlight": null,
+      "totalPrice": 55
+    },
+    {
+      "idTrip": "OW-MAD-CDG-52",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "IB-20261218-MADCDG-8076",
+        "origin": "MAD",
+        "destination": "CDG",
+        "airline": "Iberia",
+        "flightNumber": "IB8076",
+        "departureDate": "2026-12-18",
+        "departureTime": "11:15",
+        "arrivalTime": "13:20",
+        "durationMinutes": 125,
+        "stops": 0,
+        "price": 69
+      },
+      "returnFlight": null,
+      "totalPrice": 69
+    },
+    {
+      "idTrip": "OW-MAD-CDG-53",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "VY-20261218-MADCDG-8077",
+        "origin": "MAD",
+        "destination": "CDG",
+        "airline": "Vueling",
+        "flightNumber": "VY8077",
+        "departureDate": "2026-12-18",
+        "departureTime": "15:35",
+        "arrivalTime": "19:10",
+        "durationMinutes": 215,
+        "stops": 1,
+        "price": 113
+      },
+      "returnFlight": null,
+      "totalPrice": 113
+    },
+    {
+      "idTrip": "RT-MAD-BKK-51",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "IB-20261120-MADBKK-8078",
+        "origin": "MAD",
+        "destination": "BKK",
+        "airline": "Iberia",
+        "flightNumber": "IB8078",
+        "departureDate": "2026-11-20",
+        "departureTime": "11:30",
+        "arrivalTime": "23:00",
+        "durationMinutes": 690,
+        "stops": 0,
+        "price": 455
+      },
+      "returnFlight": {
+        "idFlight": "IB-20261127-BKKMAD-8079",
+        "origin": "BKK",
+        "destination": "MAD",
+        "airline": "Iberia",
+        "flightNumber": "IB8079",
+        "departureDate": "2026-11-27",
+        "departureTime": "13:15",
+        "arrivalTime": "01:15",
+        "durationMinutes": 720,
+        "stops": 0,
+        "price": 470
+      },
+      "totalPrice": 925
+    },
+    {
+      "idTrip": "RT-MAD-BKK-52",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "UX-20261120-MADBKK-8080",
+        "origin": "MAD",
+        "destination": "BKK",
+        "airline": "Air Europa",
+        "flightNumber": "UX8080",
+        "departureDate": "2026-11-20",
+        "departureTime": "09:05",
+        "arrivalTime": "00:35",
+        "durationMinutes": 930,
+        "stops": 1,
+        "price": 389
+      },
+      "returnFlight": {
+        "idFlight": "UX-20261127-BKKMAD-8081",
+        "origin": "BKK",
+        "destination": "MAD",
+        "airline": "Air Europa",
+        "flightNumber": "UX8081",
+        "departureDate": "2026-11-27",
+        "departureTime": "22:40",
+        "arrivalTime": "14:40",
+        "durationMinutes": 960,
+        "stops": 1,
+        "price": 402
+      },
+      "totalPrice": 791
+    },
+    {
+      "idTrip": "RT-MAD-BKK-53",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "IB-20261120-MADBKK-8082",
+        "origin": "MAD",
+        "destination": "BKK",
+        "airline": "Iberia",
+        "flightNumber": "IB8082",
+        "departureDate": "2026-11-20",
+        "departureTime": "19:20",
+        "arrivalTime": "10:50",
+        "durationMinutes": 930,
+        "stops": 1,
+        "price": 412
+      },
+      "returnFlight": {
+        "idFlight": "UX-20261127-BKKMAD-8083",
+        "origin": "BKK",
+        "destination": "MAD",
+        "airline": "Air Europa",
+        "flightNumber": "UX8083",
+        "departureDate": "2026-11-27",
+        "departureTime": "08:50",
+        "arrivalTime": "20:50",
+        "durationMinutes": 720,
+        "stops": 0,
+        "price": 448
+      },
+      "totalPrice": 860
+    },
+    {
+      "idTrip": "OW-MAD-BKK-51",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "IB-20261120-MADBKK-8084",
+        "origin": "MAD",
+        "destination": "BKK",
+        "airline": "Iberia",
+        "flightNumber": "IB8084",
+        "departureDate": "2026-11-20",
+        "departureTime": "11:30",
+        "arrivalTime": "23:00",
+        "durationMinutes": 690,
+        "stops": 0,
+        "price": 489
+      },
+      "returnFlight": null,
+      "totalPrice": 489
+    },
+    {
+      "idTrip": "OW-MAD-BKK-52",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "UX-20261120-MADBKK-8085",
+        "origin": "MAD",
+        "destination": "BKK",
+        "airline": "Air Europa",
+        "flightNumber": "UX8085",
+        "departureDate": "2026-11-20",
+        "departureTime": "09:05",
+        "arrivalTime": "00:35",
+        "durationMinutes": 930,
+        "stops": 1,
+        "price": 415
+      },
+      "returnFlight": null,
+      "totalPrice": 415
+    },
+    {
+      "idTrip": "RT-MAD-BKK-54",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "IB-20261218-MADBKK-8086",
+        "origin": "MAD",
+        "destination": "BKK",
+        "airline": "Iberia",
+        "flightNumber": "IB8086",
+        "departureDate": "2026-12-18",
+        "departureTime": "11:30",
+        "arrivalTime": "23:00",
+        "durationMinutes": 690,
+        "stops": 0,
+        "price": 569
+      },
+      "returnFlight": {
+        "idFlight": "IB-20270102-BKKMAD-8087",
+        "origin": "BKK",
+        "destination": "MAD",
+        "airline": "Iberia",
+        "flightNumber": "IB8087",
+        "departureDate": "2027-01-02",
+        "departureTime": "13:15",
+        "arrivalTime": "01:15",
+        "durationMinutes": 720,
+        "stops": 0,
+        "price": 588
+      },
+      "totalPrice": 1157
+    },
+    {
+      "idTrip": "RT-MAD-BKK-55",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "UX-20261218-MADBKK-8088",
+        "origin": "MAD",
+        "destination": "BKK",
+        "airline": "Air Europa",
+        "flightNumber": "UX8088",
+        "departureDate": "2026-12-18",
+        "departureTime": "09:05",
+        "arrivalTime": "00:35",
+        "durationMinutes": 930,
+        "stops": 1,
+        "price": 486
+      },
+      "returnFlight": {
+        "idFlight": "UX-20270102-BKKMAD-8089",
+        "origin": "BKK",
+        "destination": "MAD",
+        "airline": "Air Europa",
+        "flightNumber": "UX8089",
+        "departureDate": "2027-01-02",
+        "departureTime": "22:40",
+        "arrivalTime": "14:40",
+        "durationMinutes": 960,
+        "stops": 1,
+        "price": 502
+      },
+      "totalPrice": 988
+    },
+    {
+      "idTrip": "RT-MAD-BKK-56",
+      "tripType": "roundTrip",
+      "outbound": {
+        "idFlight": "IB-20261218-MADBKK-8090",
+        "origin": "MAD",
+        "destination": "BKK",
+        "airline": "Iberia",
+        "flightNumber": "IB8090",
+        "departureDate": "2026-12-18",
+        "departureTime": "19:20",
+        "arrivalTime": "10:50",
+        "durationMinutes": 930,
+        "stops": 1,
+        "price": 515
+      },
+      "returnFlight": {
+        "idFlight": "UX-20270102-BKKMAD-8091",
+        "origin": "BKK",
+        "destination": "MAD",
+        "airline": "Air Europa",
+        "flightNumber": "UX8091",
+        "departureDate": "2027-01-02",
+        "departureTime": "08:50",
+        "arrivalTime": "20:50",
+        "durationMinutes": 720,
+        "stops": 0,
+        "price": 560
+      },
+      "totalPrice": 1075
+    },
+    {
+      "idTrip": "OW-MAD-BKK-53",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "IB-20261218-MADBKK-8092",
+        "origin": "MAD",
+        "destination": "BKK",
+        "airline": "Iberia",
+        "flightNumber": "IB8092",
+        "departureDate": "2026-12-18",
+        "departureTime": "11:30",
+        "arrivalTime": "23:00",
+        "durationMinutes": 690,
+        "stops": 0,
+        "price": 611
+      },
+      "returnFlight": null,
+      "totalPrice": 611
+    },
+    {
+      "idTrip": "OW-MAD-BKK-54",
+      "tripType": "oneWay",
+      "outbound": {
+        "idFlight": "UX-20261218-MADBKK-8093",
+        "origin": "MAD",
+        "destination": "BKK",
+        "airline": "Air Europa",
+        "flightNumber": "UX8093",
+        "departureDate": "2026-12-18",
+        "departureTime": "09:05",
+        "arrivalTime": "00:35",
+        "durationMinutes": 930,
+        "stops": 1,
+        "price": 519
+      },
+      "returnFlight": null,
+      "totalPrice": 519
     }
   ]
 }
